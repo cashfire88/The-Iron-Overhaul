@@ -30,7 +30,7 @@ GameplayDefault extends GameplayElements
 	Score_PoliticsGuildMember = 50.0;
 	Score_PoliticsInfluence_Multiplier = 0.02;
 
-	EmployeeSalaryPerYear = "100 + Level * (hasTag.BuffEasy * 5 + hasTag.BuffNormal * 15 + hasTag.BuffHard * 40 + hasTag.BuffImpossible * 75) * (Source.hasTag.IsLowTier + Source.hasTag.IsHighTier * 1.5)"; // Source.hasTag is the building, just hasTag is the employee
+	EmployeeSalaryPerYear = "115 + Level * (hasTag.BuffEasy * 5 + hasTag.BuffNormal * 15 + hasTag.BuffHard * 40 + hasTag.BuffImpossible * 75) * (Source.hasTag.IsLowTier + Source.hasTag.IsHighTier * 1.5)"; // Source.hasTag is the building, just hasTag is the employee
 //	EmployeeSalaryPerYear = "100 + Level * (hasTag.BuffEasy * 5 + hasTag.BuffNormal * 15 + hasTag.BuffHard * 40 + hasTag.BuffImpossible * 75)";
 	
 	BuildingsOnFireCountLow = 1;
@@ -170,7 +170,7 @@ GameplayDefault extends GameplayElements
 	HpPerCharLevel = 8;
 	CharacterHealthAttrArray = array {"Strength", "Dexterity"};
 	CharacterHealthAttrMultiplier = 0.5;
-	Character_HealingTickFrequency = 20.0; // How often healing ticks happen, one tick every n seconds scaled realtime. (standard: 10)
+	Character_HealingTickFrequency = 10.0; // How often healing ticks happen, one tick every n seconds scaled realtime. (standard: 10)
 	
 	// Character attribute formulas.
 	// Hardcoded derived actor values:
@@ -734,65 +734,65 @@ GameplayDefault extends GameplayElements
 				StartupItemCount = 20;
 				LeaderGetsBackpack = false;
 				ResultObjectIds = array{"EasyDifficultyPlayerForward", "TagNotAI"};
-				FamilySizeLowerLimit = 5;
-				FamilySizeUpperLimit = 10;
-				FamilySizeAdoptionLimit = 8;
+				FamilySizeLowerLimit = 15;
+				FamilySizeUpperLimit = 30;
+				FamilySizeAdoptionLimit = 25;
 			},
 			DifficultyEntry
 			{
 				Id = "easy";
-				StartMoney = 5000;
+				StartMoney = 6000;
 				StartPrestige = 200;
 				StartNobilityTitle = 1;
 				XPBonusFactor = 2.0f;
 				StartupItemCount = 20;
 				LeaderGetsBackpack = true;
 				ResultObjectIds = array{"EasyDifficultyPlayerForward", "TagNotAI"};
-				FamilySizeLowerLimit = 12;
-				FamilySizeUpperLimit = 24;
-				FamilySizeAdoptionLimit = 20;
+				FamilySizeLowerLimit = 15;
+				FamilySizeUpperLimit = 30;
+				FamilySizeAdoptionLimit = 25;
 			},
 			DifficultyEntry
 			{
 				Id = "normal";
-				StartMoney = 3000;
+				StartMoney = 4000;
 				StartPrestige = 100;
 				StartNobilityTitle = 1;
 				XPBonusFactor = 1.2f;
 				StartupItemCount = 10;
 				LeaderGetsBackpack = false;
 				ResultObjectIds = array{"NormalDifficultyPlayerForward", "TagNotAI"};
-				FamilySizeLowerLimit = 10;
-				FamilySizeUpperLimit = 20;
-				FamilySizeAdoptionLimit = 20;
+				FamilySizeLowerLimit = 15;
+				FamilySizeUpperLimit = 30;
+				FamilySizeAdoptionLimit = 25;
 			},
 			DifficultyEntry
 			{
 				Id = "hard";
-				StartMoney = 2600;
+				StartMoney = 3600;
 				StartPrestige = 50;
 				StartNobilityTitle = 1;
 				XPBonusFactor = 1.0f;
 				StartupItemCount = 5;
 				LeaderGetsBackpack = false;
 				ResultObjectIds = array{"HardDifficultyPlayerForward", "TagNotAI"};
-				FamilySizeLowerLimit = 10;
-				FamilySizeUpperLimit = 20;
-				FamilySizeAdoptionLimit = 15;
+				FamilySizeLowerLimit = 15;
+				FamilySizeUpperLimit = 30;
+				FamilySizeAdoptionLimit = 25;
 			},
 			DifficultyEntry
 			{
 				Id = "impossible";
-				StartMoney = 2100;
+				StartMoney = 2600;
 				StartPrestige = 0;
 				StartNobilityTitle = 1;
 				XPBonusFactor = 0.8f;
 				StartupItemCount = 5;
 				LeaderGetsBackpack = false;
 				ResultObjectIds = array{"ImpossibleDifficultyPlayerForward", "TagNotAI"};
-				FamilySizeLowerLimit = 12;
-				FamilySizeUpperLimit = 15;
-				FamilySizeAdoptionLimit = 15;
+				FamilySizeLowerLimit = 15;
+				FamilySizeUpperLimit = 30;
+				FamilySizeAdoptionLimit = 25;
 			},
 		};
 		
@@ -809,14 +809,14 @@ GameplayDefault extends GameplayElements
 				LeaderGetsBackpack = false;
 				AIFamilyDecisionsPerYear = 24;
 				ResultObjectIds = array{"NormalDifficultyAIForward", "TagAI"};
-				FamilySizeLowerLimit = 5;
-				FamilySizeUpperLimit = 10;
-				FamilySizeAdoptionLimit = 8;
+				FamilySizeLowerLimit = 15;
+				FamilySizeUpperLimit = 30;
+				FamilySizeAdoptionLimit = 25;
 			},
 			DifficultyEntry
 			{
 				Id = "easy";
-				StartMoney = 3000;
+				StartMoney = 7000;
 				StartPrestige = 0;
 				StartNobilityTitle = 1;
 				XPBonusFactor = 0.75f;
@@ -824,14 +824,14 @@ GameplayDefault extends GameplayElements
 				LeaderGetsBackpack = false;
 				AIFamilyDecisionsPerYear = 24;
 				ResultObjectIds = array{"HardDifficultyAIForward", "TagAI"};
-				FamilySizeLowerLimit = 12;
-				FamilySizeUpperLimit = 24;
-				FamilySizeAdoptionLimit = 20;
+				FamilySizeLowerLimit = 15;
+				FamilySizeUpperLimit = 30;
+				FamilySizeAdoptionLimit = 25;
 			},
 			DifficultyEntry
 			{
 				Id = "normal";
-				StartMoney = 4000;
+				StartMoney = 8000;
 				StartPrestige = 100;
 				StartNobilityTitle = 1;
 				XPBonusFactor = 1.0f;
@@ -840,13 +840,13 @@ GameplayDefault extends GameplayElements
 				AIFamilyDecisionsPerYear = 36;
 				ResultObjectIds = array{"NormalDifficultyAIForward", "TagAI"};
 				FamilySizeLowerLimit = 15;
-				FamilySizeUpperLimit = 25;
+				FamilySizeUpperLimit = 30;
 				FamilySizeAdoptionLimit = 25;
 			},
 			DifficultyEntry
 			{
 				Id = "hard";
-				StartMoney = 5000;
+				StartMoney = 9000;
 				StartPrestige = 200;
 				StartNobilityTitle = 1;
 				XPBonusFactor = 1.25f;
@@ -861,7 +861,7 @@ GameplayDefault extends GameplayElements
 			DifficultyEntry
 			{
 				Id = "impossible";
-				StartMoney = 7000;
+				StartMoney = 11000;
 				StartPrestige = 500;
 				StartNobilityTitle = 1;
 				XPBonusFactor = 1.5f;
