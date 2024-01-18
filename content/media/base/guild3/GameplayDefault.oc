@@ -1262,7 +1262,7 @@ GameplayDefault extends GameplayElements
 				ModifierEffect
 				{
 					ActorValue = "MaxOwnedBusinesses";
-					Mod = 1.0; //Total: 2
+					Mod = 2.0; //Total: 2
 					Recover = true;
 				}
 			};
@@ -1525,7 +1525,7 @@ GameplayDefault extends GameplayElements
 				{
 					Filter = "IsFamilyMember";
 					ActorValue = "MaxOwnedBusinesses";
-					Mod = 1.0; //Total: 6
+					Mod = 2.0; //Total: 6
 					Recover = true;
 				},
 				UnlockEffect
