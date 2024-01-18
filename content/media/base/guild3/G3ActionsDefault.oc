@@ -6690,7 +6690,7 @@ G3ActionsDefault extends G3ActionsContainer
 			
 			ActionActor = "Family";            
 
-			PriceFormula = "(350 * hasTag.BuffEasy) + (500 * hasTag.BuffNormal) + (750 * hasTag.BuffHard) + (1200 * hasTag.BuffImpossible)";
+			PriceFormula = "(700 * hasTag.BuffEasy) + (1000 * hasTag.BuffNormal) + (1200 * hasTag.BuffHard) + (1500 * hasTag.BuffImpossible)";
 
 			BudgetPost = "Employees";
 			BudgetPot = "Other";

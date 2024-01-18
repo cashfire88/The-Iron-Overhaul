@@ -148,7 +148,7 @@
 	DisplayName = "$action.HireTransporter";
 	Description = "$action.HireTransporterDesc";
 
-	PriceFormula = "(((150 * hasTag.IsLowTier) + (250 * hasTag.IsHighTier)) * hasTag.BuffEasy) + (((200 * hasTag.IsLowTier) + (350 * hasTag.IsHighTier)) * hasTag.BuffNormal) + (((300 * hasTag.IsLowTier) + (500 * hasTag.IsHighTier)) * hasTag.BuffHard) + (((400 * hasTag.IsLowTier) + (650 * hasTag.IsHighTier)) * hasTag.BuffImpossible)";
+	PriceFormula = "(((850 * hasTag.IsLowTier) + (950 * hasTag.IsHighTier)) * hasTag.BuffEasy) + (((900 * hasTag.IsLowTier) + (1050 * hasTag.IsHighTier)) * hasTag.BuffNormal) + (((1000 * hasTag.IsLowTier) + (1200 * hasTag.IsHighTier)) * hasTag.BuffHard) + (((1100 * hasTag.IsLowTier) + (1350 * hasTag.IsHighTier)) * hasTag.BuffImpossible)";
 //	PriceFormula = "200";
 
 	BudgetPost = "Employees";
@@ -259,7 +259,7 @@
 	DisplayName = "$action.HireEmployee";
 	Description = "$action.HireEmployeeDesc";
 
-	PriceFormula = "(((150 * hasTag.IsLowTier) + (250 * hasTag.IsHighTier)) * hasTag.BuffEasy) + (((200 * hasTag.IsLowTier) + (350 * hasTag.IsHighTier)) * hasTag.BuffNormal) + (((300 * hasTag.IsLowTier) + (500 * hasTag.IsHighTier)) * hasTag.BuffHard) + (((400 * hasTag.IsLowTier) + (650 * hasTag.IsHighTier)) * hasTag.BuffImpossible)";
+	PriceFormula = "(((850 * hasTag.IsLowTier) + (950 * hasTag.IsHighTier)) * hasTag.BuffEasy) + (((900 * hasTag.IsLowTier) + (1050 * hasTag.IsHighTier)) * hasTag.BuffNormal) + (((1000 * hasTag.IsLowTier) + (1200 * hasTag.IsHighTier)) * hasTag.BuffHard) + (((1100 * hasTag.IsLowTier) + (1250 * hasTag.IsHighTier)) * hasTag.BuffImpossible)";
 	
 	BudgetPost = "Employees";
 	BudgetPot = "Business";
