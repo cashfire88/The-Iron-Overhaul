@@ -746,9 +746,22 @@ ResultObjectsDefault extends ResultObjectContainer
 				{
 					ApplyTo = "Self";
 					ActorValue = "Productivity";
-					Mod = 0.05;
+					Mod = 0.2;
 					Recover = true;
-					Duration = 600.0;
+					Duration = 1000.0;
+				},
+				ModifierEffect
+				{
+					ApplyTo = "Self";
+					ActorValue = "Perception";
+					Mod = 1;
+					Recover = true;
+					Duration = 1000.0;
+				}
+				FunctionSendMessage
+				{
+					ApplyTo = "Self";
+					Description = "WellRestedMessage";
 				}
 			};
 		},
