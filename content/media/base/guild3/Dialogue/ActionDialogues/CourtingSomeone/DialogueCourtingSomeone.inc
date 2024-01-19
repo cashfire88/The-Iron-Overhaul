@@ -12,7 +12,7 @@ Dialogue
 			Speaker = "Source";
 			BranchType = "UserChoice";
 			Enabled = "Source.IsMale && !Target.IsMale";
-			@base/FormulaOption1CourtingSomeone
+			@base/FormulaOption1CourtingSomeoneIron
 			Next = array
 			{
 				//First option - INT
@@ -22,7 +22,7 @@ Dialogue
 					Line = "$d.act.court.fullLine.int";
 					BranchType = "Pick";
 					 //adjust file names here
-					@base/FormulaOption1CourtingSomeone
+					@base/FormulaOption1CourtingSomeoneIron
 					TopicResult = ResultObject
 					{
 						Results = array
@@ -98,7 +98,7 @@ Dialogue
 					ShortLine = "$d.act.court.openLine.char";
 					Line = "$d.act.court.fullLine.char";
 					BranchType = "Pick";
-					@base/FormulaOption2CourtingSomeone
+					@base/FormulaOption2CourtingSomeoneIron
 					TopicResult = ResultObject
 					{
 						Results = array
@@ -175,7 +175,7 @@ Dialogue
 					ShortLine = "$d.act.court.openLine.per";
 					Line = "$d.act.court.fullLine.per";
 					BranchType = "Pick";
-					@base/FormulaOption3CourtingSomeone
+					@base/FormulaOption3CourtingSomeoneIron
 					TopicResult = ResultObject
 					{
 						Results = array
@@ -255,7 +255,7 @@ Dialogue
 			Speaker = "Source";
 			BranchType = "UserChoice";
 			Enabled = "Source.IsMale && !Target.IsMale";
-			@base/FormulaOption1CourtingSomeone
+			@base/FormulaOption1CourtingSomeoneIron
 			Next = array
 			{
 				//First option - INT
@@ -264,7 +264,7 @@ Dialogue
 					ShortLine = "$d.act.comp.openLine.v2.int.toFemale";
 					Line = "$d.act.comp.fullLine.v2.int.toFemale";
 					BranchType = "Pick";
-					@base/FormulaOption1CourtingSomeone
+					@base/FormulaOption1CourtingSomeoneIron
 					TopicResult = ResultObject
 					{
 						Results = array
@@ -340,7 +340,7 @@ Dialogue
 					ShortLine = "$d.act.comp.openLine.v2.char.toFemale";
 					Line = "$d.act.comp.fullLine.v2.char.toFemale";
 					BranchType = "Pick";
-					@base/FormulaOption2CourtingSomeone
+					@base/FormulaOption2CourtingSomeoneIron
 					TopicResult = ResultObject
 					{
 						Results = array
@@ -416,7 +416,7 @@ Dialogue
 					ShortLine = "$d.act.comp.openLine.v2.per.toFemale";
 					Line = "$d.act.comp.fullLine.v2.per.toFemale";
 					BranchType = "Pick";
-					@base/FormulaOption3CourtingSomeone
+					@base/FormulaOption3CourtingSomeoneIron
 					TopicResult = ResultObject
 					{
 						Results = array
@@ -496,7 +496,7 @@ Dialogue
 			Speaker = "Source";
 			BranchType = "UserChoice";
 			Enabled = "Source.IsMale && !Target.IsMale";
-			@base/FormulaOption1CourtingSomeone
+			@base/FormulaOption1CourtingSomeoneIron
 			Next = array
 			{
 				//First option - INT
@@ -505,7 +505,7 @@ Dialogue
 					ShortLine = "$d.act.comp.openLine.v3.int.toFemale";
 					Line = "$d.act.comp.fullLine.v3.int.toFemale";
 					BranchType = "Pick";
-					@base/FormulaOption1CourtingSomeone
+					@base/FormulaOption1CourtingSomeoneIron
 					TopicResult = ResultObject
 					{
 						Results = array
@@ -581,7 +581,7 @@ Dialogue
 					ShortLine = "$d.act.comp.openLine.v3.char.toFemale";
 					Line = "$d.act.comp.fullLine.v3.char.toFemale";
 					BranchType = "Pick";
-					@base/FormulaOption2CourtingSomeone
+					@base/FormulaOption2CourtingSomeoneIron
 					TopicResult = ResultObject
 					{
 						Results = array
@@ -657,7 +657,7 @@ Dialogue
 					ShortLine = "$d.act.comp.openLine.v3.per.toFemale";
 					Line = "$d.act.comp.fullLine.v3.per.toFemale";
 					BranchType = "Pick";
-					@base/FormulaOption3CourtingSomeone
+					@base/FormulaOption3CourtingSomeoneIron
 					TopicResult = ResultObject
 					{
 						Results = array
@@ -737,7 +737,7 @@ Dialogue
 			Speaker = "Source";
 			BranchType = "UserChoice";
 			Enabled = "!Source.IsMale && Target.IsMale";
-			@base/FormulaOption1CourtingSomeone
+			@base/FormulaOption1CourtingSomeoneIron
 			Next = array
 			{
 				//First option - INT
@@ -746,7 +746,7 @@ Dialogue
 					ShortLine = "$d.act.court.openLine.int";
 					Line = "$d.act.court.fullLine.int";
 					BranchType = "Pick";
-					@base/FormulaOption1CourtingSomeone
+					@base/FormulaOption1CourtingSomeoneIron
 					TopicResult = ResultObject
 					{
 						Results = array
@@ -822,7 +822,7 @@ Dialogue
 					ShortLine = "$d.act.court.openLine.char";
 					Line = "$d.act.court.fullLine.char";
 					BranchType = "Pick";
-					@base/FormulaOption2CourtingSomeone
+					@base/FormulaOption2CourtingSomeoneIron
 					TopicResult = ResultObject
 					{
 						Results = array
@@ -898,7 +898,7 @@ Dialogue
 					ShortLine = "$d.act.court.openLine.per";
 					Line = "$d.act.court.fullLine.per";
 					BranchType = "Pick";
-					@base/FormulaOption3CourtingSomeone
+					@base/FormulaOption3CourtingSomeoneIron
 					TopicResult = ResultObject
 					{
 						Results = array
@@ -978,7 +978,7 @@ Dialogue
 			Speaker = "Source";
 			BranchType = "UserChoice";
 			Enabled = "!Source.IsMale && Target.IsMale";
-			@base/FormulaOption1CourtingSomeone
+			@base/FormulaOption1CourtingSomeoneIron
 			Next = array
 			{
 				//First option - INT
@@ -987,7 +987,7 @@ Dialogue
 					ShortLine = "$d.act.comp.openLine.v2.int.toMale";
 					Line = "$d.act.comp.fullLine.v2.int.toMale";
 					BranchType = "Pick";
-					@base/FormulaOption1CourtingSomeone
+					@base/FormulaOption1CourtingSomeoneIron
 					TopicResult = ResultObject
 					{
 						Results = array
@@ -1064,7 +1064,7 @@ Dialogue
 					Line = "$d.act.comp.fullLine.v2.char.toMale";
 					BranchType = "Pick";
 
-					@base/FormulaOption2CourtingSomeone
+					@base/FormulaOption2CourtingSomeoneIron
 					TopicResult = ResultObject
 					{
 						Results = array
@@ -1140,7 +1140,7 @@ Dialogue
 					ShortLine = "$d.act.comp.openLine.v2.per.toMale";
 					Line = "$d.act.comp.fullLine.v2.per.toMale";
 					BranchType = "Pick";
-					@base/FormulaOption3CourtingSomeone
+					@base/FormulaOption3CourtingSomeoneIron
 					TopicResult = ResultObject
 					{
 						Results = array
@@ -1220,7 +1220,7 @@ Dialogue
 			Speaker = "Source";
 			BranchType = "UserChoice";
 			Enabled = "!Source.IsMale && Target.IsMale";
-			@base/FormulaOption1CourtingSomeone
+			@base/FormulaOption1CourtingSomeoneIron
 			Next = array
 			{
 				//First option - INT
@@ -1229,7 +1229,7 @@ Dialogue
 					ShortLine = "$d.act.comp.openLine.v3.int.toMale";
 					Line = "$d.act.comp.fullLine.v3.int.toMale";
 					BranchType = "Pick";
-					@base/FormulaOption1CourtingSomeone
+					@base/FormulaOption1CourtingSomeoneIron
 					TopicResult = ResultObject
 					{
 						Results = array
@@ -1305,7 +1305,7 @@ Dialogue
 					ShortLine = "$d.act.comp.openLine.v3.char.toMale";
 					Line = "$d.act.comp.fullLine.v3.char.toMale";
 					BranchType = "Pick";
-					@base/FormulaOption2CourtingSomeone
+					@base/FormulaOption2CourtingSomeoneIron
 					TopicResult = ResultObject
 					{
 						Results = array
@@ -1381,7 +1381,7 @@ Dialogue
 					ShortLine = "$d.act.comp.openLine.v3.per.toMale";
 					Line = "$d.act.comp.fullLine.v3.per.toMale";
 					BranchType = "Pick";
-					@base/FormulaOption3CourtingSomeone
+					@base/FormulaOption3CourtingSomeoneIron
 					TopicResult = ResultObject
 					{
 						Results = array

@@ -222,8 +222,8 @@
 	EnterBuilding = "TryEnter";
 	SuppressBuildingEnterBehavior = true;
 	
-	SourceScoreFormula = "RelationshipScore / 15 + Charisma + Target.DoesHaveTag.RomPrefCloseApproach";
-	TargetScoreFormula = "Intelligence + (100 - RelationshipScore) / 50";       
+	SourceScoreFormula = "0.2 * (Strength + Dexterity + Perception + Charisma + Intelligence) + RelationshipScore / 15 + Charisma + Target.DoesHaveTag.RomPrefCloseApproach";
+	TargetScoreFormula = "0.2 * (Strength + Dexterity + Perception + Charisma + Intelligence) + Intelligence + (100 - RelationshipScore) / 50";       
 
 	ShowSelectionPrompt = "LoverCharacters";
 	SelectionPromptNoTargetMessage = "$gui.no.lovers";
@@ -408,8 +408,8 @@
 	BaseRewardXP = 33;
 	Cooldown = 0.12;
 	
-	SourceScoreFormula = "RelationshipScore / 20 + Charisma * 0.5 + Target.DoesHaveTag.RomPrefCloseApproach + Target.DoesHaveTag.RomPrefContraryGoodBehavior";
-	TargetScoreFormula = "Intelligence * 0.75 + (100 - RelationshipScore) / 35";       
+	SourceScoreFormula = "0.2 * (Strength + Dexterity + Perception + Charisma + Intelligence) + RelationshipScore / 20 + Charisma * 0.5 + Target.DoesHaveTag.RomPrefCloseApproach + Target.DoesHaveTag.RomPrefContraryGoodBehavior";
+	TargetScoreFormula = "0.2 * (Strength + Dexterity + Perception + Charisma + Intelligence) + Intelligence * 0.75 + (100 - RelationshipScore) / 35";       
 
 	ShowSelectionPrompt = "LoverCharacters";
 	SelectionPromptNoTargetMessage = "$gui.no.lovers";
@@ -686,8 +686,8 @@
 	EnterBuilding = "TryEnter";
 	SuppressBuildingEnterBehavior = true;
 	
-	SourceScoreFormula = "RelationshipScore / 25";
-	TargetScoreFormula = "Intelligence * 0.5 + (100 - RelationshipScore) / 30";       
+	SourceScoreFormula = "0.1 * (Strength + Dexterity + Perception + Charisma + Intelligence) + RelationshipScore / 25";
+	TargetScoreFormula = "0.1 * (Strength + Dexterity + Perception + Charisma + Intelligence) + Intelligence * 0.5 + (100 - RelationshipScore) / 30";       
 
 	ShowSelectionPrompt = "LiaisonCharacters";
 	SelectionPromptNoTargetMessage = "$gui.no.liaisons";
@@ -837,8 +837,8 @@
 	
 	CanFail = true;			
 	
-	SourceScoreFormula = "RelationshipScore / 30";
-	TargetScoreFormula = "Intelligence * 0.5 + (100 - RelationshipScore) / 25";       
+	SourceScoreFormula = "0.2 * (Strength + Dexterity + Perception + Charisma + Intelligence) + RelationshipScore / 30";
+	TargetScoreFormula = "0.2 * (Strength + Dexterity + Perception + Charisma + Intelligence) + Intelligence * 0.5 + (100 - RelationshipScore) / 25";       
 
 	ShowSelectionPrompt = "LiaisonCharacters";
 	SelectionPromptNoTargetMessage = "$gui.no.liaisons";
@@ -1136,8 +1136,8 @@
         Values = array{0,0,0};
     };
 
-	SourceScoreFormula = "RelationshipScore / 20 + Charisma * 0.5 + Target.DoesHaveTag.RomPrefCloseApproach + Target.DoesHaveTag.RomPrefContraryGoodBehavior";
-	TargetScoreFormula = "Intelligence * 0.75 + (100 - RelationshipScore) / 45";       
+	SourceScoreFormula = "0.1 * (Strength + Dexterity + Perception + Charisma + Intelligence) + RelationshipScore / 20 + Charisma * 0.5 + Target.DoesHaveTag.RomPrefCloseApproach + Target.DoesHaveTag.RomPrefContraryGoodBehavior";
+	TargetScoreFormula = "0.1 * (Strength + Dexterity + Perception + Charisma + Intelligence) + Intelligence * 0.75 + (100 - RelationshipScore) / 45";       
 
 	CanFail = true;			
 	CriticalFactor = 1.0;
@@ -1323,8 +1323,8 @@
         Values = array{0,0,0};
     };
 
-	SourceScoreFormula = "RelationshipScore / 20 + Charisma * 0.5 + Target.DoesHaveTag.RomPrefCloseApproach + Target.DoesHaveTag.RomPrefContraryGoodBehavior";
-	TargetScoreFormula = "Intelligence * 0.75 + (100 - RelationshipScore) / 45";       
+	SourceScoreFormula = "0.1 * (Strength + Dexterity + Perception + Charisma + Intelligence) + RelationshipScore / 20 + Charisma * 0.5 + Target.DoesHaveTag.RomPrefCloseApproach + Target.DoesHaveTag.RomPrefContraryGoodBehavior";
+	TargetScoreFormula = "0.1 * (Strength + Dexterity + Perception + Charisma + Intelligence) + Intelligence * 0.75 + (100 - RelationshipScore) / 45";       
 
 	CanFail = true;			
 	CriticalFactor = 1.0;
@@ -2363,8 +2363,8 @@
 
 	EnterBuilding = "TryEnter";
 
-	SourceScoreFormula = "RelationshipScore / 20 + Entertainment + Target.DoesHaveTag.RomPrefArtist";
-	TargetScoreFormula = "Charisma * 0.5 + (100 - RelationshipScore) / 35";       
+	SourceScoreFormula = "0.2 * (Strength + Dexterity + Perception + Charisma + Intelligence) + RelationshipScore / 20 + Entertainment + Target.DoesHaveTag.RomPrefArtist";
+	TargetScoreFormula = "0.2 * (Strength + Dexterity + Perception + Charisma + Intelligence) + Charisma * 0.5 + (100 - RelationshipScore) / 35";       
 
 	ShowSelectionPrompt = "LoverCharacters";
 	SelectionPromptNoTargetMessage = "$gui.no.lovers";
