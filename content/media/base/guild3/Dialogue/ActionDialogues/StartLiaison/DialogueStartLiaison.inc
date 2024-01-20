@@ -13,7 +13,7 @@ Dialogue
 			BranchType = "UserChoice";
 			Enabled = "Source.IsMale && !Target.IsMale";
 			 //adjust file names here
-			@base/FormulaOption1StartLiaison
+			@base/FormulaOption1StartLiaisonIron
 			Next = array
 			{
 				//First option - INT
@@ -23,7 +23,7 @@ Dialogue
 					Line = "$d.act.startLia.fullLine.int.toFemale";
 					BranchType = "Pick";
 					 //adjust file names here
-					@base/FormulaOption1StartLiaison
+					@base/FormulaOption1StartLiaisonIron
 					TopicResult = ResultObject
 					{
 						Results = array
@@ -136,7 +136,7 @@ Dialogue
 					Line = "$d.act.startLia.fullLine.char.toFemale";
 					BranchType = "Pick";
 					 //adjust file names here
-					@base/FormulaOption2StartLiaison
+					@base/FormulaOption2StartLiaisonIron
 					TopicResult = ResultObject
 					{
 						Results = array
@@ -249,7 +249,7 @@ Dialogue
 					Line = "$d.act.startLia.fullLine.per.toFemale";
 					BranchType = "Pick";
 					 //adjust file names here
-					@base/FormulaOption3StartLiaison
+					@base/FormulaOption3StartLiaisonIron
 					TopicResult = ResultObject
 					{
 						Results = array
@@ -366,7 +366,7 @@ Dialogue
 			BranchType = "UserChoice";
 			Enabled = "Source.IsMale && !Target.IsMale";
 			 //adjust file names here
-			@base/FormulaOption1StartLiaison
+			@base/FormulaOption1StartLiaisonIron
 			Next = array
 			{
 				//First option - INT
@@ -376,7 +376,7 @@ Dialogue
 					Line = "$d.act.startLia.fullLine.v2.int.toFemale";
 					BranchType = "Pick";
 					 //adjust file names here
-					@base/FormulaOption1StartLiaison
+					@base/FormulaOption1StartLiaisonIron
 					TopicResult = ResultObject
 					{
 						Results = array
@@ -455,7 +455,7 @@ Dialogue
 					Line = "$d.act.startLia.fullLine.v2.char.toFemale";
 					BranchType = "Pick";
 					 //adjust file names here
-					@base/FormulaOption2StartLiaison
+					@base/FormulaOption2StartLiaisonIron
 					TopicResult = ResultObject
 					{
 						Results = array
@@ -534,7 +534,7 @@ Dialogue
 					Line = "$d.act.startLia.fullLine.v2.per.toFemale";
 					BranchType = "Pick";
 					 //adjust file names here
-					@base/FormulaOption3StartLiaison
+					@base/FormulaOption3StartLiaisonIron
 					TopicResult = ResultObject
 					{
 						Results = array
@@ -617,7 +617,7 @@ Dialogue
 			BranchType = "UserChoice";
 			Enabled = "Source.IsMale && !Target.IsMale";
 			 //adjust file names here
-			@base/FormulaOption1StartLiaison
+			@base/FormulaOption1StartLiaisonIron
 			Next = array
 			{
 				//First option - INT
@@ -627,7 +627,7 @@ Dialogue
 					Line = "$d.act.startLia.fullLine.v3.int.toFemale";
 					BranchType = "Pick";
 					 //adjust file names here
-					@base/FormulaOption1StartLiaison
+					@base/FormulaOption1StartLiaisonIron
 					TopicResult = ResultObject
 					{
 						Results = array
@@ -706,7 +706,7 @@ Dialogue
 					Line = "$d.act.startLia.fullLine.v3.char.toFemale";
 					BranchType = "Pick";
 					 //adjust file names here
-					@base/FormulaOption2StartLiaison
+					@base/FormulaOption2StartLiaisonIron
 					TopicResult = ResultObject
 					{
 						Results = array
@@ -785,7 +785,7 @@ Dialogue
 					Line = "$d.act.startLia.fullLine.v3.per.toFemale";
 					BranchType = "Pick";
 					 //adjust file names here
-					@base/FormulaOption3StartLiaison
+					@base/FormulaOption3StartLiaisonIron
 					TopicResult = ResultObject
 					{
 						Results = array
@@ -868,7 +868,7 @@ Dialogue
 			BranchType = "UserChoice";
 			Enabled = "!Source.IsMale && Target.IsMale";
 			 //adjust file names here
-			@base/FormulaOption1StartLiaison
+			@base/FormulaOption1StartLiaisonIron
 			Next = array
 			{
 				//First option - INT
@@ -878,7 +878,7 @@ Dialogue
 					Line = "$d.act.startLia.fullLine.v2.int.toMale";
 					BranchType = "Pick";
 					 //adjust file names here
-					@base/FormulaOption1StartLiaison
+					@base/FormulaOption1StartLiaisonIron
 					TopicResult = ResultObject
 					{
 						Results = array
@@ -957,7 +957,7 @@ Dialogue
 					Line = "$d.act.startLia.fullLine.v2.char.toMale";
 					BranchType = "Pick";
 					 //adjust file names here
-					@base/FormulaOption2StartLiaison
+					@base/FormulaOption2StartLiaisonIron
 					TopicResult = ResultObject
 					{
 						Results = array
@@ -1036,7 +1036,7 @@ Dialogue
 					Line = "$d.act.startLia.fullLine.v2.per.toMale";
 					BranchType = "Pick";
 					 //adjust file names here
-					@base/FormulaOption3StartLiaison
+					@base/FormulaOption3StartLiaisonIron
 					TopicResult = ResultObject
 					{
 						Results = array
@@ -1119,7 +1119,7 @@ Dialogue
 			BranchType = "UserChoice";
 			Enabled = "!Source.IsMale && Target.IsMale";
 			 //adjust file names here
-			@base/FormulaOption1StartLiaison
+			@base/FormulaOption1StartLiaisonIron
 			Next = array
 			{
 				//First option - INT
@@ -1129,7 +1129,7 @@ Dialogue
 					Line = "$d.act.startLia.fullLine.v3.int.toMale";
 					BranchType = "Pick";
 					 //adjust file names here
-					@base/FormulaOption1StartLiaison
+					@base/FormulaOption1StartLiaisonIron
 					TopicResult = ResultObject
 					{
 						Results = array
@@ -1208,7 +1208,7 @@ Dialogue
 					Line = "$d.act.startLia.fullLine.v3.char.toMale";
 					BranchType = "Pick";
 					 //adjust file names here
-					@base/FormulaOption2StartLiaison
+					@base/FormulaOption2StartLiaisonIron
 					TopicResult = ResultObject
 					{
 						Results = array
@@ -1287,7 +1287,7 @@ Dialogue
 					Line = "$d.act.startLia.fullLine.v3.per.toMale";
 					BranchType = "Pick";
 					 //adjust file names here
-					@base/FormulaOption3StartLiaison
+					@base/FormulaOption3StartLiaisonIron
 					TopicResult = ResultObject
 					{
 						Results = array
@@ -1370,7 +1370,7 @@ Dialogue
 			BranchType = "UserChoice";
 			Enabled = "!Source.IsMale && Target.IsMale";
 			 //adjust file names here
-			@base/FormulaOption1StartLiaison
+			@base/FormulaOption1StartLiaisonIron
 			Next = array
 			{
 				//First option - INT
@@ -1380,7 +1380,7 @@ Dialogue
 					Line = "$d.act.startLia.fullLine.int.toMale";
 					BranchType = "Pick";
 					 //adjust file names here
-					@base/FormulaOption1StartLiaison
+					@base/FormulaOption1StartLiaisonIron
 					TopicResult = ResultObject
 					{
 						Results = array
@@ -1493,7 +1493,7 @@ Dialogue
 					Line = "$d.act.startLia.fullLine.char.toMale";
 					BranchType = "Pick";
 					 //adjust file names here
-					@base/FormulaOption2StartLiaison
+					@base/FormulaOption2StartLiaisonIron
 					TopicResult = ResultObject
 					{
 						Results = array
@@ -1606,7 +1606,7 @@ Dialogue
 					Line = "$d.act.startLia.fullLine.per.toMale";
 					BranchType = "Pick";
 					 //adjust file names here
-					@base/FormulaOption3StartLiaison
+					@base/FormulaOption3StartLiaisonIron
 					TopicResult = ResultObject
 					{
 						Results = array

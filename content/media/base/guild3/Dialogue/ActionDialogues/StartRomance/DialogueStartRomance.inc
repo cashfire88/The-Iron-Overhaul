@@ -13,7 +13,7 @@ Dialogue
 			Speaker = "Source";
 			BranchType = "UserChoice";
 			Enabled = "Source.IsMale && !Target.IsMale";
-			@base/FormulaOption1StartRomance
+			@base/FormulaOption1StartRomanceIron
 			Next = array
 			{
 				//First option - INT (v1)
@@ -23,7 +23,7 @@ Dialogue
 					Line = "$d.act.embRom.fullLine.int.toFemale";
 					BranchType = "Pick";
 
-					@base/FormulaOption1StartRomance
+					@base/FormulaOption1StartRomanceIron
 					TopicResult = ResultObject
 					{
 						Results = array
@@ -172,7 +172,7 @@ Dialogue
 					ShortLine = "$d.act.embRom.openLine.char.toFemale";
 					Line = "$d.act.embRom.fullLine.char.toFemale";
 					BranchType = "Pick";
-					@base/FormulaOption2StartRomance
+					@base/FormulaOption2StartRomanceIron
 					TopicResult = ResultObject
 					{
 						Results = array
@@ -320,7 +320,7 @@ Dialogue
 					ShortLine = "$d.act.embRom.openLine.per.toFemale";
 					Line = "$d.act.embRom.fullLine.per.toFemale";
 					BranchType = "Pick";
-					@base/FormulaOption3StartRomance
+					@base/FormulaOption3StartRomanceIron
 					TopicResult = ResultObject
 					{
 						Results = array
@@ -472,7 +472,7 @@ Dialogue
 			Speaker = "Source";
 			BranchType = "UserChoice";
 			Enabled = "Source.IsMale && !Target.IsMale";
-			@base/FormulaOption1StartRomance
+			@base/FormulaOption1StartRomanceIron
 			Next = array
 			{
 				//First option - INT (v2)
@@ -481,7 +481,7 @@ Dialogue
 					ShortLine = "$d.act.embRom.v2.openLine.int.toFemale";
 					Line = "$d.act.embRom.v2.fullLine.int.toFemale";
 					BranchType = "Pick";
-					@base/FormulaOption1StartRomance
+					@base/FormulaOption1StartRomanceIron
 					TopicResult = ResultObject
 					{
 						Results = array
@@ -585,7 +585,7 @@ Dialogue
 					ShortLine = "$d.act.embRom.v2.openLine.char.toFemale";
 					Line = "$d.act.embRom.v2.fullLine.char.toFemale";
 					BranchType = "Pick";
-					@base/FormulaOption2StartRomance
+					@base/FormulaOption2StartRomanceIron
 					TopicResult = ResultObject
 					{
 						Results = array
@@ -689,7 +689,7 @@ Dialogue
 					ShortLine = "$d.act.embRom.v2.openLine.per.toFemale";
 					Line = "$d.act.embRom.v2.fullLine.per.toFemale";
 					BranchType = "Pick";
-					@base/FormulaOption3StartRomance
+					@base/FormulaOption3StartRomanceIron
 					TopicResult = ResultObject
 					{
 						Results = array
@@ -797,7 +797,7 @@ Dialogue
 			Speaker = "Source";
 			BranchType = "UserChoice";
 			Enabled = "Source.IsMale && !Target.IsMale";
-			@base/FormulaOption1StartRomance
+			@base/FormulaOption1StartRomanceIron
 			Next = array
 			{
 				//First option - INT (v3)
@@ -806,7 +806,7 @@ Dialogue
 					ShortLine = "$d.act.embRom.v3.openLine.int.toFemale";
 					Line = "$d.act.embRom.v3.fullLine.int.toFemale";
 					BranchType = "Pick";
-					@base/FormulaOption1StartRomance
+					@base/FormulaOption1StartRomanceIron
 					TopicResult = ResultObject
 					{
 						Results = array
@@ -910,7 +910,7 @@ Dialogue
 					ShortLine = "$d.act.embRom.v3.openLine.char.toFemale";
 					Line = "$d.act.embRom.v3.fullLine.char.toFemale";
 					BranchType = "Pick";
-					@base/FormulaOption2StartRomance
+					@base/FormulaOption2StartRomanceIron
 					TopicResult = ResultObject
 					{
 						Results = array
@@ -1014,7 +1014,7 @@ Dialogue
 					ShortLine = "$d.act.embRom.v3.openLine.per.toFemale";
 					Line = "$d.act.embRom.v3.fullLine.per.toFemale";
 					BranchType = "Pick";
-					@base/FormulaOption3StartRomance
+					@base/FormulaOption3StartRomanceIron
 					TopicResult = ResultObject
 					{
 						Results = array
@@ -1123,7 +1123,7 @@ Dialogue
 			Speaker = "Source";
 			BranchType = "UserChoice";
 			Enabled = "!Source.IsMale && Target.IsMale";
-			@base/FormulaOption1StartRomance
+			@base/FormulaOption1StartRomanceIron
 			Next = array
 			{
 				//First option - INT (v1)
@@ -1132,7 +1132,7 @@ Dialogue
 					ShortLine = "$d.act.embRom.openLine.int.toMale";
 					Line = "$d.act.embRom.fullLine.int.toMale";
 					BranchType = "Pick";
-					@base/FormulaOption1StartRomance
+					@base/FormulaOption1StartRomanceIron
 					TopicResult = ResultObject
 					{
 						Results = array
@@ -1280,7 +1280,7 @@ Dialogue
 					ShortLine = "$d.act.embRom.openLine.char.toFemale";
 					Line = "$d.act.embRom.fullLine.char.toFemale";
 					BranchType = "Pick";
-					@base/FormulaOption2StartRomance
+					@base/FormulaOption2StartRomanceIron
 					TopicResult = ResultObject
 					{
 						Results = array
@@ -1428,7 +1428,7 @@ Dialogue
 					ShortLine = "$d.act.embRom.openLine.per.toMale";
 					Line = "$d.act.embRom.fullLine.per.toMale";
 					BranchType = "Pick";
-					@base/FormulaOption3StartRomance
+					@base/FormulaOption3StartRomanceIron
 					TopicResult = ResultObject
 					{
 						Results = array
@@ -1581,7 +1581,7 @@ Dialogue
 			Speaker = "Source";
 			BranchType = "UserChoice";
 			Enabled = "!Source.IsMale && Target.IsMale";
-			@base/FormulaOption1StartRomance
+			@base/FormulaOption1StartRomanceIron
 			Next = array
 			{
 				//First option - INT (v2)
@@ -1590,7 +1590,7 @@ Dialogue
 					ShortLine = "$d.act.embRom.v2.openLine.int.toMale";
 					Line = "$d.act.embRom.v2.fullLine.int.toMale";
 					BranchType = "Pick";
-					@base/FormulaOption1StartRomance
+					@base/FormulaOption1StartRomanceIron
 					TopicResult = ResultObject
 					{
 						Results = array
@@ -1694,7 +1694,7 @@ Dialogue
 					ShortLine = "$d.act.embRom.v2.openLine.char.toMale";
 					Line = "$d.act.embRom.v2.fullLine.char.toMale";
 					BranchType = "Pick";
-					@base/FormulaOption2StartRomance
+					@base/FormulaOption2StartRomanceIron
 					TopicResult = ResultObject
 					{
 						Results = array
@@ -1798,7 +1798,7 @@ Dialogue
 					ShortLine = "$d.act.embRom.v2.openLine.per.toMale";
 					Line = "$d.act.embRom.v2.fullLine.per.toMale";
 					BranchType = "Pick";
-					@base/FormulaOption3StartRomance
+					@base/FormulaOption3StartRomanceIron
 					TopicResult = ResultObject
 					{
 						Results = array
@@ -1906,7 +1906,7 @@ Dialogue
 			Speaker = "Source";
 			BranchType = "UserChoice";
 			Enabled = "!Source.IsMale && Target.IsMale";
-			@base/FormulaOption1StartRomance
+			@base/FormulaOption1StartRomanceIron
 			Next = array
 			{
 				//First option - INT (v3)
@@ -1915,7 +1915,7 @@ Dialogue
 					ShortLine = "$d.act.embRom.v3.openLine.int.toMale";
 					Line = "$d.act.embRom.v3.fullLine.int.toMale";
 					BranchType = "Pick";
-					@base/FormulaOption1StartRomance
+					@base/FormulaOption1StartRomanceIron
 					TopicResult = ResultObject
 					{
 						Results = array
@@ -2019,7 +2019,7 @@ Dialogue
 					ShortLine = "$d.act.embRom.v3.openLine.char.toMale";
 					Line = "$d.act.embRom.v3.fullLine.char.toMale";
 					BranchType = "Pick";
-					@base/FormulaOption2StartRomance
+					@base/FormulaOption2StartRomanceIron
 					TopicResult = ResultObject
 					{
 						Results = array
@@ -2123,7 +2123,7 @@ Dialogue
 					ShortLine = "$d.act.embRom.v3.openLine.per.toMale";
 					Line = "$d.act.embRom.v3.fullLine.per.toMale";
 					BranchType = "Pick";
-					@base/FormulaOption3StartRomance
+					@base/FormulaOption3StartRomanceIron
 					TopicResult = ResultObject
 					{
 						Results = array

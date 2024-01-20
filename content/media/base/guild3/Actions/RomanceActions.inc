@@ -124,7 +124,7 @@
 	SelectionPromptNoTargetMessage = "$gui.no.lovers";
 	
 	BaseRewardXP = 18;
-	Cooldown = 0.008; //~10sec
+	Cooldown = 0.108; //~10sec
 	
 	CanFail = false;
 	
@@ -217,13 +217,13 @@
 	CanFail = true;		
 
 	BaseRewardXP = 26;
-	Cooldown = 0.03;
+	Cooldown = 0.13;
 	
 	EnterBuilding = "TryEnter";
 	SuppressBuildingEnterBehavior = true;
 	
-	SourceScoreFormula = "RelationshipScore / 15 + Charisma + Target.DoesHaveTag.RomPrefCloseApproach";
-	TargetScoreFormula = "Intelligence + (100 - RelationshipScore) / 50";       
+	SourceScoreFormula = "0.2 * (Strength + Dexterity + Perception + Charisma + Intelligence) + RelationshipScore / 15 + Charisma + Target.DoesHaveTag.RomPrefCloseApproach";
+	TargetScoreFormula = "0.2 * (Strength + Dexterity + Perception + Charisma + Intelligence) + Intelligence + (100 - RelationshipScore) / 50";       
 
 	ShowSelectionPrompt = "LoverCharacters";
 	SelectionPromptNoTargetMessage = "$gui.no.lovers";
@@ -337,10 +337,28 @@
 		ModifierEffect
 		{
 			ApplyTo = "Self";
-			Tags = array{"SweetTalk"};
+			Tags = array{"SweetTalk","LoveDebuff"};
 			ActorValue = "Charisma";
 			Mod = -1;
-			Duration = 15.0;
+			Duration = 2400.0;
+			Recover = true;
+		},
+		ModifierEffect
+		{
+			ApplyTo = "Self";
+			Tags = array{"SweetTalk","LoveDebuff"};
+			ActorValue = "Perception";
+			Mod = -1;
+			Duration = 2400.0;
+			Recover = true;
+		},
+		ModifierEffect
+		{
+			ApplyTo = "Self";
+			Tags = array{"SweetTalk","LoveDebuff"};
+			ActorValue = "Intelligence";
+			Mod = -1;
+			Duration = 2400.0;
 			Recover = true;
 		},
 		DisplayEffect
@@ -349,7 +367,7 @@
 			ApplyTo = "Self";
 			DisplayGroup = "wound";
 			DisplayName = "$effect.rejected";
-			Duration = 15.0;
+			Duration = 2400.0;
 		},
 		FunctionAffectNeeds
 		{
@@ -408,8 +426,8 @@
 	BaseRewardXP = 33;
 	Cooldown = 0.12;
 	
-	SourceScoreFormula = "RelationshipScore / 20 + Charisma * 0.5 + Target.DoesHaveTag.RomPrefCloseApproach + Target.DoesHaveTag.RomPrefContraryGoodBehavior";
-	TargetScoreFormula = "Intelligence * 0.75 + (100 - RelationshipScore) / 35";       
+	SourceScoreFormula = "0.2 * (Strength + Dexterity + Perception + Charisma + Intelligence) + RelationshipScore / 20 + Charisma * 0.5 + Target.DoesHaveTag.RomPrefCloseApproach + Target.DoesHaveTag.RomPrefContraryGoodBehavior";
+	TargetScoreFormula = "0.2 * (Strength + Dexterity + Perception + Charisma + Intelligence) + Intelligence * 0.75 + (100 - RelationshipScore) / 35";       
 
 	ShowSelectionPrompt = "LoverCharacters";
 	SelectionPromptNoTargetMessage = "$gui.no.lovers";
@@ -528,19 +546,37 @@
 		ModifierEffect
 		{
 			ApplyTo = "Self";
-			Tags = array{"KissCheek"};
+			Tags = array{"KissCheek","LoveDebuff"};
 			ActorValue = "Charisma";
 			Mod = -2;
-			Duration = 15.0;
+			Duration = 2400.0;
+			Recover = true;
+		},
+		ModifierEffect
+		{
+			ApplyTo = "Self";
+			Tags = array{"KissCheek","LoveDebuff"};
+			ActorValue = "Intelligence";
+			Mod = -1;
+			Duration = 2400.0;
+			Recover = true;
+		},
+		ModifierEffect
+		{
+			ApplyTo = "Self";
+			Tags = array{"KissCheek","LoveDebuff"};
+			ActorValue = "Perception";
+			Mod = -1;
+			Duration = 2400.0;
 			Recover = true;
 		},
 		DisplayEffect
 		{
-			Tags = array{"Rejected"};
+			Tags = array{"Rejected","LoveDebuff"};
 			ApplyTo = "Self";
 			DisplayGroup = "wound";
 			DisplayName = "$effect.rejected";
-			Duration = 15.0;
+			Duration = 2400.0;
 		},
 		FunctionAffectNeeds
 		{
@@ -580,7 +616,7 @@
 	TargetActor = "Character";
 	
 	CanFail = false;
-	Cooldown = 0.015;
+	Cooldown = 0.115;
 	
 	BaseRewardXP = 35;
 	BaseRewardPrestige = 20;
@@ -686,8 +722,8 @@
 	EnterBuilding = "TryEnter";
 	SuppressBuildingEnterBehavior = true;
 	
-	SourceScoreFormula = "RelationshipScore / 25";
-	TargetScoreFormula = "Intelligence * 0.5 + (100 - RelationshipScore) / 30";       
+	SourceScoreFormula = "0.1 * (Strength + Dexterity + Perception + Charisma + Intelligence) + RelationshipScore / 25";
+	TargetScoreFormula = "0.1 * (Strength + Dexterity + Perception + Charisma + Intelligence) + Intelligence * 0.5 + (100 - RelationshipScore) / 30";       
 
 	ShowSelectionPrompt = "LiaisonCharacters";
 	SelectionPromptNoTargetMessage = "$gui.no.liaisons";
@@ -837,8 +873,8 @@
 	
 	CanFail = true;			
 	
-	SourceScoreFormula = "RelationshipScore / 30";
-	TargetScoreFormula = "Intelligence * 0.5 + (100 - RelationshipScore) / 25";       
+	SourceScoreFormula = "0.2 * (Strength + Dexterity + Perception + Charisma + Intelligence) + RelationshipScore / 30";
+	TargetScoreFormula = "0.2 * (Strength + Dexterity + Perception + Charisma + Intelligence) + Intelligence * 0.5 + (100 - RelationshipScore) / 25";       
 
 	ShowSelectionPrompt = "LiaisonCharacters";
 	SelectionPromptNoTargetMessage = "$gui.no.liaisons";
@@ -1077,7 +1113,7 @@
 	ActionActor = "Character";
 	TargetActor = "Character";
 	BaseRewardXP = 100;
-	Cooldown = 0.5;
+	Cooldown = 0.6;
 	
 	ShowSelectionPrompt = "LiaisonCharacters";
 	SelectionPromptNoTargetMessage = "$gui.no.liaisons";
@@ -1136,8 +1172,8 @@
         Values = array{0,0,0};
     };
 
-	SourceScoreFormula = "RelationshipScore / 20 + Charisma * 0.5 + Target.DoesHaveTag.RomPrefCloseApproach + Target.DoesHaveTag.RomPrefContraryGoodBehavior";
-	TargetScoreFormula = "Intelligence * 0.75 + (100 - RelationshipScore) / 45";       
+	SourceScoreFormula = "0.1 * (Strength + Dexterity + Perception + Charisma + Intelligence) + RelationshipScore / 20 + Charisma * 0.5 + Target.DoesHaveTag.RomPrefCloseApproach + Target.DoesHaveTag.RomPrefContraryGoodBehavior";
+	TargetScoreFormula = "0.1 * (Strength + Dexterity + Perception + Charisma + Intelligence) + Intelligence * 0.75 + (100 - RelationshipScore) / 45";       
 
 	CanFail = true;			
 	CriticalFactor = 1.0;
@@ -1222,19 +1258,37 @@
 		ModifierEffect
 		{
 			ApplyTo = "Self";
-			Tags = array{"KissLiaison"};
+			Tags = array{"KissLiaison","LoveDebuff"};
 			ActorValue = "Charisma";
-			Mod = -2;
-			Duration = 15.0;
+			Mod = -1;
+			Duration = 2400.0;
+			Recover = true;
+		},
+		ModifierEffect
+		{
+			ApplyTo = "Self";
+			Tags = array{"KissLiaison","LoveDebuff"};
+			ActorValue = "Perception";
+			Mod = -1;
+			Duration = 2400.0;
+			Recover = true;
+		},
+		ModifierEffect
+		{
+			ApplyTo = "Self";
+			Tags = array{"KissLiaison","LoveDebuff"};
+			ActorValue = "Intelligence";
+			Mod = -1;
+			Duration = 2400.0;
 			Recover = true;
 		},
 		DisplayEffect
 		{
-			Tags = array{"Rejected"};
+			Tags = array{"Rejected","LoveDebuff"};
 			ApplyTo = "Self";
 			DisplayGroup = "wound";
 			DisplayName = "$effect.rejected";
-			Duration = 15.0;
+			Duration = 2400.0;
 		},
 		FunctionTriggerAction
 		{
@@ -1268,7 +1322,7 @@
 	ActionActor = "Character";
 	TargetActor = "Character";
 	BaseRewardXP = 100;
-	Cooldown = 0.5;
+	Cooldown = 0.6;
 	
 	ShowSelectionPrompt = "LiaisonCharacters";
 	SelectionPromptNoTargetMessage = "$gui.no.liaisons";
@@ -1323,8 +1377,8 @@
         Values = array{0,0,0};
     };
 
-	SourceScoreFormula = "RelationshipScore / 20 + Charisma * 0.5 + Target.DoesHaveTag.RomPrefCloseApproach + Target.DoesHaveTag.RomPrefContraryGoodBehavior";
-	TargetScoreFormula = "Intelligence * 0.75 + (100 - RelationshipScore) / 45";       
+	SourceScoreFormula = "0.1 * (Strength + Dexterity + Perception + Charisma + Intelligence) + RelationshipScore / 20 + Charisma * 0.5 + Target.DoesHaveTag.RomPrefCloseApproach + Target.DoesHaveTag.RomPrefContraryGoodBehavior";
+	TargetScoreFormula = "0.1 * (Strength + Dexterity + Perception + Charisma + Intelligence) + Intelligence * 0.75 + (100 - RelationshipScore) / 45";       
 
 	CanFail = true;			
 	CriticalFactor = 1.0;
@@ -1409,10 +1463,28 @@
 		ModifierEffect
 		{
 			ApplyTo = "Self";
-			Tags = array{"DanceWithLiaison"};
+			Tags = array{"DanceWithLiaison","LoveDebuff"};
 			ActorValue = "Perception";
 			Mod = -2;
-			Duration = 15.0;
+			Duration = 2400.0;
+			Recover = true;
+		},
+		ModifierEffect
+		{
+			ApplyTo = "Self";
+			Tags = array{"DanceWithLiaison","LoveDebuff"};
+			ActorValue = "Charisma";
+			Mod = -1;
+			Duration = 2400.0;
+			Recover = true;
+		},
+		ModifierEffect
+		{
+			ApplyTo = "Self";
+			Tags = array{"DanceWithLiaison","LoveDebuff"};
+			ActorValue = "Intelligence";
+			Mod = -1;
+			Duration = 2400.0;
 			Recover = true;
 		},
 		DisplayEffect
@@ -1421,7 +1493,7 @@
 			ApplyTo = "Self";
 			DisplayGroup = "wound";
 			DisplayName = "$effect.rejected";
-			Duration = 15.0;
+			Duration = 600.0;
 		},
 		FunctionTriggerAction
 		{
@@ -1580,7 +1652,7 @@
 	EnterBuilding = "TryEnter";
 	SuppressBuildingEnterBehavior = true;
 	
-	Cooldown = 0.015;
+	Cooldown = 0.115;
 	
 	ActionActor = "Character";            
 	TargetActor = "Character";  
@@ -2159,7 +2231,7 @@
 	CriticalFactor = 1.0;
 	
 	Duration = 0.029; 
-	Cooldown = 0.3; // ~6 hours
+	Cooldown = 0.6; // ~6 hours
 	
 	BaseRewardXP = 35;
 	
@@ -2359,12 +2431,12 @@
 	BaseRewardXP = 25;
 	CanFail = true;
 	CriticalFactor = 1.0;
-	Cooldown = 0.12;
+	Cooldown = 0.22;
 
 	EnterBuilding = "TryEnter";
 
-	SourceScoreFormula = "RelationshipScore / 20 + Entertainment + Target.DoesHaveTag.RomPrefArtist";
-	TargetScoreFormula = "Charisma * 0.5 + (100 - RelationshipScore) / 35";       
+	SourceScoreFormula = "0.2 * (Strength + Dexterity + Perception + Charisma + Intelligence) + RelationshipScore / 20 + Entertainment + Target.DoesHaveTag.RomPrefArtist";
+	TargetScoreFormula = "0.2 * (Strength + Dexterity + Perception + Charisma + Intelligence) + Charisma * 0.5 + (100 - RelationshipScore) / 35";       
 
 	ShowSelectionPrompt = "LoverCharacters";
 	SelectionPromptNoTargetMessage = "$gui.no.lovers";
@@ -2462,7 +2534,7 @@
 			Tags = array{"serenade"};
 			ActorValue = "Charisma";
 			Mod = -2;
-			Duration = 15.0;
+			Duration = 600.0;
 			Recover = true;
 		},
 		DisplayEffect
@@ -2471,7 +2543,7 @@
 			ApplyTo = "Self";
 			DisplayGroup = "wound";
 			DisplayName = "$effect.rejected";
-			Duration = 15.0;
+			Duration = 600.0;
 		},
 		FunctionAffectNeeds
 		{
