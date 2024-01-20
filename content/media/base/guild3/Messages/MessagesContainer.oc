@@ -231,6 +231,27 @@ MessagesContainer extends MessageRegistrar
 			Body = "$props.interaction.CannotSleepInForeignResidence.body";
 		};
 
+		"WellRestedMessage" = MessageDescription
+		{
+			Title = "$iron.buff.wellRested.title";
+			Body = "$iron.buff.wellRested.body";
+			Effect = "";
+			Icon = "Characters";
+			Type = "Positive";
+			IsUrgent = false;
+			Duration = 60;
+			SFX = 33;
+			OnClickReactions = array
+			{
+				FunctionOpenUI
+				{
+					UIName = "MessageLog";
+					ShowOnTop = true;
+					PlaySound = true;	
+				};
+			};	
+		};
+
 		"ExitInteractionError" = MessageDescription
 		{
 			Title = "$action.InteractionError.Head";

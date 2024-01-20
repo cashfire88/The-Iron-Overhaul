@@ -839,7 +839,7 @@ G3ActionsDefault extends G3ActionsContainer
 			
 			Cooldown = 0.001; //~1sec
 			
-			Duration = 0.25;
+			Duration = 0.10; // 0.25
 				
 			EnterBuilding = "TryEnter";
 

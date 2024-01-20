@@ -7,7 +7,7 @@ GameplayDefault extends GameplayElements
 	WorkdayBegin = 4.0;						//24h format, 12.5 = 12:30h, 0.5 = 00:30h
 	WorkdayEnd = 22.0;						//24h format, 12.5 = 12:30h, 0.5 = 00:30h
 	SnoozeTime = 0.5;						// Snooze timer, in hours (0.5 = 30 minutes). Employees are allowed to oversleep by at most this much. If their sleep action would extend beyond this overtime, they are woken up.
-	WellRestedDuration = 0.2;				// Duration (in years) that a character has to sleep in order to get the 'WellRested' buff. The sleep action should be a bit longer than this at least, otherwise characters will never be well rested.
+	WellRestedDuration = 0.02;				// Duration (in years) that a character has to sleep in order to get the 'WellRested' buff. The sleep action should be a bit longer than this at least, otherwise characters will never be well rested.
 	DaylightBegin = 4.0;					// dayhour when night starts visually! 24h format, 12.5 = 12:30h, 0.5 = 00:30h
 	DaylightEnd = 22.0;						// dayhour when night ends visually! 24h format, 12.5 = 12:30h, 0.5 = 00:30h
 	EnableLightsBegin = 20.0;				// dayhour when lights for buildings should be enabled! 24h format (hours only)

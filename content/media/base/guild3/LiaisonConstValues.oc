@@ -5,5 +5,5 @@ LiaisonConstValues extends LiaisonConstants
 	AffectionThresholdLiaison = 0.1;
 	AffectionThresholdEngagement = 0.1;
 	AffectionThresholdEndWarning = 12.5;
-	InitialRomanceScore = 25.0;
+	InitialRomanceScore = 10.0; //25.0
 };
