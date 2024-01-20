@@ -3,6 +3,13 @@ DialogueSuccessType
 {
 	  Type = "CriticalFailure";
 },
+TagEffect
+{
+	Filter = "Source.hasNotTag.LoveDebuff";
+	ApplyTo = "Self";
+	Tags = array{"LoveDebuff"};
+	Duration = 2400.0;
+},
 VisualEffect
 {
 	ApplyTo = "Target";

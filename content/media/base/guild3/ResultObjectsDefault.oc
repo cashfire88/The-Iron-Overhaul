@@ -740,7 +740,7 @@ ResultObjectsDefault extends ResultObjectContainer
 				    ApplyTo = "Self";
 				    DisplayGroup = "buffed";
 				    DisplayName = "$effect.rested";
-					Duration = 600.0;
+					Duration = 1200.0;
 				},
 				ModifierEffect
 				{
@@ -748,7 +748,7 @@ ResultObjectsDefault extends ResultObjectContainer
 					ActorValue = "Productivity";
 					Mod = 0.2;
 					Recover = true;
-					Duration = 1000.0;
+					Duration = 1200.0;
 				},
 				ModifierEffect
 				{
@@ -756,8 +756,8 @@ ResultObjectsDefault extends ResultObjectContainer
 					ActorValue = "Perception";
 					Mod = 1;
 					Recover = true;
-					Duration = 1000.0;
-				}
+					Duration = 1200.0;
+				},
 				FunctionSendMessage
 				{
 					ApplyTo = "Self";

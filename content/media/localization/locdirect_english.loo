@@ -4,6 +4,11 @@ LocDirectData
 	(
 		LocDirectEntry
 		{
+			Key = "$iron.romance.wounded.heal";
+			Text = "Time to forget what was happening. It's time to move on";
+		},
+		LocDirectEntry
+		{
 			Key = "$AboutTalents1";
 			Text = "About Talents I";
 		},

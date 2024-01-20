@@ -1994,6 +1994,12 @@
 			Duration = 360.0;
 			Recover = true;
 		};
+		FunctionTriggerAction
+		{
+			Filter = "hasTag.LoveDebuff";
+			ApplyTo = "Self";
+			Actions = array{"RomanceHealDebuff"};
+		},
 		FunctionRemoveEffect
 		{
 			MatchAny = true;
@@ -2422,6 +2428,12 @@
 			ApplyTo = "Source";
 			ActionTarget = "Target";
 			Actions = array{"GetGastronomyServiceResultWheatBeer", "GetGastronomyServiceResultRoastBeef"};
+		},
+		FunctionTriggerAction
+		{
+			Filter = "hasTag.LoveDebuff";
+			ApplyTo = "Self";
+			Actions = array{"RomanceHealDebuff"};
 		},
 		FunctionRemoveEffect
 		{
@@ -3104,14 +3116,20 @@
 		},
 		FunctionTriggerAction
 		{
-			ApplyTo = "Source";
-			Actions = array{"Exit"};
+			Filter = "hasTag.LoveDebuff";
+			ApplyTo = "Self";
+			Actions = array{"RomanceHealDebuff"};
 		},
 		FunctionRemoveEffect
 		{
 			ApplyTo = "Self";
 			MatchAny = true;
 			Tags = array {"LoveDebuff"};
+		},
+		FunctionTriggerAction
+		{
+			ApplyTo = "Source";
+			Actions = array{"Exit"};
 		}
 	};
 	SuccessResult = array
@@ -3136,6 +3154,12 @@
 		{
 			ApplyTo = "Source";
 			Actions = array{"Exit"};
+		},
+		FunctionTriggerAction
+		{
+			Filter = "hasTag.LoveDebuff";
+			ApplyTo = "Self";
+			Actions = array{"RomanceHealDebuff"};
 		},
 		FunctionRemoveEffect
 		{

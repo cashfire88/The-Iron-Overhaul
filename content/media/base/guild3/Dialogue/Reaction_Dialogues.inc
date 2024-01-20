@@ -75,6 +75,19 @@ Dialogue
 
 Dialogue
 {
+	Id = "d.RomanceHealDebuff";
+	BranchType = "Pick";
+	Topics = array
+	{
+		Topic
+		{
+			Line = "$iron.romance.wounded.heal";
+		},
+	};
+},
+
+Dialogue
+{
 	Id = "d.WaveHelloWaveBackCritical";
 	BranchType = "Pick";
 	Topics = array

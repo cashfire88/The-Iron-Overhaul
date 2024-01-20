@@ -17,6 +17,13 @@ VisualEffect
 	VisualName = "Insulted";
 	Duration = 5.0;
 },
+TagEffect
+{
+	Filter = "Source.hasNotTag.LoveDebuff";
+	ApplyTo = "Self";
+	Tags = array{"LoveDebuff"};
+	Duration = 2400.0;
+},
 ModifierEffect
 {
 	ApplyTo = "Source";
