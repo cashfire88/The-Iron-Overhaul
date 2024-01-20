@@ -124,7 +124,7 @@
 	SelectionPromptNoTargetMessage = "$gui.no.lovers";
 	
 	BaseRewardXP = 18;
-	Cooldown = 0.008; //~10sec
+	Cooldown = 0.108; //~10sec
 	
 	CanFail = false;
 	
@@ -217,7 +217,7 @@
 	CanFail = true;		
 
 	BaseRewardXP = 26;
-	Cooldown = 0.03;
+	Cooldown = 0.13;
 	
 	EnterBuilding = "TryEnter";
 	SuppressBuildingEnterBehavior = true;
@@ -616,7 +616,7 @@
 	TargetActor = "Character";
 	
 	CanFail = false;
-	Cooldown = 0.015;
+	Cooldown = 0.115;
 	
 	BaseRewardXP = 35;
 	BaseRewardPrestige = 20;
@@ -1113,7 +1113,7 @@
 	ActionActor = "Character";
 	TargetActor = "Character";
 	BaseRewardXP = 100;
-	Cooldown = 0.5;
+	Cooldown = 0.6;
 	
 	ShowSelectionPrompt = "LiaisonCharacters";
 	SelectionPromptNoTargetMessage = "$gui.no.liaisons";
@@ -1322,7 +1322,7 @@
 	ActionActor = "Character";
 	TargetActor = "Character";
 	BaseRewardXP = 100;
-	Cooldown = 0.5;
+	Cooldown = 0.6;
 	
 	ShowSelectionPrompt = "LiaisonCharacters";
 	SelectionPromptNoTargetMessage = "$gui.no.liaisons";
@@ -1652,7 +1652,7 @@
 	EnterBuilding = "TryEnter";
 	SuppressBuildingEnterBehavior = true;
 	
-	Cooldown = 0.015;
+	Cooldown = 0.115;
 	
 	ActionActor = "Character";            
 	TargetActor = "Character";  
@@ -2231,7 +2231,7 @@
 	CriticalFactor = 1.0;
 	
 	Duration = 0.029; 
-	Cooldown = 0.3; // ~6 hours
+	Cooldown = 0.6; // ~6 hours
 	
 	BaseRewardXP = 35;
 	
@@ -2431,7 +2431,7 @@
 	BaseRewardXP = 25;
 	CanFail = true;
 	CriticalFactor = 1.0;
-	Cooldown = 0.12;
+	Cooldown = 0.22;
 
 	EnterBuilding = "TryEnter";
 

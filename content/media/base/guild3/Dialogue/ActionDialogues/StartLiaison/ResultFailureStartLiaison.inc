@@ -46,11 +46,11 @@ ModifierEffect
 },
 DisplayEffect
 {
-	Tags = array{"Rejected"};
+	Tags = array{"Rejected","LoveDebuff"};
 	ApplyTo = "Source";
 	DisplayGroup = "wound";
 	DisplayName = "$effect.rejected";
-	Duration = 15.0;
+	Duration = 2400.0;
 },
 FunctionSendMessage
 {
