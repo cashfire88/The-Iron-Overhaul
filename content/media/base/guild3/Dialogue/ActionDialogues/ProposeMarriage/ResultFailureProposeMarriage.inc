@@ -20,19 +20,37 @@ VisualEffect
 ModifierEffect
 {
 	ApplyTo = "Source";
-	Tags = array{"ProposeMarriage"};
+	Tags = array{"ProposeMarriage","LoveDebuff"};
 	ActorValue = "Charisma";
 	Mod = -2;
-	Duration = 15.0;
+	Duration = 2400.0;
+	Recover = true;
+},
+ModifierEffect
+{
+	ApplyTo = "Source";
+	Tags = array{"ProposeMarriage","LoveDebuff"};
+	ActorValue = "Intelligence";
+	Mod = -2;
+	Duration = 2400.0;
+	Recover = true;
+},
+ModifierEffect
+{
+	ApplyTo = "Source";
+	Tags = array{"ProposeMarriage","LoveDebuff"};
+	ActorValue = "Perception";
+	Mod = -2;
+	Duration = 2400.0;
 	Recover = true;
 },
 DisplayEffect
 {
-	Tags = array{"Rejected"};
+	Tags = array{"Rejected","LoveDebuff"};
 	ApplyTo = "Source";
 	DisplayGroup = "wound";
 	DisplayName = "$effect.rejected";
-	Duration = 15.0;
+	Duration = 2400.0;
 },
 FunctionSendMessage
 {

@@ -1997,7 +1997,7 @@
 		FunctionRemoveEffect
 		{
 			MatchAny = true;
-			Tags = array{"Fleas"};
+			Tags = array{"Fleas","LoveDebuff"};
 			ApplyTo = "Self";
 		},
 		FunctionTriggerAction
@@ -2423,12 +2423,18 @@
 			ActionTarget = "Target";
 			Actions = array{"GetGastronomyServiceResultWheatBeer", "GetGastronomyServiceResultRoastBeef"};
 		},
+		FunctionRemoveEffect
+		{
+			ApplyTo = "Self";
+			MatchAny = true;
+			Tags = array {"LoveDebuff"};
+		},
 		FunctionTriggerAction
 		{
 			Filter = "!Target.hasItems.SmallBeer.1 && !Target.hasItems.Sausage.1 && !Target.hasItems.WheatBeer.1 && !Target.hasItems.RoastBeef.1";
 			ApplyTo = "Source";
 			Actions = array{"Exit"};
-		},
+		}
 	};
 	FailureResult = array
 	{
@@ -3100,6 +3106,12 @@
 		{
 			ApplyTo = "Source";
 			Actions = array{"Exit"};
+		},
+		FunctionRemoveEffect
+		{
+			ApplyTo = "Self";
+			MatchAny = true;
+			Tags = array {"LoveDebuff"};
 		}
 	};
 	SuccessResult = array
@@ -3125,6 +3137,12 @@
 			ApplyTo = "Source";
 			Actions = array{"Exit"};
 		},
+		FunctionRemoveEffect
+		{
+			ApplyTo = "Self";
+			MatchAny = true;
+			Tags = array {"LoveDebuff"};
+		}
 	};
 };
 // ***************

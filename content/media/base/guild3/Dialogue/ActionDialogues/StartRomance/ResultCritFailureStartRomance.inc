@@ -12,19 +12,19 @@ VisualEffect
 ModifierEffect
 {
 	ApplyTo = "Source";
-	Tags = array{"StartRomance"};
+	Tags = array{"StartRomance","LoveDebuff"};
 	ActorValue = "Charisma";
-	Mod = -1;
-	Duration = 20.0;
+	Mod = -2;
+	Duration = 600.0;
 	Recover = true;
 },
 DisplayEffect
 {
-	Tags = array{"Rejected"};
+	Tags = array{"Rejected","LoveDebuff"};
 	ApplyTo = "Source";
 	DisplayGroup = "wound";
 	DisplayName = "$effect.rejected";
-	Duration = 20.0;
+	Duration = 600.0;
 };
 FunctionTriggerAction
 {

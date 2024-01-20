@@ -20,10 +20,28 @@ VisualEffect
 ModifierEffect
 {
 	ApplyTo = "Source";
-	Tags = array{"StartRomance"};
+	Tags = array{"StartRomance","LoveDebuff"};
 	ActorValue = "Charisma";
 	Mod = -2;
-	Duration = 15.0;
+	Duration = 2400.0;
+	Recover = true;
+},
+ModifierEffect
+{
+	ApplyTo = "Source";
+	Tags = array{"StartRomance","LoveDebuff"};
+	ActorValue = "Perception";
+	Mod = -1;
+	Duration = 2400.0;
+	Recover = true;
+},
+ModifierEffect
+{
+	ApplyTo = "Source";
+	Tags = array{"StartRomance","LoveDebuff"};
+	ActorValue = "Intelligence";
+	Mod = -1;
+	Duration = 2400.0;
 	Recover = true;
 },
 DisplayEffect

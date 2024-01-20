@@ -337,10 +337,28 @@
 		ModifierEffect
 		{
 			ApplyTo = "Self";
-			Tags = array{"SweetTalk"};
+			Tags = array{"SweetTalk","LoveDebuff"};
 			ActorValue = "Charisma";
 			Mod = -1;
-			Duration = 15.0;
+			Duration = 2400.0;
+			Recover = true;
+		},
+		ModifierEffect
+		{
+			ApplyTo = "Self";
+			Tags = array{"SweetTalk","LoveDebuff"};
+			ActorValue = "Perception";
+			Mod = -1;
+			Duration = 2400.0;
+			Recover = true;
+		},
+		ModifierEffect
+		{
+			ApplyTo = "Self";
+			Tags = array{"SweetTalk","LoveDebuff"};
+			ActorValue = "Intelligence";
+			Mod = -1;
+			Duration = 2400.0;
 			Recover = true;
 		},
 		DisplayEffect
@@ -349,7 +367,7 @@
 			ApplyTo = "Self";
 			DisplayGroup = "wound";
 			DisplayName = "$effect.rejected";
-			Duration = 15.0;
+			Duration = 2400.0;
 		},
 		FunctionAffectNeeds
 		{
@@ -528,19 +546,37 @@
 		ModifierEffect
 		{
 			ApplyTo = "Self";
-			Tags = array{"KissCheek"};
+			Tags = array{"KissCheek","LoveDebuff"};
 			ActorValue = "Charisma";
 			Mod = -2;
-			Duration = 15.0;
+			Duration = 2400.0;
+			Recover = true;
+		},
+		ModifierEffect
+		{
+			ApplyTo = "Self";
+			Tags = array{"KissCheek","LoveDebuff"};
+			ActorValue = "Intelligence";
+			Mod = -1;
+			Duration = 2400.0;
+			Recover = true;
+		},
+		ModifierEffect
+		{
+			ApplyTo = "Self";
+			Tags = array{"KissCheek","LoveDebuff"};
+			ActorValue = "Perception";
+			Mod = -1;
+			Duration = 2400.0;
 			Recover = true;
 		},
 		DisplayEffect
 		{
-			Tags = array{"Rejected"};
+			Tags = array{"Rejected","LoveDebuff"};
 			ApplyTo = "Self";
 			DisplayGroup = "wound";
 			DisplayName = "$effect.rejected";
-			Duration = 15.0;
+			Duration = 2400.0;
 		},
 		FunctionAffectNeeds
 		{
@@ -1222,19 +1258,37 @@
 		ModifierEffect
 		{
 			ApplyTo = "Self";
-			Tags = array{"KissLiaison"};
+			Tags = array{"KissLiaison","LoveDebuff"};
 			ActorValue = "Charisma";
-			Mod = -2;
-			Duration = 15.0;
+			Mod = -1;
+			Duration = 2400.0;
+			Recover = true;
+		},
+		ModifierEffect
+		{
+			ApplyTo = "Self";
+			Tags = array{"KissLiaison","LoveDebuff"};
+			ActorValue = "Perception";
+			Mod = -1;
+			Duration = 2400.0;
+			Recover = true;
+		},
+		ModifierEffect
+		{
+			ApplyTo = "Self";
+			Tags = array{"KissLiaison","LoveDebuff"};
+			ActorValue = "Intelligence";
+			Mod = -1;
+			Duration = 2400.0;
 			Recover = true;
 		},
 		DisplayEffect
 		{
-			Tags = array{"Rejected"};
+			Tags = array{"Rejected","LoveDebuff"};
 			ApplyTo = "Self";
 			DisplayGroup = "wound";
 			DisplayName = "$effect.rejected";
-			Duration = 15.0;
+			Duration = 2400.0;
 		},
 		FunctionTriggerAction
 		{
@@ -1409,10 +1463,28 @@
 		ModifierEffect
 		{
 			ApplyTo = "Self";
-			Tags = array{"DanceWithLiaison"};
+			Tags = array{"DanceWithLiaison","LoveDebuff"};
 			ActorValue = "Perception";
 			Mod = -2;
-			Duration = 15.0;
+			Duration = 2400.0;
+			Recover = true;
+		},
+		ModifierEffect
+		{
+			ApplyTo = "Self";
+			Tags = array{"DanceWithLiaison","LoveDebuff"};
+			ActorValue = "Charisma";
+			Mod = -1;
+			Duration = 2400.0;
+			Recover = true;
+		},
+		ModifierEffect
+		{
+			ApplyTo = "Self";
+			Tags = array{"DanceWithLiaison","LoveDebuff"};
+			ActorValue = "Intelligence";
+			Mod = -1;
+			Duration = 2400.0;
 			Recover = true;
 		},
 		DisplayEffect
@@ -1421,7 +1493,7 @@
 			ApplyTo = "Self";
 			DisplayGroup = "wound";
 			DisplayName = "$effect.rejected";
-			Duration = 15.0;
+			Duration = 600.0;
 		},
 		FunctionTriggerAction
 		{
@@ -2462,7 +2534,7 @@
 			Tags = array{"serenade"};
 			ActorValue = "Charisma";
 			Mod = -2;
-			Duration = 15.0;
+			Duration = 600.0;
 			Recover = true;
 		},
 		DisplayEffect
@@ -2471,7 +2543,7 @@
 			ApplyTo = "Self";
 			DisplayGroup = "wound";
 			DisplayName = "$effect.rejected";
-			Duration = 15.0;
+			Duration = 600.0;
 		},
 		FunctionAffectNeeds
 		{
