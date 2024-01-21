@@ -4,6 +4,46 @@ LocDirectData
 	(
 		LocDirectEntry
 		{
+			Key = "$action.PromoteYourBusinesses.WithPrayers.IronDesc";
+			Text = "Pray for workers and customers such that the business is going to flourish";
+		},
+		LocDirectEntry
+		{
+			Key = "$action.PromoteYourBusinessesIron";
+			Text = "Promote Business with Music";
+		},
+		LocDirectEntry
+		{
+			Key = "$action.PromoteYourBusinesses.WithPrayers.Iron";
+			Text = "Promote Business with prayers";
+		},
+		LocDirectEntry
+		{
+			Key = "$action.PromoteYourBusinessesIronDesc";
+			Text = "Play some music to make the Business more attractive to customers";
+		},
+		LocDirectEntry
+		{
+			Key = "$effect.PromoteYourBusiness.WithPrayers.NoFrontStoreIron";
+			Text = "Motivated by an inspiring Prayer";
+		},
+		LocDirectEntry
+		{
+			Key = "$effect.PromoteYourBusiness.NoFrontStoreIron";
+			Text = "Motivated by inspiring Music";
+		},
+		LocDirectEntry
+		{
+			Key = "$effect.promotedBusinessIron";
+			Text = "Business promoted with Music - increased customer satisfaction";
+		},
+		LocDirectEntry
+		{
+			Key = "$action.MotivatedWorkersIron";
+			Text = "Motivated workers through Music";
+		},
+		LocDirectEntry
+		{
 			Key = "$action.SimpleFeast";
 			Text = "Feed the Poor";
 		},

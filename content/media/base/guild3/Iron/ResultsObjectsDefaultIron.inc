@@ -23,3 +23,57 @@ ResultObject
         },
     };
 },
+
+ResultObject
+{
+    Id = "PromoteOwnBusinessForewardIron";
+    DisplayName = "$action.PromoteYourBusinesses";
+    Filter = "IsEmployeeOfBuilding";
+    Results = array
+    {
+        DisplayEffect
+        {
+            Tags = array{"PromoteOwnBusinessIron"};
+            ApplyTo = "Target";
+            Duration = 360;
+            DisplayGroup = "buffed";
+            DisplayName = "$effect.PromoteYourBusiness.NoFrontStoreIron"";
+        },
+        ModifierEffect
+        {
+            ApplyTo = "Target";
+            Tags = array{"PromoteOwnBusinessIron"};
+            ActorValue = "Motivation";
+            Mod = 0.5;
+            Duration = 360;
+            Recover = true;
+        },
+    };
+},
+
+ResultObject
+{
+    Id = "PromoteOwnBusinessWithPrayersForewardIron";
+    DisplayName = "$action.PromoteYourBusinesses";
+    Filter = "IsEmployeeOfBuilding";
+    Results = array
+    {
+        DisplayEffect
+        {
+            Tags = array{"PromoteYourBusinessesWithPrayersIron"};
+            ApplyTo = "Target";
+            Duration = 360;
+            DisplayGroup = "buffed";
+            DisplayName = "$effect.PromoteYourBusiness.WithPrayers.NoFrontStoreIron";
+        },
+        ModifierEffect
+        {
+            ApplyTo = "Target";
+            Tags = array{"PromoteYourBusinessesWithPrayersIron"};
+            ActorValue = "Motivation";
+            Mod = 0.2;
+            Duration = 360;
+            Recover = true;
+        },
+    };
+},
