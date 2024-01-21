@@ -19,8 +19,8 @@
 	ArtefactName = "SimpleFeast";
 	
 	ActionName = "DonateSimpleFeast";
-	DisplayName = "$action.BoastAboutYourExploits";
-	Description = "$action.BoastAboutYourExploitsDesc";
+	DisplayName = "$action.SimpleFeast";
+	Description = "$action.SimpleFeastDesc";
 	Instruction = "$callToAction.StreetArea";
 
 	ActionActor = "Character";

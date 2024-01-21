@@ -4,6 +4,16 @@ LocDirectData
 	(
 		LocDirectEntry
 		{
+			Key = "$action.SimpleFeast";
+			Text = "Feed the Poor";
+		},
+		LocDirectEntry
+		{
+			Key = "$action.SimpleFeastDesc";
+			Text = "Donate food to the poor to combat Hunger and Poverty";
+		},
+		LocDirectEntry
+		{
 			Key = "$SimpleFeast";
 			Text = "Simple Donation Feast";
 		},

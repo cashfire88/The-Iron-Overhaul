@@ -8,7 +8,7 @@
 	UsableBy = array{ "$qs.charactertype.0" };
 	
 	Production = 3;
-	BuildTime = 6;
+	BuildTime = 20;
 	Tier = 0;
 	
 
@@ -19,8 +19,23 @@
 	{
 		comp1 extends G3ItemComponent
 		{
-			Name = "Wheat";
-			Number = 1;
+			Name = "FriedTrout";
+			Number = 5;
+		},
+        comp1 extends G3ItemComponent
+		{
+			Name = "SmokedPerch";
+			Number = 5;
+		},
+        comp1 extends G3ItemComponent
+		{
+			Name = "Fruit";
+			Number = 5;
+		},
+        comp1 extends G3ItemComponent
+		{
+			Name = "BucketOfWater";
+			Number = 10;
 		}
 	};
 	
