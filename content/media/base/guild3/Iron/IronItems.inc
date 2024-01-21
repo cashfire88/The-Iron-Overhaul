@@ -12,7 +12,7 @@
 	Tier = 0;
 	
 
-	SoldAtMarket = true;
+	SoldAtMarket = false;
 	BoughtByMarket = true;
 	
 	Requirements = array

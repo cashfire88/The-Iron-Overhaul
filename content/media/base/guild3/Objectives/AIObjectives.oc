@@ -482,6 +482,7 @@ AIObjectives extends AIObjectivesContainer
 						//"DrinkStrongBeer" = 0.01,
 						"DrinkWheatBeer" = 0.01,
 						"DrinkMead" = 0.01,	
+						"DonateSimpleFeast" = 0.05,	
 					};
 				},
 				IncreasePrestigeObjective //IncreasePrestigeLowActions
@@ -603,6 +604,8 @@ AIObjectives extends AIObjectivesContainer
 						//"DrinkStrongBeer" = 0.01,
 						"DrinkWheatBeer" = 0.01,
 						"DrinkMead" = 0.01,
+						"DonateSimpleFeast" = 0.05,
+						
 						
 					};
 				},
@@ -729,6 +732,7 @@ AIObjectives extends AIObjectivesContainer
 						//"DrinkStrongBeer" = 0.01,
 						"DrinkWheatBeer" = 0.01,
 						"DrinkMead" = 0.01,
+						"DonateSimpleFeast" = 0.05,
 					};
 				},
 				IncreasePrestigeObjective //IncreasePrestigeHighActions
