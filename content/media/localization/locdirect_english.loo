@@ -4,6 +4,16 @@ LocDirectData
 	(
 		LocDirectEntry
 		{
+			Key = "$SimpleFeast";
+			Text = "Simple Donation Feast";
+		},
+		LocDirectEntry
+		{
+			Key = "$SimpleFeast.description";
+			Text = "This is a Simple Donation Feast containing Water and Bread.";
+		},
+		LocDirectEntry
+		{
 			Key = "$iron.romance.wounded.heal";
 			Text = "Time to forget what was happening. It's time to move on";
 		},
@@ -37108,6 +37118,170 @@ LocDirectData
 		{
 			Key = "$d.poi.fire.rich6";
 			Text = "Alarm everyone! We have a fire over here!";
+		},
+		LocDirectEntry
+		{
+			Key = "$d.poi.boast.iron.poor1";
+			Text = "Really?";
+		},
+		LocDirectEntry
+		{
+			Key = "$d.poi.boast.iron.eat.poor1";
+			Text = "...delicious ...";
+		},
+		LocDirectEntry
+		{
+			Key = "$d.poi.boast.iron.poor2";
+			Text = "What do you have to eat?";
+		},
+		LocDirectEntry
+		{
+			Key = "$d.poi.boast.iron.eatCreampie.poor2";
+			Text = "Wow, is that for real? So good";
+		},
+		LocDirectEntry
+		{
+			Key = "$d.poi.boast.iron.poor3";
+			Text = "Incredible!";
+		},
+		LocDirectEntry
+		{
+			Key = "$d.poi.boast.iron.poor4";
+			Text = "Wow nice cheeks ...";
+		},
+		LocDirectEntry
+		{
+			Key = "$d.poi.boast.iron.poor5";
+			Text = "Can i have a fish please?";
+		},
+		LocDirectEntry
+		{
+			Key = "$d.poi.boast.iron.poor6";
+			Text = "Thanks for the food...";
+		},
+		LocDirectEntry
+		{
+			Text = "I won't forget that. Thank you";
+		},
+		LocDirectEntry
+		{
+			Key = "$d.poi.boast.iron.poor8";
+			Text = "Good Food!";
+		},
+		LocDirectEntry
+		{
+			Key = "$d.poi.boast.iron.poor9";
+			Text = "Thank you";
+		},
+		LocDirectEntry
+		{
+			Key = "$d.poi.boast.iron.poor10";
+			Text = "Great that finally someone is caring for us!";
+		},
+		LocDirectEntry
+		{
+			Key = "$d.poi.boast.iron.poor11";
+			Text = "It tastes bad. But food is food.";
+		},
+		LocDirectEntry
+		{
+			Key = "$d.poi.boast.iron.poor12";
+			Text = "What curious food.";
+		},
+		LocDirectEntry
+		{
+			Key = "$d.poi.boast.iron.poor13";
+			Text = "You have a silver tongue.";
+		},
+		LocDirectEntry
+		{
+			Key = "$d.poi.boast.iron.poor14";
+			Text = "I want Pork";
+		},
+		LocDirectEntry
+		{
+			Key = "$d.poi.boast.iron.poor15";
+			Text = "Just listen to this!";
+		},
+		LocDirectEntry
+		{
+			Key = "$d.poi.boast.iron.com1";
+			Text = "Carry on...";
+		},
+		LocDirectEntry
+		{
+			Key = "$d.poi.boast.iron.com2";
+			Text = "I should try that too...";
+		},
+		LocDirectEntry
+		{
+			Key = "$d.poi.boast.iron.com3";
+			Text = "Impressive!";
+		},
+		LocDirectEntry
+		{
+			Key = "$d.poi.boast.iron.com4";
+			Text = "I love this food!";
+		},
+		LocDirectEntry
+		{
+			Key = "$d.poi.boast.iron.com5";
+			Text = "Didn't I hear this yesterday?";
+		},
+		LocDirectEntry
+		{
+			Key = "$d.poi.boast.iron.com6";
+			Text = "Nice try. But honestly you just want to get in our pants.";
+		},
+		LocDirectEntry
+		{
+			Key = "$d.poi.boast.iron.com7";
+			Text = "Come! Come over, listen and eat!";
+		},
+		LocDirectEntry
+		{
+			Key = "$d.poi.boast.iron.com8";
+			Text = "Come grab some!";
+		},
+		LocDirectEntry
+		{
+			Key = "$d.poi.boast.iron.com9";
+			Text = "That's what i need!";
+		},
+		LocDirectEntry
+		{
+			Key = "$d.poi.boast.iron.com10";
+			Text = "What great deeds!";
+		},
+		LocDirectEntry
+		{
+			Key = "$d.poi.boast.iron.rich1";
+			Text = "It's so easy to amaze poor people.";
+		},
+		LocDirectEntry
+		{
+			Key = "$d.poi.boast.iron.rich2";
+			Text = "Interesting...";
+		},
+		LocDirectEntry
+		{
+			Key = "$d.poi.boast.iron.rich3";
+			Text = "Should I be impressed?";
+		},
+		LocDirectEntry
+		{
+			Key = "$d.poi.boast.iron.rich4";
+			Text = "Stay with the poor and filthy";
+		},
+		LocDirectEntry
+		{
+			Key = "$d.poi.boast.iron.rich5";
+			Text = "I have to admit... that was funny.";
+		},
+		LocDirectEntry
+		{
+			Key = "$d.poi.boast.iron.rich6";
+			Text = "It is nice to see someone dooing this!";
 		},
 		LocDirectEntry
 		{

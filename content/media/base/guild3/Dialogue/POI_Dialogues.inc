@@ -3076,6 +3076,8 @@ Dialogue
 	};
 };
 
+@base/POI_DialoguesIron
+
 // PublicBanquet POI
 Dialogue
 {

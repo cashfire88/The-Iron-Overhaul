@@ -12999,5 +12999,6 @@ G3ActionsDefault extends G3ActionsContainer
 		@base/ArsenalLifeActions
 		@base/TownhallLifeActions
 		@base/TrialActions
+		@base/IronActions
 	};
 };

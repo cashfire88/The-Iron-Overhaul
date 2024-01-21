@@ -1179,7 +1179,8 @@ GameplayDefault extends GameplayElements
 					Names = array
 					{
 						"WashCloth",
-						"FlowerBouqet"
+						"FlowerBouqet",
+						"SimpleFeast"
 					};
 				},
 				
