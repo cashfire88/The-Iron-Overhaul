@@ -22,6 +22,51 @@ LocDirectData
 			Key = "$IngredientsSmokedPerch.iron.name";
 			Text = "Ingredients Smoked Perch";
 		},
+
+		LocDirectEntry
+		{
+			Key = "$Pipe.iron.name";
+			Text = "Pipe";
+		},
+		LocDirectEntry
+		{
+			Key = "$Pipe.iron.desc";
+			Text = "Pipe to sell";
+		},
+
+		LocDirectEntry
+		{
+			Key = "$BronceFlail.iron.name";
+			Text = "BronceFlail";
+		},
+		LocDirectEntry
+		{
+			Key = "$BronceFlail.iron.desc";
+			Text = "BronceFlail to smack down your enemies";
+		},
+
+		LocDirectEntry
+		{
+			Key = "$RomanHelmet.iron.name";
+			Text = "Bronce Helmet";
+		},
+		LocDirectEntry
+		{
+			Key = "$RomanHelmet.iron.desc";
+			Text = "Bronce Helmet to wear for some protection";
+		},
+
+		LocDirectEntry
+		{
+			Key = "$Bucket.iron.name";
+			Text = "Bucket";
+		},
+		LocDirectEntry
+		{
+			Key = "$Bucket.iron.desc";
+			Text = "Bucket to sell";
+		},
+
 		LocDirectEntry
 		{
 			Key = "$IngredientsSmokedPerch.iron.desc";

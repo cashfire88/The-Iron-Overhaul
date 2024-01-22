@@ -766,7 +766,7 @@ G3SkillsDefault extends G3SkillsContainer
 						},
 						UnlockEffect
 						{
-							Names = array { "Copper", "Cauldron", "PinewoodPlank" };
+							Names = array { "Copper", "Cauldron", "PinewoodPlank", "Pipe", "Bucket" };
 						}
 					};
 				};
@@ -779,7 +779,7 @@ G3SkillsDefault extends G3SkillsContainer
 					{
 						UnlockEffect
 						{
-							Names = array { "CopperBracelet", "Torch", "WoodenShield" };
+							Names = array { "CopperBracelet", "Torch", "WoodenShield","RomanHelmet", "BronceFlail" };
 						}
 					};
 				};
