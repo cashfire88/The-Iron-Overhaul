@@ -375,7 +375,7 @@
 	SourceScoreFormula = "1";
 	TargetScoreFormula = "0";
 
-	CanFail = false;
+	CanFail = true;
 	ShowCombatText = true;
 	CriticalFactor = 1.0;
 	

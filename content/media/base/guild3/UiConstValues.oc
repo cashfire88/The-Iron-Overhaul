@@ -316,7 +316,7 @@ UiConstValues extends UiConstants
 			Dialogue,
 			Diplomacy,
 			Dynasty,
-			Characters,
+			Character,
 			Employee,
 			Event,
 			Guild,

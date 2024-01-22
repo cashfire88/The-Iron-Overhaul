@@ -4,6 +4,11 @@ LocDirectData
 	(
 		LocDirectEntry
 		{
+			Key = "$ui.messageCategory.Character";
+			Text = "Character";
+		},
+		LocDirectEntry
+		{
 			Key = "$action.PromoteYourBusinesses.WithPrayers.IronDesc";
 			Text = "Pray for workers and customers such that the business is going to flourish";
 		},
