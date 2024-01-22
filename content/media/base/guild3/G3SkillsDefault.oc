@@ -385,7 +385,7 @@ G3SkillsDefault extends G3SkillsContainer
 						},
 						UnlockEffect
 						{
-							Names = array { "Trout", "Perch", "FriedTrout", "SmokedPerch", "IngredientsSmokedPerch" };
+							Names = array { "Trout", "Perch", "FriedTrout", "SmokedPerch"};
 						}
 					};
 				};
