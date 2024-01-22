@@ -9,6 +9,46 @@ LocDirectData
 		},
 		LocDirectEntry
 		{
+			Key = "$Salt.iron.name";
+			Text = "Salt";
+		},
+		LocDirectEntry
+		{
+			Key = "$Salt.iron.desc";
+			Text = "Salt for cooking delicious food";
+		},
+		LocDirectEntry
+		{
+			Key = "$IngredientsSmokedPerch.iron.name";
+			Text = "Ingredients Smoked Perch";
+		},
+		LocDirectEntry
+		{
+			Key = "$IngredientsSmokedPerch.iron.desc";
+			Text = "Ingredients to cook Smoked Perch";
+		},
+		LocDirectEntry
+		{
+			Key = "$DeliciousCookedPerch.iron.name";
+			Text = "Delicious Cooked Perch";
+		},
+		LocDirectEntry
+		{
+			Key = "$DeliciousCookedPerch.iron.desc";
+			Text = "Delicious Cooked Perch";
+		},
+		LocDirectEntry
+		{
+			Key = "$BerryJuice.iron.name";
+			Text = "Berry Juice";
+		},
+		LocDirectEntry
+		{
+			Key = "$BerryJuice.iron.desc";
+			Text = "Water and Berries mixed";
+		},
+		LocDirectEntry
+		{
 			Key = "$action.PromoteYourBusinesses.WithPrayers.IronDesc";
 			Text = "Pray for workers and customers such that the business is going to flourish";
 		},

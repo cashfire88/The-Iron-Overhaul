@@ -2061,8 +2061,11 @@ G3ItemsDefault extends G3ItemsContainer
 		
 		//-------------- END -----------------------
 		@base/ResourceProducerItems
+		@base/ResourceProducerItemsIron
 		@base/GatheredItems
+		@base/GatheredItemsIron
 		@base/Tier1Products
+		@base/Tier1ProductsIron
 		@base/Tier2Products
 		@base/Tier3Products
 		@base/Tier4Products
