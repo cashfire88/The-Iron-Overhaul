@@ -450,3 +450,81 @@
 		}
 	};
 };
+
+"FishSoup" = G3Item
+{
+	Type = 1;
+	SubType = 2;
+
+	DisplayName = "$FishSoup.iron.name";
+	Description = "$FishSoup.iron.desc";
+	DisplayCategories = array("All", "Food");
+
+	Tier = 2;
+	SocialClass = 0;
+	BuildTime = 30.0;
+	Production = 1;
+	
+	Requirements = array
+	{
+		comp1 extends G3ItemComponent
+		{
+			Name = "Perch";
+			Number = 1;
+		};
+		comp2 extends G3ItemComponent
+		{
+			Name = "ClayBowl";
+			Number = 1;
+		};
+		comp3 extends G3ItemComponent
+		{
+			Name = "Trout";
+			Number = 1;
+		};
+	};
+	
+	RequiredBuildings = array
+	{
+		RequiredBuilding = array { "FishingHut", 1 }
+	};
+};
+
+"LivingTrout" = G3Item
+{
+	Type = 1;
+	SubType = 2;
+
+	DisplayName = "$FishSoup.iron.name";
+	Description = "$FishSoup.iron.desc";
+	DisplayCategories = array("All", "Food");
+
+	Tier = 2;
+	SocialClass = 0;
+	BuildTime = 60.0;
+	Production = 1;
+	
+	Requirements = array
+	{
+		comp1 extends G3ItemComponent
+		{
+			Name = "Worm";
+			Number = 5;
+		};
+		comp2 extends G3ItemComponent
+		{
+			Name = "Bucket";
+			Number = 1;
+		};
+		comp3 extends G3ItemComponent
+		{
+			Name = "Trout";
+			Number = 1;
+		};
+	};
+	
+	RequiredBuildings = array
+	{
+		RequiredBuilding = array { "FishingHut", 1 }
+	};
+};

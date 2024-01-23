@@ -73,3 +73,29 @@
 	GatheringBuilding = "Cemetary";
 };
 
+"Shell" = G3Item
+{
+	Type = 1;
+	SubType = 1;
+
+	DisplayName = "$Shell.iron.name";
+	Description = "$Shell.iron.desc";
+	DisplayCategories = array("All", "RawMaterial");
+
+	IconName = "Shell";
+
+	Production = 1;
+	BuildTime = 7;
+	Tier = 1;
+	SocialClass = 0;
+
+	SeasonAvailability = array{1, 1, 1, 1};
+
+	RequiredBuildings = array{
+		RequiredBuilding = array { "FishingHut", 1 }
+	};
+
+	GatheringBuilding = "FishingSpot";
+};
+
+

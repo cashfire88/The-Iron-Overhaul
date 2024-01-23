@@ -31,6 +31,39 @@ LocDirectData
 
 		LocDirectEntry
 		{
+			Key = "$LivingTrout.iron.name";
+			Text = "Living Trout";
+		},
+		LocDirectEntry
+		{
+			Key = "$LivingTrout.iron.desc";
+			Text = "A Trout which is alive in a Bucket of Water";
+		},
+
+		LocDirectEntry
+		{
+			Key = "$Shell.iron.name";
+			Text = "Shell";
+		},
+		LocDirectEntry
+		{
+			Key = "$Shell.iron.desc";
+			Text = "Shell are usually found near Water";
+		},
+
+		LocDirectEntry
+		{
+			Key = "$ShellNecklace.iron.name";
+			Text = "Shell Necklace";
+		},
+		LocDirectEntry
+		{
+			Key = "$ShellNecklace.iron.desc";
+			Text = "Shell Necklace to wear, but it really stinks still";
+		},
+
+		LocDirectEntry
+		{
 			Key = "$ImprovedMillerClothes.iron.name";
 			Text = "Improved Miller Clothes";
 		},
@@ -71,6 +104,29 @@ LocDirectData
 		{
 			Key = "$Worm.iron.desc";
 			Text = "Worms who are living in the earth";
+		},
+
+		LocDirectEntry
+		{
+			Key = "$FishSoup.iron.name";
+			Text = "Fish Soup";
+		},
+		LocDirectEntry
+		{
+			Key = "$FishSoup.iron.desc";
+			Text = "Poor people dish Fish Soup";
+		},
+
+
+		LocDirectEntry
+		{
+			Key = "$ClayBowl.iron.name";
+			Text = "Clay Bowl";
+		},
+		LocDirectEntry
+		{
+			Key = "$ClayBowl.iron.desc";
+			Text = "A simple Clay Bowl usually used for serving food";
 		},
 
 		LocDirectEntry

@@ -385,7 +385,7 @@ G3SkillsDefault extends G3SkillsContainer
 						},
 						UnlockEffect
 						{
-							Names = array { "Trout", "Perch", "FriedTrout", "SmokedPerch"};
+							Names = array { "Trout", "Perch", "FriedTrout", "SmokedPerch", "Shell", "ShellNecklace"};
 						}
 					};
 				};
@@ -398,7 +398,7 @@ G3SkillsDefault extends G3SkillsContainer
 					{
 						UnlockEffect
 						{
-							Names = array { "Pike", "FishOil", "BoneNeedle", "GoFishing" };
+							Names = array { "Pike", "FishOil", "BoneNeedle", "GoFishing", "FishSoup", "LivingTrout" };
 						}
 					};
 				};
@@ -626,7 +626,7 @@ G3SkillsDefault extends G3SkillsContainer
 						},
 						UnlockEffect
 						{
-							Names = array { "ClayVase", "Beaker", "WeightStone", "BucketOfWater" };
+							Names = array { "ClayVase", "Beaker", "WeightStone", "BucketOfWater", "ClayBowl" };
 						}
 					};
 				};

@@ -363,3 +363,131 @@
 		RequiredBuilding = array { "Farm", 1 }
 	};
 };
+
+"ClayBowl" = G3Item
+{
+	Type = 1;
+	SubType = 5;
+
+	DisplayName = "$ClayBowl.iron.name";
+	Description = "$ClayBowl.iron.desc";
+	DisplayCategories = array("All", "Trinkets");
+
+	IconName = "ClayBowl";
+
+	BuildTime = 12;
+	Tier = 1;
+	SocialClass = 0;
+	
+	Requirements = array
+	{
+		comp1 extends G3ItemComponent
+		{
+			Name = "Clay";
+			Number = 1;
+		};
+		comp2 extends G3ItemComponent
+		{
+			Name = "BucketOfWater";
+			Number = 1;
+		};
+	};
+	
+	RequiredBuildings = array
+	{
+		RequiredBuilding = array { "Masonery", 1 }
+	};
+};
+
+"ShellNecklace" = G3Item
+{
+	Type = 3;
+	
+	DisplayName = "$ShellNecklace.iron.name";
+	Description = "$ShellNecklace.iron.desc";
+	DisplayCategories = array("All");
+
+	IconName = "ShellNecklace";
+
+	EquipmentType = 4;
+	EquipmentAdultsOnly = true;
+	UsableBy = array{ "$characters.Age.Adult" };
+
+	SoldAtMarket = false;
+	BoughtByMarket = true;
+
+	Tier = 1;
+	SocialClass = 0;
+
+	Production = 1;
+	BuildTime = 22.0;
+	
+	Requirements = array
+	{
+		comp1 extends G3ItemComponent
+		{
+			Name = "Shell";
+			Number = 5;
+		};
+	};
+
+	Results = array
+	{
+		ModifierEffect
+		{
+			ActorValue = "Dexterity";
+			Mod = 1;
+			Recover = true;
+		},
+		ModifierEffect
+		{
+			ActorValue = "Charisma";
+			Mod = -1;
+			Recover = true;
+		},
+	};
+
+	RequiredBuildings = array
+	{
+		RequiredBuilding = array { "FishingHut", 1 }
+	};
+};
+
+"CuttedRose" = G3Item
+{
+	Type = 3;
+
+	DisplayName = "$CuttedRose.iron.name";
+	Description = "$CuttedRose.iron.desc";
+	DisplayCategories = array("All");
+	UsableBy = array{ "$qs.charactertype.0" };
+	
+	Production = 1;
+	BuildTime = 10;
+	Tier = 2;
+	
+	SoldAtMarket = false;
+	BoughtByMarket = false;
+	
+	Requirements = array
+	{
+		comp3 extends G3ItemComponent
+		{
+			Name = "WildRose";
+			Number = 1;
+		}
+	};
+	
+	Results = array
+	{
+		UnlockEffect
+		{
+			Names = array {"GiveFlowers"};
+		}
+	};
+	
+	RequiredBuildings = array
+	{
+		RequiredBuilding = array { "Barber", 1 }
+	};
+};
