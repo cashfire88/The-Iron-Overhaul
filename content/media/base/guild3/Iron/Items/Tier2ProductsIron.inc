@@ -122,3 +122,99 @@
 		RequiredBuilding = array { "Tinker", 1 }
 	};
 };
+
+"BucketOfFruits" = G3Item
+{
+	Type = 1;
+	SubType = 8;
+
+	DisplayName = "$BucketOfFruits.iron.name";
+	Description = "$BucketOfFruits.iron.description";
+	DisplayCategories = array("All", "Food");
+	IconName = "BucketOfFruits";
+
+	Production = 1;
+	BuildTime = 50.00;
+	Tier = 1;
+	SocialClass = 0;
+	
+	Requirements = array
+	{
+		comp1 extends G3ItemComponent
+		{
+			Name = "Bucket";
+			Number = 1;
+		};
+		comp2 extends G3ItemComponent
+		{
+			Name = "Berry";
+			Number = 5;
+		};
+		comp3 extends G3ItemComponent
+		{
+			Name = "Fruits";
+			Number = 5;
+		};
+	};
+	
+	RequiredBuildings = array
+	{
+		RequiredBuilding = array { "Orchardist", 1 }
+	};
+
+	Results = array
+	{
+		UnlockEffect
+		{
+			Names = array {"DonateSimpleFeast"};
+		}
+	};
+};
+
+"FlowerPot" = G3Item
+{
+	Type = 1;
+	SubType = 8;
+
+	DisplayName = "$FlowerPot.iron.name";
+	Description = "$FlowerPot.iron.description";
+	DisplayCategories = array("All", "Food");
+	IconName = "FlowerPot";
+
+	Production = 1;
+	BuildTime = 42.00;
+	Tier = 1;
+	SocialClass = 0;
+	
+	Requirements = array
+	{
+		comp1 extends G3ItemComponent
+		{
+			Name = "Cauldron";
+			Number = 1;
+		};
+		comp2 extends G3ItemComponent
+		{
+			Name = "Jasmin";
+			Number = 1;
+		};
+		comp3 extends G3ItemComponent
+		{
+			Name = "StoneLily";
+			Number = 1;
+		};
+	};
+	
+	RequiredBuildings = array
+	{
+		RequiredBuilding = array { "Orchardist", 1 }
+	};
+
+	Results = array
+	{
+		UnlockEffect
+			{
+				Names = array {"GiveFlowers"};
+			}
+	};
+};

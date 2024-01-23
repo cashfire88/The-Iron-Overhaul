@@ -14,7 +14,7 @@
 	
 
 	SoldAtMarket = false;
-	BoughtByMarket = true;
+	BoughtByMarket = false;
 	
 	Requirements = array
 	{

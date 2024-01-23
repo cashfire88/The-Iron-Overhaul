@@ -260,7 +260,7 @@ G3SkillsDefault extends G3SkillsContainer
 						},
 						UnlockEffect
 						{
-							Names = array { "Fruit", "Honey", "Juice", "Cider" };
+							Names = array { "Fruit", "Honey", "Juice", "Cider", "BerryJuice", "Berry" };
 						}
 					};
 				};
@@ -273,7 +273,7 @@ G3SkillsDefault extends G3SkillsContainer
 					{
 						UnlockEffect
 						{
-							Names = array { "Blackberry", "BlackberryJam", "Candy" };
+							Names = array { "Blackberry", "BlackberryJam", "Candy", "BucketOfFruits", "FlowerPot" };
 						}
 					};
 				};

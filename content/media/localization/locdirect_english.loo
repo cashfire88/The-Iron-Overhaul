@@ -47,6 +47,28 @@ LocDirectData
 
 		LocDirectEntry
 		{
+			Key = "$BucketOfFruits.iron.name";
+			Text = "Bucket of Fruits";
+		},
+		LocDirectEntry
+		{
+			Key = "$BucketOfFruits.iron.desc";
+			Text = "Bucket of Fruits can be sold or distributed to the poor. The neighbourhood will love you";
+		},
+
+		LocDirectEntry
+		{
+			Key = "$Berry.iron.name";
+			Text = "Berry";
+		},
+		LocDirectEntry
+		{
+			Key = "$Berry";
+			Text = "Simple delicious berries";
+		},
+
+		LocDirectEntry
+		{
 			Key = "$RomanHelmet.iron.name";
 			Text = "Bronce Helmet";
 		},
