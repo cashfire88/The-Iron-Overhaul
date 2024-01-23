@@ -130,12 +130,12 @@
 
 	DisplayName = "$BucketOfFruits.iron.name";
 	Description = "$BucketOfFruits.iron.description";
-	DisplayCategories = array("All", "Food");
+	DisplayCategories = array( "All", "Food");
 	IconName = "BucketOfFruits";
 
 	Production = 1;
 	BuildTime = 50.00;
-	Tier = 1;
+	Tier = 2;
 	SocialClass = 0;
 	
 	Requirements = array
@@ -152,7 +152,7 @@
 		};
 		comp3 extends G3ItemComponent
 		{
-			Name = "Fruits";
+			Name = "Fruit";
 			Number = 5;
 		};
 	};
@@ -184,7 +184,7 @@
 	Production = 1;
 	BuildTime = 42.00;
 	Tier = 1;
-	SocialClass = 0;
+	SocialClass = 1;
 	
 	Requirements = array
 	{
