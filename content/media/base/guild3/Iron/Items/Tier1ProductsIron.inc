@@ -262,3 +262,40 @@
 		RequiredBuilding = array { "Farm", 1 }
 	};
 };
+
+"Ashes" = G3Item
+{
+	Type = 1;
+	SubType = 1;
+
+	DisplayName = "$Ashes.iron.name";
+	Description = "$Ashes.iron.desc";
+	DisplayCategories = array("All", "RawMaterial");
+
+	IconName = "Ashes";
+
+	Production = 10;
+	BuildTime = 70.0;
+
+	Tier = 1;
+	SocialClass = 0;
+	
+	Requirements = array
+	{
+		comp1 extends G3ItemComponent
+		{
+			Name = "Bone";
+			Number = 3;
+		};
+		comp2 extends G3ItemComponent
+		{
+			Name = "Torch";
+			Number = 1;
+		};
+	};
+			
+	RequiredBuildings = array
+	{
+		RequiredBuilding = array { "Gravedigger", 1 }
+	};
+};

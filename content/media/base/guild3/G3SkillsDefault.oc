@@ -1812,7 +1812,7 @@ G3SkillsDefault extends G3SkillsContainer
 						},
 						UnlockEffect
 						{
-							Names = array { "Bone", "BoneDust", "BoneGlue", "BoneBracelet", "Worm" };
+							Names = array { "Bone", "BoneDust", "BoneGlue", "BoneBracelet", "Worm", "Ashes" };
 						}
 					};
 				};
@@ -1825,7 +1825,7 @@ G3SkillsDefault extends G3SkillsContainer
 					{
 						UnlockEffect
 						{
-							Names = array { "SkullLamp", "PlunderGraves" };
+							Names = array { "SkullLamp", "PlunderGraves", "Tombstone", "BoneShield" };
 						}
 					};
 				};

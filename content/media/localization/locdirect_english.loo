@@ -75,6 +75,39 @@ LocDirectData
 
 		LocDirectEntry
 		{
+			Key = "$BoneShield.iron.name";
+			Text = "Bone Shield";
+		},
+		LocDirectEntry
+		{
+			Key = "$BoneShield.iron.desc";
+			Text = "Bones glued together with some melted Iron at least do for some protection";
+		},
+
+		LocDirectEntry
+		{
+			Key = "$Ashes.iron.name";
+			Text = "Ashes";
+		},
+		LocDirectEntry
+		{
+			Key = "$Ashes.iron.desc";
+			Text = "Bones burned down to Ashes";
+		},
+
+		LocDirectEntry
+		{
+			Key = "$Tombstone.iron.name";
+			Text = "Tombstone";
+		},
+		LocDirectEntry
+		{
+			Key = "$Tombstone.iron.desc";
+			Text = "Tombstone to remember the deceased";
+		},
+
+		LocDirectEntry
+		{
 			Key = "$SackOfFlours.iron.name";
 			Text = "Sack of Flours";
 		},

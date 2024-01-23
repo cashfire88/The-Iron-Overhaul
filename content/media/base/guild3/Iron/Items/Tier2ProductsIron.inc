@@ -283,3 +283,91 @@
 		RequiredBuilding = array { "Miller", 1 }
 	};
 };
+
+"Tombstone" = G3Item
+{
+	Type = 2;
+	SubType = 2;
+
+	DisplayName = "$Tombstone.iron.name";
+	Description = "$Tombstone.iron.desc";
+	DisplayCategories = array("All", "Food");
+
+	IconName = "Tombstone";
+
+	Production = 2;
+	BuildTime = 30.0;
+
+	Tier = 1;
+	SocialClass = 0;
+	
+	Requirements = array
+	{
+		comp1 extends G3ItemComponent
+		{
+			Name = "GraniteBlock";
+			Number = 3;
+		};
+	};
+			
+	RequiredBuildings = array
+	{
+		RequiredBuilding = array { "Gravedigger", 1 }
+	};
+};
+
+"BoneShield" = G3Item
+{
+	Type = 1;
+	SubType = 3;
+
+	DisplayName = "$BoneShield.iron.name";
+	Description = "$BoneShield.iron.desc";
+	DisplayCategories = array("All", "WeaponArmor");
+	
+	IconName = "BoneShield";
+
+	Tier = 2;
+	SocialClass = 0;
+
+	BuildTime = 60;
+	Production = 1;
+	
+	EquipmentType = 5;
+	EquipmentAdultsOnly = true;
+	UsableBy = array{ "$characters.Age.Adult" };
+	
+	Results = array
+	{
+		ModifierEffect
+		{
+			ActorValue = "DefensePower";
+			Mod = 1;
+			Recover = true;
+		}
+	};
+
+	Requirements = array
+	{
+		comp1 extends G3ItemComponent
+		{
+			Name = "BoneGlue";
+			Number = 2;
+		};
+		comp2 extends G3ItemComponent
+		{
+			Name = "Bone";
+			Number = 5;
+		};
+		comp3 extends G3ItemComponent
+		{
+			Name = "Iron";
+			Number = 1;
+		};
+	};
+	
+	RequiredBuildings = array
+	{
+		RequiredBuilding = array { "Gravedigger", 1 }
+	};
+};
