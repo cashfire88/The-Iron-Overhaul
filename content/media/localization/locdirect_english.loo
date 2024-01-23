@@ -31,6 +31,17 @@ LocDirectData
 
 		LocDirectEntry
 		{
+			Key = "$Roses.iron.name";
+			Text = "Roses";
+		},
+		LocDirectEntry
+		{
+			Key = "$Roses.iron.desc";
+			Text = "A couple of tuned roses to impress lovers";
+		},
+
+		LocDirectEntry
+		{
 			Key = "$LivingTrout.iron.name";
 			Text = "Living Trout";
 		},

@@ -1287,7 +1287,7 @@ G3SkillsDefault extends G3SkillsContainer
 					{
 						UnlockEffect
 						{
-//							Names = array { "WildRose", "RoseWater", "Soap" };
+//							Names = array { "WildRose", "RoseWater", "Soap", "Roses" };
 							Names = array { "BatBlood", "JasmineOil", "MakeUp" };
 						}
 					};

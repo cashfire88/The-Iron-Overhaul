@@ -3837,8 +3837,8 @@
 	ActionActor = "Character";
 	TargetActor = "Character";
 	
-	SourceScoreFormula = "RelationshipScore / 25 + Charisma * 2 + Target.DoesHaveTag.RomPrefPresent";
-	TargetScoreFormula = "Intelligence * 0.25";
+	SourceScoreFormula = "0.2 * (Strength + Dexterity + Perception + Charisma + Intelligence) + RelationshipScore / 25 + Charisma * 2 + Target.DoesHaveTag.RomPrefPresent";
+	TargetScoreFormula = "0.2 * (Strength + Dexterity + Perception + Charisma + Intelligence) + Intelligence";
 
 	EnterBuilding = "TryEnter";
 	SuppressBuildingEnterBehavior = true;

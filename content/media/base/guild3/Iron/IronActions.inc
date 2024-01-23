@@ -458,3 +458,252 @@
 		},
 	};
 };
+
+"GiveFlowersIron" = G3ActionTemplate //Bouquet of flowers
+{
+	UICategory = "Artifact";
+	GUIPresent = true;
+	GUIData = array
+	{
+		@base/AnyMemberOfOwnFamily
+	};
+	UsableBy = array{ "$qs.charactertype.0" };
+	
+	ActionClassName = "UseArtefactAction";
+	
+	ActionName = "GiveFlowers";
+	ArtefactName = "GiveFlowersIron";
+	DisplayName = "$GiveFlowersIron.iron.name";
+	Description = "$GiveFlowersIron.iron.desc";
+	Instruction = "$callToAction.CharacterRomanticRelationship";
+
+	IconName = "GiveFlowersIron"
+	
+	ActionActor = "Character";
+	TargetActor = "Character";
+	
+	SourceScoreFormula = "RelationshipScore / 25 + Charisma * 2 + Target.DoesHaveTag.RomPrefPresent";
+	TargetScoreFormula = "Intelligence * 0.25";
+
+	EnterBuilding = "TryEnter";
+	SuppressBuildingEnterBehavior = true;
+	
+	Cooldown = 0.04;
+	BaseRewardXP = 14;
+	ShowSelectionPrompt = "LoverCharacters";
+	SelectionPromptNoTargetMessage = "$gui.no.lovers";
+		
+	DesiredProfiles = array
+	{
+		TargetProfileCharacter 
+		{
+			Adult = 3;
+			OppositeGender = 3;
+			Leader = -3; 
+			NPCGuard = -3;  
+			Employee = -3;
+			InLoveWithMe = 3;
+			FamilyProfile = TargetProfileFamily
+			{
+				MyFamily = -3;
+			};
+			CurrentBuildingProfiles = array
+			{
+				TargetProfileBuilding // somewhere in the world
+				{
+					Exists = -3;
+				},
+				TargetProfileBuilding // inside my residence
+				{
+					Residence = 3;
+					Burning = -3;
+					FamilyProfile = TargetProfileFamily
+					{
+						MyFamily = 3;
+					};
+				},
+				TargetProfileBuilding // inside the residence of an ally
+				{
+					Residence = 3;
+					Burning = -3;
+					FamilyProfile = TargetProfileFamily
+					{
+						Alliance = 3;
+					};
+				},
+				TargetProfileBuilding // inside a city building
+				{
+					IncludedTypes = array{"Cityhall", "Church", "cathedrale", "Arsenal"};
+				},
+			};
+		}
+	};  
+	
+	CustomAnimationPool = array
+	{
+		CustomAnimationInfo = array {"GiveFlowers", 5, -1, -1};
+	};
+
+	CustomReceiverAnimationPool = array
+	{
+		CustomAnimationInfo = array {"AcceptPresent", 0, -1, -1};
+	};
+	
+	DistanceFromTarget = 55;
+	DistanceFromTargetMin = 55;
+	
+	MoralAlignmentShift = 0.06;
+	MoralAlignment = MoralAlignment
+	{
+		Values = array{0.3,0.25,0.3};
+	};
+
+	CriticalFactor = 0.80;
+	
+	CriticalSuccessResult = array
+	{
+		VisualEffect
+		{
+			ApplyTo = "Target";
+			VisualName = "Compliment";
+			Duration = 5;
+		},
+		FunctionUpdateRelationship
+		{
+			AffectLiaison = "(35 + (Target.hasTag.RomPrefPresent * 5)) * ((1.25 * hasTag.BuffEasy) + (1 * hasTag.BuffNormal) + (0.75 * hasTag.BuffHard) + (0.5 * hasTag.BuffImpossible))";
+		},
+		FunctionPickRandom
+		{
+			ApplyTo = "Target";
+			ResultObjectIds = array{"RomPref.Nothing", "RomPref.Artist", "RomPref.MoreDistance", "RomPref.CloseApproach", "RomPref.ContraryGoodBehavior"};
+		},
+		FunctionAffectNeeds
+		{
+			ApplyTo = "Target";
+			ProductType = 3;
+			Amount = -0.02;
+		},
+		FunctionAffectNeeds
+		{
+			ApplyTo = "Target";
+			ProductType = 2;
+			Amount = 0.03;
+		},
+		FunctionAffectNeeds
+		{
+			ApplyTo = "Target";
+			ProductType = 6;
+			Amount = 0.02;
+		},
+		FunctionTriggerAction
+		{
+			Filter = "!IsControlledByHuman";
+			ApplyTo = "Source";
+			Actions = array{"NPCDynRandomFollowUpShort"};
+		},
+		FunctionTriggerAction
+		{
+			Filter = "!IsControlledByHuman";
+			ApplyTo = "Target";
+			Actions = array{"NPCRandomFollowUpShort"};
+		},
+	};
+	
+	SuccessResult = array
+	{
+		VisualEffect
+		{
+			ApplyTo = "Target";
+			VisualName = "Compliment";
+			Duration = 5;
+		},
+		FunctionUpdateRelationship
+		{
+			AffectLiaison = "30 * ((1.25 * hasTag.BuffEasy) + (1 * hasTag.BuffNormal) + (0.75 * hasTag.BuffHard) + (0.5 * hasTag.BuffImpossible))";
+		},
+		FunctionAffectNeeds
+		{
+			ApplyTo = "Target";
+			ProductType = 3;
+			Amount = -0.02;
+		},
+		FunctionAffectNeeds
+		{
+			ApplyTo = "Target";
+			ProductType = 2;
+			Amount = 0.03;
+		},
+		FunctionAffectNeeds
+		{
+			ApplyTo = "Target";
+			ProductType = 6;
+			Amount = 0.02;
+		},
+		FunctionTriggerAction
+		{
+			Filter = "!IsControlledByHuman";
+			ApplyTo = "Source";
+			Actions = array{"NPCDynRandomFollowUpShort"};
+		},
+		FunctionTriggerAction
+		{
+			Filter = "!IsControlledByHuman";
+			ApplyTo = "Target";
+			Actions = array{"NPCRandomFollowUpShort"};
+		},
+	};
+	
+	FailureResult = array
+	{
+		VisualEffect
+		{
+			ApplyTo = "Target";
+			VisualName = "Insulted";
+			Duration = 5;
+		},
+		FunctionUpdateRelationship
+		{
+			AffectLiaison = "-10 * ((0.75 * hasTag.BuffEasy) + (1 * hasTag.BuffNormal) + (1.25 * hasTag.BuffHard) + (1.5 * hasTag.BuffImpossible))";
+		},
+		@base/LoveDebuff
+		FunctionTriggerAction
+		{
+			Filter = "!IsControlledByHuman";
+			ApplyTo = "Source";
+			Actions = array{"NPCDynRandomFollowUpShort"};
+		},
+		FunctionTriggerAction
+		{
+			Filter = "!IsControlledByHuman";
+			ApplyTo = "Target";
+			Actions = array{"NPCRandomFollowUpShort"};
+		},
+	};
+	
+	CriticalFailureResult = array
+	{
+		VisualEffect
+		{
+			ApplyTo = "Target";
+			VisualName = "Insulted";
+			Duration = 5;
+		},
+		@base/LoveDebuff
+		FunctionUpdateRelationship
+		{
+			AffectLiaison = "-15 * ((0.75 * hasTag.BuffEasy) + (1 * hasTag.BuffNormal) + (1.25 * hasTag.BuffHard) + (1.5 * hasTag.BuffImpossible))";
+		},
+		FunctionTriggerAction
+		{
+			Filter = "!IsControlledByHuman";
+			ApplyTo = "Source";
+			Actions = array{"NPCDynRandomFollowUpShort"};
+		},
+		FunctionTriggerAction
+		{
+			Filter = "!IsControlledByHuman";
+			ApplyTo = "Target";
+			Actions = array{"NPCRandomFollowUpShort"};
+		},
+	};
+};

@@ -495,8 +495,8 @@
 	Type = 1;
 	SubType = 2;
 
-	DisplayName = "$FishSoup.iron.name";
-	Description = "$FishSoup.iron.desc";
+	DisplayName = "$LivingTrout.iron.name";
+	Description = "$LivingTrout.iron.desc";
 	DisplayCategories = array("All", "Food");
 
 	Tier = 2;
@@ -526,5 +526,51 @@
 	RequiredBuildings = array
 	{
 		RequiredBuilding = array { "FishingHut", 1 }
+	};
+};
+
+"Roses" = G3Item
+{
+	Type = 3;
+
+	DisplayName = "$Roses.iron.name";
+	Description = "$Roses.iron.desc";
+	DisplayCategories = array("All");
+	UsableBy = array{ "$qs.charactertype.0" };
+	
+	IconName = "Roses";
+
+	Production = 1;
+	BuildTime = 25;
+	Tier = 2;
+	
+	SoldAtMarket = false;
+	BoughtByMarket = false;
+	
+	Requirements = array
+	{
+		comp1 extends G3ItemComponent
+		{
+			Name = "WildRose";
+			Number = 3;
+		},
+		comp2 extends G3ItemComponent
+		{
+			Name = "RoseWater";
+			Number = 1;
+		}
+	};
+	
+	Results = array
+	{
+		UnlockEffect
+		{
+			Names = array {"GiveFlowers"};
+		}
+	};
+	
+	RequiredBuildings = array
+	{
+		RequiredBuilding = array { "Barber", 1 }
 	};
 };
