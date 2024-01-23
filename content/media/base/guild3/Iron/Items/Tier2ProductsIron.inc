@@ -10,7 +10,7 @@
 	IconName = "RomanHelmet";
 
 	Tier = 2;
-	SocialClass = 0;
+	SocialClass = 1;
 	BuildTime = 90;
 	Production = 1;
 	
@@ -216,5 +216,70 @@
 			{
 				Names = array {"GiveFlowers"};
 			}
+	};
+};
+
+"GrindedBlackPepper" = G3Item
+{
+	Type = 1;
+	SubType = 8;
+
+	DisplayName = "$GrindedBlackPepper.iron.name";
+	Description = "$GrindedBlackPepper.iron.description";
+	DisplayCategories = array("All", "Food");
+	IconName = "GrindedBlackPepper";
+
+	Production = 1;
+	BuildTime = 62.00;
+	Tier = 1;
+	SocialClass = 1;
+	
+	Requirements = array
+	{
+		comp1 extends G3ItemComponent
+		{
+			Name = "BlackPepperPlant";
+			Number = 10;
+		};
+	};
+	
+	RequiredBuildings = array
+	{
+		RequiredBuilding = array { "Miller", 1 }
+	};
+};
+
+"SackOfFlours" = G3Item
+{
+	Type = 1;
+	SubType = 8;
+
+	DisplayName = "$SackOfFlours.iron.name";
+	Description = "$SackOfFlours.iron.desc";
+	DisplayCategories = array("All", "Food");
+	IconName = "SackOfFlours";
+
+	Production = 1;
+	BuildTime = 200.00;
+	Tier = 1;
+	SocialClass = 1;
+	
+	Requirements = array
+	{
+		comp1 extends G3ItemComponent
+		{
+			Name = "WheatFlour";
+			Number = 5;
+		};
+		comp2 extends G3ItemComponent
+		{
+			Name = "BarleyFlour";
+			Number = 5;
+		};
+	};
+	
+	RequiredBuildings = array
+	{
+		RequiredBuilding = array { "Miller", 1 }
 	};
 };

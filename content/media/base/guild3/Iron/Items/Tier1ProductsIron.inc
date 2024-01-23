@@ -109,3 +109,156 @@
 		RequiredBuilding = array { "Tinker", 1 }
 	};
 };
+
+"ImprovedMillerClothes" = G3Item
+{
+	Type = 3;
+	
+	DisplayName = "$ImprovedMillerClothes.iron.name";
+	Description = "$ImprovedMillerClothes.iron.name";
+	DisplayCategories = array("All");
+
+	IconName = "ImprovedMillerClothes";
+
+	EquippedCharacterDesc = "commoner2";
+	EquipmentType = 1;
+	EquipmentAdultsOnly = true;
+	UsableBy = array{ "$characters.Age.Adult" };
+
+	SoldAtMarket = false;
+	BoughtByMarket = true;
+
+	Production = 1;
+	BuildTime = 74.0;
+
+	Tier = 1;
+	SocialClass = 0;
+	
+	Requirements = array
+	{
+		comp1 extends G3ItemComponent
+		{
+			Name = "Hemp";
+			Number = 7;
+		};
+	};
+
+	Results = array
+	{
+		ModifierEffect
+		{
+			ActorValue = "Dexterity";
+			Mod = 1;
+			Recover = true;
+		},
+		ModifierEffect
+		{
+			ActorValue = "Productivity";
+			Mod = 2;
+			Recover = true;
+		},
+		ModifierEffect
+		{
+			ActorValue = "Intimidation";
+			Mod = -1;
+			Recover = true;
+		},
+	};
+
+	RequiredBuildings = array
+	{
+		RequiredBuilding = array { "Miller", 1 }
+	};
+};
+
+"ImprovedMillerClothesHat" = G3Item
+{
+	Type = 3;
+	
+	DisplayName = "$ImprovedMillerClothesHat.iron.name";
+	Description = "$ImprovedMillerClothesHat.iron.desc";
+	DisplayCategories = array("All");
+
+	IconName = "ImprovedMillerClothesHat";
+
+	EquipmentType = 4;
+	EquipmentAdultsOnly = true;
+	UsableBy = array{ "$characters.Age.Adult" };
+
+	SoldAtMarket = false;
+	BoughtByMarket = true;
+
+	Tier = 1;
+	SocialClass = 0;
+
+	Production = 1;
+	BuildTime = 22.0;
+	
+	Requirements = array
+	{
+		comp1 extends G3ItemComponent
+		{
+			Name = "Hemp";
+			Number = 2;
+		};
+	};
+
+	Results = array
+	{
+		ModifierEffect
+		{
+			ActorValue = "Dexterity";
+			Mod = 1;
+			Recover = true;
+		},
+		ModifierEffect
+		{
+			ActorValue = "Productivity";
+			Mod = 2;
+			Recover = true;
+		},
+		ModifierEffect
+		{
+			ActorValue = "Intimidation";
+			Mod = -1;
+			Recover = true;
+		},
+	};
+
+	RequiredBuildings = array
+	{
+		RequiredBuilding = array { "Miller", 1 }
+	};
+};
+
+"Hemp" = G3Item
+{
+	Type = 1;
+	SubType = 2;
+
+	DisplayName = "$Hemp.iron.name";
+	Description = "$Hemp.iron.desc";
+	DisplayCategories = array("All", "Food");
+
+	IconName = "Hemp";
+
+	Production = 2;
+	BuildTime = 10.0;
+
+	Tier = 1;
+	SocialClass = 0;
+	
+	Requirements = array
+	{
+		comp1 extends G3ItemComponent
+		{
+			Name = "BucketOfWater";
+			Number = 2;
+		};
+	};
+			
+	RequiredBuildings = array
+	{
+		RequiredBuilding = array { "Farm", 1 }
+	};
+};

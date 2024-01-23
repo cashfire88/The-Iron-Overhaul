@@ -57,7 +57,7 @@ G3SkillsDefault extends G3SkillsContainer
 						},
 						UnlockEffect
 						{
-							Names = array{"Barley", "Wheat", "BucketOfWater"};
+							Names = array{"Barley", "Wheat", "BucketOfWater", "Hemp"};
 						}
 					};
 				};
@@ -137,7 +137,7 @@ G3SkillsDefault extends G3SkillsContainer
 						},
 						UnlockEffect
 						{
-							Names = array { "BarleyFlour", "WheatFlour", "MixedGrains", "FlatBread" };
+							Names = array { "BarleyFlour", "WheatFlour", "MixedGrains", "FlatBread","ImprovedMillerClothes", "ImprovedMillerClothesHat" };
 						}
 					};
 				};
@@ -150,7 +150,7 @@ G3SkillsDefault extends G3SkillsContainer
 					{
 						UnlockEffect
 						{
-							Names = array { "GrainPap", "PlantEssence" };
+							Names = array { "GrainPap", "PlantEssence", "GrindedBlackPepper", "SackOfFlours" };
 						}
 					};
 				};
@@ -998,7 +998,7 @@ G3SkillsDefault extends G3SkillsContainer
 						},
 						UnlockEffect
 						{
-							Names = array{ "Blackberry", "Lavender", "BucketOfWater", "HerbTea", "MixedHerbs", "DiseaseService" };
+							Names = array{ "Blackberry", "Lavender", "BucketOfWater", "HerbTea", "MixedHerbs", "DiseaseService", "BlackPepperPlant" };
 						}
 					};
 				};
@@ -1812,7 +1812,7 @@ G3SkillsDefault extends G3SkillsContainer
 						},
 						UnlockEffect
 						{
-							Names = array { "Bone", "BoneDust", "BoneGlue", "BoneBracelet" };
+							Names = array { "Bone", "BoneDust", "BoneGlue", "BoneBracelet", "Worm" };
 						}
 					};
 				};

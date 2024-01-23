@@ -1,14 +1,14 @@
 //---------- QUARRY -------------
-"Salt" = G3Item
+"LesserQualitySaltStone" = G3Item
 {
 	Type = 1;
 	SubType = 1;
 
-	DisplayName = "$Salt.iron.name";
-	Description = "$Salt.iron.desc";
+	DisplayName = "$LesserQualitySaltStone.iron.name";
+	Description = "$LesserQualitySaltStone.iron.desc";
 	DisplayCategories = array("All", "RawMaterial");
 
-	IconName = "Salt";
+	IconName = "Saltblock";
 
 	Production = 1;
 	BuildTime = 10; //originally 8

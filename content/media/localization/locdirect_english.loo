@@ -9,13 +9,110 @@ LocDirectData
 		},
 		LocDirectEntry
 		{
-			Key = "$Salt.iron.name";
-			Text = "Salt";
+			Key = "$LesserQualitySalt.iron.name";
+			Text = "Lesser Quality Salt";
 		},
 		LocDirectEntry
 		{
-			Key = "$Salt.iron.desc";
-			Text = "Salt for cooking delicious food";
+			Key = "$LesserQualitySalt.iron.desc";
+			Text = "Lesser QualitySalt for cooking delicious food";
+		},
+
+		LocDirectEntry
+		{
+			Key = "$Hemp.iron.name";
+			Text = "Hemp";
+		},
+		LocDirectEntry
+		{
+			Key = "$Hemp.iron.desc";
+			Text = "Who knows what you can do with this magic plant";
+		},
+
+		LocDirectEntry
+		{
+			Key = "$ImprovedMillerClothes.iron.name";
+			Text = "Improved Miller Clothes";
+		},
+		LocDirectEntry
+		{
+			Key = "$ImprovedMillerClothes.iron.desc";
+			Text = "Miller Clothes to be more productive and less intimidating";
+		},
+
+		LocDirectEntry
+		{
+			Key = "$ImprovedMillerClothesHat.iron.name";
+			Text = "Miller Hat";
+		},
+		LocDirectEntry
+		{
+			Key = "$ImprovedMillerClothesHat.iron.desc";
+			Text = "Miller Hat to be more productive";
+		},
+		
+		LocDirectEntry
+		{
+			Key = "$FlowerPot.iron.name";
+			Text = "Flower in a Pot";
+		},
+		LocDirectEntry
+		{
+			Key = "$FlowerPot.iron.desc";
+			Text = "A nice Flower in a Pot";
+		},
+
+		LocDirectEntry
+		{
+			Key = "$Worm.iron.name";
+			Text = "Worm";
+		},
+		LocDirectEntry
+		{
+			Key = "$Worm.iron.desc";
+			Text = "Worms who are living in the earth";
+		},
+
+		LocDirectEntry
+		{
+			Key = "$SackOfFlours.iron.name";
+			Text = "Sack of Flours";
+		},
+		LocDirectEntry
+		{
+			Key = "$SackOfFlours.iron.desc";
+			Text = "Sack of flours for the market";
+		},
+
+		LocDirectEntry
+		{
+			Key = "$LesserQualitySaltStone.iron.name";
+			Text = "Salt Stone";
+		},
+		LocDirectEntry
+		{
+			Key = "$LesserQualitySaltStone.iron.desc";
+			Text = "A Stone containing Lesser Quality Salt";
+		},
+		LocDirectEntry
+		{
+			Key = "$GrindedBlackPepper.iron.name";
+			Text = "Lesser Quality Black Pepper";
+		},
+		LocDirectEntry
+		{
+			Key = "$GrindedBlackPepper.iron.desc";
+			Text = "Lesser Quality Black Pepper to make foods spicier";
+		},
+		LocDirectEntry
+		{
+			Key = "$BlackPepperPlant.iron.name";
+			Text = "Black Pepper Plant";
+		},
+		LocDirectEntry
+		{
+			Key = "$BlackPepperPlant.iron.desc";
+			Text = "Black Pepper Plant can be grindedn to Black Pepper";
 		},
 		LocDirectEntry
 		{
@@ -25670,6 +25767,11 @@ LocDirectData
 		{
 			Key = "$gui.Char.Fertility";
 			Text = "Fertility";
+		},
+		LocDirectEntry
+		{
+			Key = "$gui.Char.Banger";
+			Text = "Banger";
 		},
 		LocDirectEntry
 		{
