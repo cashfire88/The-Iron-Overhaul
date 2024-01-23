@@ -371,3 +371,82 @@
 		RequiredBuilding = array { "Gravedigger", 1 }
 	};
 };
+
+"MassageOil" = G3Item
+{
+	Type = 1;
+	SubType = 6;
+	DisplayCategories = array("All", "Luxury");
+
+	DisplayName = "$MassageOil.iron.name";
+	Description = "$MassageOil.iron.desc";
+
+	IconName = "MassageOil";
+
+	BuildTime = 21.5;
+	Production = 5;
+	Tier = 2;
+
+	Requirements = array
+	{
+		comp1 extends G3ItemComponent
+		{
+			Name = "Olive";
+			Number = 5;
+		};
+		comp2 extends G3ItemComponent
+		{
+			Name = "RoseWater";
+			Number = 1;
+		};
+	};			
+		
+	RequiredBuildings = array
+	{
+		RequiredBuilding = array { "Barber", 1 }
+	};
+};
+
+
+"BucketOfTomatos" = G3Item
+{
+	Type = 1;
+	SubType = 8;
+
+	DisplayName = "$BucketOfTomatos.iron.name";
+	Description = "$BucketOfTomatos.iron.description";
+	DisplayCategories = array( "All", "Food");
+	IconName = "BucketOfTomatos";
+
+	Production = 1;
+	BuildTime = 50.00;
+	Tier = 2;
+	SocialClass = 0;
+	
+	Requirements = array
+	{
+		comp1 extends G3ItemComponent
+		{
+			Name = "Bucket";
+			Number = 1;
+		};
+		comp2 extends G3ItemComponent
+		{
+			Name = "Tomato";
+			Number = 10;
+		};
+	};
+	
+	RequiredBuildings = array
+	{
+		RequiredBuilding = array { "Farm", 1 }
+	};
+
+	Results = array
+	{
+		UnlockEffect
+		{
+			Names = array {"DonateSimpleFeast"};
+		}
+	};
+};

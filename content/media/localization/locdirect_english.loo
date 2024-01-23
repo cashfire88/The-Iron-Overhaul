@@ -75,6 +75,50 @@ LocDirectData
 
 		LocDirectEntry
 		{
+			Key = "$BucketOfTomatos.iron.name";
+			Text = "Bucket of Tomatos";
+		},
+		LocDirectEntry
+		{
+			Key = "$BucketOfTomatos.iron.desc";
+			Text = "Bucket of Tomatos to feed the poor";
+		},
+
+		LocDirectEntry
+		{
+			Key = "$Tomato.iron.name";
+			Text = "Tomato";
+		},
+		LocDirectEntry
+		{
+			Key = "$Tomato.iron.desc";
+			Text = "Just a simple Tomato";
+		},
+
+		LocDirectEntry
+		{
+			Key = "$MassageOil.iron.name";
+			Text = "Massage Oil";
+		},
+		LocDirectEntry
+		{
+			Key = "$MassageOil.iron.desc";
+			Text = "Massage Oil can enahnce the overall wellness experience";
+		},
+
+		LocDirectEntry
+		{
+			Key = "$Olive.iron.name";
+			Text = "Olive";
+		},
+		LocDirectEntry
+		{
+			Key = "$Olive.iron.desc";
+			Text = "Olives have multiple usages. Besides of food they can be used in healthcare as well";
+		},
+
+		LocDirectEntry
+		{
 			Key = "$BoneShield.iron.name";
 			Text = "Bone Shield";
 		},

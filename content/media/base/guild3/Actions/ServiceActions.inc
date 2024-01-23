@@ -2008,6 +2008,13 @@
 		},
 		FunctionTriggerAction
 		{
+			Filter = "Target.hasItems.MassageOil.1";
+			ApplyTo = "Source";
+			ActionTarget = "Target";
+			Actions = array{"UseMassageOil"};
+		},
+		FunctionTriggerAction
+		{
 			Filter = "!Target.hasItems.Soap.1";
 			ApplyTo = "Source";
 			Actions = array{"GetBodyCareServiceExit"};
@@ -2040,6 +2047,91 @@
 		}
 	};
 };
+
+"UseMassageOil" = G3ActionTemplate
+{
+	GUIPresent = false;
+	CanFail = false;
+	
+	ActionName = "UseMassageOil";
+	DisplayName = "$TheBillPlease";
+	Description = "$TheBillPleaseDesc";
+	BudgetPost = "Services";
+
+	ActionActor = "Character";
+	TargetActor = "Building";
+	ActionClassName = "SimpleExecutionAction";
+
+	SourceScoreFormula = "1";
+	TargetScoreFormula = "0";
+	
+	ShowCombatText = true;
+
+	CanFail = false;
+	CriticalFactor = 0.85;
+
+	Duration = 0.0015;
+	
+	TargetSnapPoint = TargetSnapPoint
+	{
+		Required = true;
+		ShouldReserve = false;
+		ShouldOccupy = false;
+		
+		Profiles = array
+		{
+			TargetProfileSnapPoint{ Context = "GetBodyCareServiceResult"; Inside = -3; IsFree = 3; },
+		};
+	};
+	
+	CriticalSuccessResult = array
+	{
+		FunctionTransferMoney
+		{
+			Filter = "Target.hasItems.MassageOil.1";
+			Giver = "";
+			Receiver = "Target";
+			Amount = "20";
+		},
+		FunctionTransferItems
+		{
+			Filter = "Target.hasItems.MassageOil.1";
+			Giver = "Target";
+			Receiver = "";
+			MinAmount = 1;
+			MaxAmount = 1;
+			SpecificItems = array{"MassageOil"};
+		},
+		FunctionUpdateRelationship
+		{
+			AffectSource = "1";
+		}
+	};
+	SuccessResult = array
+	{
+		FunctionTransferMoney
+		{
+			Filter = "Target.hasItems.MassageOil.1";
+			Giver = "";
+			Receiver = "Target";
+			Amount = "20";
+		},
+		FunctionTransferItems
+		{
+			Filter = "Target.hasItems.MassageOil.1";
+			Giver = "Target";
+			Receiver = "";
+			MinAmount = 1;
+			MaxAmount = 1;
+			SpecificItems = array{"MassageOil"};
+		},
+		FunctionUpdateRelationship
+		{
+			AffectSource = "1";
+		}
+	};
+};
+
 
 "GetBodyCareServiceResult" = G3ActionTemplate
 {

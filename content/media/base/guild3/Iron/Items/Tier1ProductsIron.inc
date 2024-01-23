@@ -299,3 +299,67 @@
 		RequiredBuilding = array { "Gravedigger", 1 }
 	};
 };
+
+"Olive" = G3Item
+{
+	Type = 1;
+	SubType = 2;
+
+	DisplayName = "$Olive.iron.name";
+	Description = "$Olive.iron.desc";
+	DisplayCategories = array("All", "Food");
+
+	IconName = "Olive";
+
+	Production = 1;
+	BuildTime = 7.0;
+
+	Tier = 1;
+	SocialClass = 0;
+	
+	Requirements = array
+	{
+		comp1 extends G3ItemComponent
+		{
+			Name = "BucketOfWater";
+			Number = 1;
+		};
+	};
+			
+	RequiredBuildings = array
+	{
+		RequiredBuilding = array { "Farm", 1 }
+	};
+};
+
+"Tomato" = G3Item
+{
+	Type = 1;
+	SubType = 2;
+
+	DisplayName = "$Tomato.iron.name";
+	Description = "$Tomato.iron.desc";
+	DisplayCategories = array("All", "Food");
+
+	IconName = "Tomato";
+
+	Production = 3;
+	BuildTime = 15.0;
+
+	Tier = 2;
+	SocialClass = 0;
+	
+	Requirements = array
+	{
+		comp1 extends G3ItemComponent
+		{
+			Name = "BucketOfWater";
+			Number = 3;
+		};
+	};
+			
+	RequiredBuildings = array
+	{
+		RequiredBuilding = array { "Farm", 1 }
+	};
+};

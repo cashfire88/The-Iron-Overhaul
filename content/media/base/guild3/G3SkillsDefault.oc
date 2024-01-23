@@ -57,7 +57,7 @@ G3SkillsDefault extends G3SkillsContainer
 						},
 						UnlockEffect
 						{
-							Names = array{"Barley", "Wheat", "BucketOfWater", "Hemp"};
+							Names = array{"Barley", "Wheat", "BucketOfWater", "Hemp", "Tomato"};
 						}
 					};
 				};
@@ -70,7 +70,7 @@ G3SkillsDefault extends G3SkillsContainer
 					{
 						UnlockEffect
 						{
-							Names = array{"Cattle", "Pig"};
+							Names = array{"Cattle", "Pig" , "Olive", "BucketOfTomatos"};
 						}
 					};
 				};
@@ -1273,7 +1273,7 @@ G3SkillsDefault extends G3SkillsContainer
 						},
 						UnlockEffect
 						{
-//							Names = array{ "Jasmin", "BatBlood", "JasmineOil", "MakeUp", "BodyCareService" };
+//							Names = array{ "Jasmin", "BatBlood", "JasmineOil", "MakeUp", "BodyCareService" ,"MassageOil" };
 							Names = array{ "Jasmin", "WildRose", "RoseWater", "Soap", "BodyCareService" };
 						}
 					};
