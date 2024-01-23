@@ -4020,6 +4020,7 @@
 		{
 			AffectLiaison = "-10 * ((0.75 * hasTag.BuffEasy) + (1 * hasTag.BuffNormal) + (1.25 * hasTag.BuffHard) + (1.5 * hasTag.BuffImpossible))";
 		},
+		@base/LoveDebuff
 		FunctionTriggerAction
 		{
 			Filter = "!IsControlledByHuman";
@@ -4042,6 +4043,7 @@
 			VisualName = "Insulted";
 			Duration = 5;
 		},
+		@base/LoveDebuff
 		FunctionUpdateRelationship
 		{
 			AffectLiaison = "-15 * ((0.75 * hasTag.BuffEasy) + (1 * hasTag.BuffNormal) + (1.25 * hasTag.BuffHard) + (1.5 * hasTag.BuffImpossible))";
