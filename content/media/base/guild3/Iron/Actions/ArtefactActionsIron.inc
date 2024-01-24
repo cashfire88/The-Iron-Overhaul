@@ -303,7 +303,7 @@
 		VisualEffect
 		{
 			ApplyTo = "Self";
-			Tags = array{"High"};
+			Tags = array{"Endurance", "UncontrollablyDrunk"};
 			VisualName = "Poisoned";
 			Duration = 200.0;
 		},
@@ -312,7 +312,7 @@
 			Tags = array{"High"};
 			ApplyTo = "Self";
 			DisplayGroup = "drunk";
-			DisplayName = "$Joint.iron.name";
+			DisplayName = "$WheatBeer";
 			Duration = 200.0;
 		},
 		ModifierEffect
@@ -338,7 +338,7 @@
 			Tags = array{"Drunk", "High"};
 			ApplyTo = "Self";
 			DisplayGroup = "drunk";
-			DisplayName = "$Joint.iron.name";
+			DisplayName = "$WheatBeer";
 			Duration = 200.0;
 		},
 		FunctionAffectNeeds
@@ -352,7 +352,7 @@
 			Tags = array{"Drunk", "High"};
 			ApplyTo = "Self";
 			DisplayGroup = "drunk";
-			DisplayName = "$Joint.iron.name";
+			DisplayName = "$WheatBeer";
 			Duration = 200.0;
 		},
 		ModifierEffect
