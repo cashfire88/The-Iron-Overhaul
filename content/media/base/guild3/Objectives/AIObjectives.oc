@@ -604,7 +604,7 @@ AIObjectives extends AIObjectivesContainer
 						//"DrinkStrongBeer" = 0.01,
 						"DrinkWheatBeer" = 0.01,
 						"DrinkMead" = 0.01,
-						"DonateSimpleFeast" = 0.05,
+						"DonateSimpleFeast" = 0.02,
 						
 						
 					};
@@ -642,6 +642,7 @@ AIObjectives extends AIObjectivesContainer
 						//political actions
 						"GreaseTheWheels" = 0.5,
 						"BribeOfficeHolder" = 0.7,
+						"DonateSimpleFeast" = 0.2,
 						"UseStatelyDispatch" = 0.7,
 						"BribeWithWine" = 0.1,
 						//"RunForOffice" = 0.75,
@@ -732,7 +733,7 @@ AIObjectives extends AIObjectivesContainer
 						//"DrinkStrongBeer" = 0.01,
 						"DrinkWheatBeer" = 0.01,
 						"DrinkMead" = 0.01,
-						"DonateSimpleFeast" = 0.05,
+						"DonateSimpleFeast" = 0.01,
 					};
 				},
 				IncreasePrestigeObjective //IncreasePrestigeHighActions
@@ -756,6 +757,7 @@ AIObjectives extends AIObjectivesContainer
 						//religion actions
 						"DonateToChurch" = 0.1,
 						"UseObligation" = 0.1,
+						"DonateSimpleFeast" = 0.1,
 						"InitiateIntrigue" = 0.15,
 						"LetterFromInquisition" = 0.15,
 						"HoldPublicPrayer" = 0.15,	
@@ -933,6 +935,7 @@ AIObjectives extends AIObjectivesContainer
 				"NPCWaitShort" = 0.25,
 				"NPCDrinkShort" = 0.25,
 				"NPCEatBreadShort" = 0.25,
+				"DonateSimpleFeast" = 0.1,
 				"SitOnBench" = 0.2,
 				"ChatWithMarketVendor" = 0.2,
 				"MournDeceasedRelative" = 0.1,
