@@ -58,3 +58,87 @@
         };
     };	
 };
+
+"GotHigh" = MessageDescription
+{
+    Title = "$High.buff.iron.title";
+    Body = "$High.buff.iron.title";
+    Effect = "";
+    Icon = "Character";
+    Type = "neutral";
+    IsUrgent = false;
+    Duration = 60;
+    SFX = 33;
+    OnClickReactions = array
+    {
+        FunctionOpenUI
+        {
+            UIName = "MessageLog";
+            ShowOnTop = true;
+            PlaySound = true;	
+        };
+    };	
+};
+
+"NiceHigh" = MessageDescription
+{
+    Title = "$NiceHigh.buff.iron.title";
+    Body = "$NiceHigh.buff.iron.title";
+    Effect = "";
+    Icon = "Character";
+    Type = "postitive";
+    IsUrgent = false;
+    Duration = 60;
+    SFX = 33;
+    OnClickReactions = array
+    {
+        FunctionOpenUI
+        {
+            UIName = "MessageLog";
+            ShowOnTop = true;
+            PlaySound = true;	
+        };
+    };	
+};
+
+"BadFlash" = MessageDescription
+{
+    Title = "$BadFlash.buff.iron.title";
+    Body = "$BadFlash.buff.iron.title";
+    Effect = "";
+    Icon = "Character";
+    Type = "neutral";
+    IsUrgent = false;
+    Duration = 60;
+    SFX = 33;
+    OnClickReactions = array
+    {
+        FunctionOpenUI
+        {
+            UIName = "MessageLog";
+            ShowOnTop = true;
+            PlaySound = true;	
+        };
+    };	
+};
+
+"HorrorFlash" = MessageDescription
+{
+    Title = "$HorrorFlash.buff.iron.title";
+    Body = "$NiceHHorrorFlashigh.buff.iron.title";
+    Effect = "";
+    Icon = "Character";
+    Type = "negative";
+    IsUrgent = false;
+    Duration = 60;
+    SFX = 33;
+    OnClickReactions = array
+    {
+        FunctionOpenUI
+        {
+            UIName = "MessageLog";
+            ShowOnTop = true;
+            PlaySound = true;	
+        };
+    };	
+};

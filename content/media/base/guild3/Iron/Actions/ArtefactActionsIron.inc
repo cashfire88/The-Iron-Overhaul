@@ -217,6 +217,8 @@
 	CanFail = true;
 	CriticalFactor = 0.8;
 
+    ShowCombatText = true;
+
 	EnterBuilding = "TryEnter";
 	
 	MoralAlignmentShift = 0;
@@ -228,7 +230,7 @@
 	// Animation Character
 	CustomAnimationPool = array
 	{
-		CustomAnimationInfo = array {"choc_react1", 0, -1, -1};
+		CustomAnimationInfo = array {"eat", 0, -1, -1};
 	};
 	// Animation Props
 	AnimationProps = array
@@ -284,6 +286,11 @@
 			Duration = 200.0;
 			Recover = true;
 		},
+        FunctionSendMessage
+        {
+            ApplyTo = "Self";
+            Description = "GotHigh";
+        },
 	};
 	CriticalSuccessResult = array
 	{
@@ -312,7 +319,7 @@
 			Tags = array{"High"};
 			ApplyTo = "Self";
 			DisplayGroup = "drunk";
-			DisplayName = "$WheatBeer";
+			DisplayName = "$Joint.iron.name";
 			Duration = 200.0;
 		},
 		ModifierEffect
@@ -320,10 +327,15 @@
 			Tags = array{"Slow","High"};
 			ApplyTo = "Self";
 			ActorValue = "MovementSpeedMult";
-			Mod = -0.5;
+			Mod = 0.1;
 			Duration = 200.0;
 			Recover = true;
 		},
+        FunctionSendMessage
+        {
+            ApplyTo = "Self";
+            Description = "NiceHigh";
+        },
 	};
 	FailureResult = array
 	{
@@ -338,7 +350,7 @@
 			Tags = array{"Drunk", "High"};
 			ApplyTo = "Self";
 			DisplayGroup = "drunk";
-			DisplayName = "$WheatBeer";
+			DisplayName = "$Joint.iron.name";
 			Duration = 200.0;
 		},
 		FunctionAffectNeeds
@@ -352,7 +364,7 @@
 			Tags = array{"Drunk", "High"};
 			ApplyTo = "Self";
 			DisplayGroup = "drunk";
-			DisplayName = "$WheatBeer";
+			DisplayName = "$Joint.iron.name";
 			Duration = 200.0;
 		},
 		ModifierEffect
@@ -364,6 +376,11 @@
 			Duration = 200.0;
 			Recover = true;
 		},
+        FunctionSendMessage
+        {
+            ApplyTo = "Self";
+            Description = "BadFlash";
+        },
 	};
 	CriticalFailureResult = array
 	{
@@ -377,7 +394,7 @@
 			Tags = array{"Endurance", "UncontrollablyDrunk", "Drunk"};
 			ApplyTo = "Self";
 			DisplayGroup = "drunk";
-			DisplayName = "$Inebriated";
+			DisplayName = "$High.iron.name";
 			Duration = 200.0;
 		},
 		VisualEffect
@@ -392,7 +409,7 @@
 			Tags = array{"Drunk", "High"};
 			ApplyTo = "Self";
 			DisplayGroup = "drunk";
-			DisplayName = "$WheatBeer";
+			DisplayName = "$Joint.iron.name";
 			Duration = 200.0;
 		},
 		ModifierEffect
@@ -404,5 +421,10 @@
 			Duration = 200.0;
 			Recover = true;
 		},
+        FunctionSendMessage
+        {
+            ApplyTo = "Self";
+            Description = "HorrorFlash";
+        },
 	};
 };

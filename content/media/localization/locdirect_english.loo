@@ -31,6 +31,60 @@ LocDirectData
 
 		LocDirectEntry
 		{
+			Key = "$High.buff.iron.title";
+			Text = "%character% got High";
+		},
+
+		LocDirectEntry
+		{
+			Key = "$High.buff.iron.body";
+			Text = "%character% tried out a Joint and now feels great.";
+		},
+
+		LocDirectEntry
+		{
+			Key = "$NiceHigh.buff.iron.title";
+			Text = "%character% got a very nice Flash";
+		},
+
+		LocDirectEntry
+		{
+			Key = "$NiceHigh.buff.iron.body";
+			Text = "%character% tried out a Joint and now feels great.";
+		},
+
+				LocDirectEntry
+		{
+			Key = "$BadFlash.buff.iron.title";
+			Text = "%character% got a bad Flash and feels unwell";
+		},
+
+		LocDirectEntry
+		{
+			Key = "$BadFlash.buff.iron.body";
+			Text = "%character% tried out a Joint and now feels very unwell.";
+		},
+
+		LocDirectEntry
+		{
+			Key = "$HorrorFlash.buff.iron.title";
+			Text = "%character% got a horror Trip";
+		},
+
+		LocDirectEntry
+		{
+			Key = "$HorrorFlash.buff.iron.body";
+			Text = "%character% got a Horror Trip";
+		},
+
+		LocDirectEntry
+		{
+			Key = "$Hemp.iron.desc";
+			Text = "Who knows what you can do with this magic plant";
+		},
+
+		LocDirectEntry
+		{
 			Key = "$Joint.iron.name";
 			Text = "Joint";
 		},
