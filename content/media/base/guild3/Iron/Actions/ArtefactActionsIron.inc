@@ -173,3 +173,236 @@
 		};
 	};
 };
+
+"SmokeJoint" = G3ActionTemplate //Wheat beer
+{
+	ActionClassName = "UseArtefactAction";
+
+	GUIPresent = true;
+	GUIData = array
+	{
+		ActionGUIData
+		{
+			IsCharacter = 1;
+			IsFamilyMember = 1;
+			BelongsToOwnFamily = 1;
+			IsAdult = 1;
+			IsControlledByHuman = 1;
+		},
+		ActionGUIData
+		{
+			IsCharacter = 1;
+			IsFamilyMember = 1;
+			BelongsToOwnFamily = 1;
+			IsAdult = 1;
+			IsControlledByHuman = -1;
+			DoesNotHaveTag = "NoDrinking";
+		}
+	};
+	UsableBy = array{ "$gui.item.UsableByAdultFamilyMembers" };
+
+	ActionActor = "Character";
+	UICategory = "Artifact";
+	Cooldown = 1.0;     //24 hours
+
+	ArtefactName = "Joint";
+	ActionName = "SmokeJoint";
+	DisplayName = "$Joint.iron.name";
+	Description = "$Joint.iron.desc";
+
+	// FailureResult and CriticalFailureResult only
+	// because 0 is still a tiny chance for a success, we keep CriticalSuccessResult and SuccessResult...
+	SourceScoreFormula = "0.2 * (Strength + Dexterity + Perception + Charisma + Intelligence) + Strength";
+	TargetScoreFormula = "8";
+	CanFail = true;
+	CriticalFactor = 0.8;
+
+	EnterBuilding = "TryEnter";
+	
+	MoralAlignmentShift = 0;
+	MoralAlignment = MoralAlignment
+	{
+		Values = array{0, 0, 0};
+	};
+
+	// Animation Character
+	CustomAnimationPool = array
+	{
+		CustomAnimationInfo = array {"choc_react1", 0, -1, -1};
+	};
+	// Animation Props
+	AnimationProps = array
+	{
+		PropSpawnDesc { PropNames = array { "beaker/beaker" }; };
+	};
+
+	OnEndResult = array
+	{
+		TagEffect
+		{
+			ApplyTo = "Self";
+			Tags = array{"NoSmoking"};
+			Duration = 450.0;
+		},
+	};
+	SuccessResult = array
+	{
+		VisualEffect
+		{
+			ApplyTo = "Self";
+			VisualName = "Inebriate";
+			Duration = 10.0;
+		},
+		DisplayEffect
+		{
+			Tags = array{"High"};
+			ApplyTo = "Self";
+			DisplayGroup = "drunk";
+			DisplayName = "$Joint.iron.name";
+			Duration = 200.0;
+		},
+		FunctionAffectNeeds
+		{
+			ApplyTo = "Target";
+			ProductType = 2;
+			Amount = -0.01;
+		},
+		DisplayEffect
+		{
+			Tags = array{"High"};
+			ApplyTo = "Self";
+			DisplayGroup = "drunk";
+			DisplayName = "$Joint.iron.name";
+			Duration = 200.0;
+		},
+		ModifierEffect
+		{
+			Tags = array{"High"};
+			ApplyTo = "Self";
+			ActorValue = "MovementSpeedMult";
+			Mod = -0.25;
+			Duration = 200.0;
+			Recover = true;
+		},
+	};
+	CriticalSuccessResult = array
+	{
+		FunctionTriggerAction
+		{
+			ApplyTo = "Source";
+			Actions = array{"Drunk"};
+		},
+		DisplayEffect
+		{
+			Tags = array{"High"};
+			ApplyTo = "Self";
+			DisplayGroup = "drunk";
+			DisplayName = "$High.iron.desc";
+			Duration = 200.0;
+		},
+		VisualEffect
+		{
+			ApplyTo = "Self";
+			Tags = array{"High"};
+			VisualName = "Poisoned";
+			Duration = 200.0;
+		},
+		DisplayEffect
+		{
+			Tags = array{"High"};
+			ApplyTo = "Self";
+			DisplayGroup = "drunk";
+			DisplayName = "$Joint.iron.name";
+			Duration = 200.0;
+		},
+		ModifierEffect
+		{
+			Tags = array{"Slow","High"};
+			ApplyTo = "Self";
+			ActorValue = "MovementSpeedMult";
+			Mod = -0.5;
+			Duration = 200.0;
+			Recover = true;
+		},
+	};
+	FailureResult = array
+	{
+		VisualEffect
+		{
+			ApplyTo = "Self";
+			VisualName = "Inebriate";
+			Duration = 1.0;
+		},
+		DisplayEffect
+		{
+			Tags = array{"Drunk", "High"};
+			ApplyTo = "Self";
+			DisplayGroup = "drunk";
+			DisplayName = "$Joint.iron.name";
+			Duration = 200.0;
+		},
+		FunctionAffectNeeds
+		{
+			ApplyTo = "Target";
+			ProductType = 2;
+			Amount = -0.01;
+		},
+		DisplayEffect
+		{
+			Tags = array{"Drunk", "High"};
+			ApplyTo = "Self";
+			DisplayGroup = "drunk";
+			DisplayName = "$Joint.iron.name";
+			Duration = 200.0;
+		},
+		ModifierEffect
+		{
+			Tags = array{"Slow","High"};
+			ApplyTo = "Self";
+			ActorValue = "MovementSpeedMult";
+			Mod = -0.25;
+			Duration = 200.0;
+			Recover = true;
+		},
+	};
+	CriticalFailureResult = array
+	{
+		FunctionTriggerAction
+		{
+			ApplyTo = "Source";
+			Actions = array{"Drunk"};
+		},
+		DisplayEffect
+		{
+			Tags = array{"Endurance", "UncontrollablyDrunk", "Drunk"};
+			ApplyTo = "Self";
+			DisplayGroup = "drunk";
+			DisplayName = "$Inebriated";
+			Duration = 200.0;
+		},
+		VisualEffect
+		{
+			ApplyTo = "Self";
+			Tags = array{"Endurance", "UncontrollablyDrunk"};
+			VisualName = "Poisoned";
+			Duration = 200.0;
+		},
+		DisplayEffect
+		{
+			Tags = array{"Drunk", "High"};
+			ApplyTo = "Self";
+			DisplayGroup = "drunk";
+			DisplayName = "$WheatBeer";
+			Duration = 200.0;
+		},
+		ModifierEffect
+		{
+			Tags = array{"Slow","High"};
+			ApplyTo = "Self";
+			ActorValue = "MovementSpeedMult";
+			Mod = -0.5;
+			Duration = 200.0;
+			Recover = true;
+		},
+	};
+};

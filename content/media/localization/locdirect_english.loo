@@ -31,6 +31,23 @@ LocDirectData
 
 		LocDirectEntry
 		{
+			Key = "$Joint.iron.name";
+			Text = "Joint";
+		},
+		LocDirectEntry
+		{
+			Key = "$Joint.iron.desc";
+			Text = "Hemp mixed into Paper to make your life better";
+		},
+
+		LocDirectEntry
+		{
+			Key = "$High.iron.desc";
+			Text = "High";
+		},
+
+		LocDirectEntry
+		{
 			Key = "$Roses.iron.name";
 			Text = "Roses";
 		},

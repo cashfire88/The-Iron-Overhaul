@@ -481,6 +481,7 @@ AIObjectives extends AIObjectivesContainer
 						"DrinkSmallBeer" = 0.01,
 						//"DrinkStrongBeer" = 0.01,
 						"DrinkWheatBeer" = 0.01,
+						"SmokeJoint" = 0.01,
 						"DrinkMead" = 0.01,	
 						"DonateSimpleFeast" = 0.05,	
 					};
@@ -603,6 +604,7 @@ AIObjectives extends AIObjectivesContainer
 						"DrinkSmallBeer" = 0.01,
 						//"DrinkStrongBeer" = 0.01,
 						"DrinkWheatBeer" = 0.01,
+						"SmokeJoint" = 0.01,
 						"DrinkMead" = 0.01,
 						"DonateSimpleFeast" = 0.02,
 						
@@ -732,6 +734,7 @@ AIObjectives extends AIObjectivesContainer
 						"DrinkSmallBeer" = 0.01,
 						//"DrinkStrongBeer" = 0.01,
 						"DrinkWheatBeer" = 0.01,
+						"SmokeJoint" = 0.01,
 						"DrinkMead" = 0.01,
 						"DonateSimpleFeast" = 0.01,
 					};
@@ -2138,6 +2141,7 @@ AIObjectives extends AIObjectivesContainer
 				"DrinkSmallBeer" = 1.0,
 				//"DrinkStrongBeer" = 1.0,
 				"DrinkWheatBeer" = 1.0,
+				"SmokeJoint" = 0.9,
 				"DrinkMead" = 1.0,
 				
 			};

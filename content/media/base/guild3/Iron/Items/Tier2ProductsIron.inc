@@ -625,3 +625,44 @@
 		RequiredBuilding = array { "Barber", 1 }
 	};
 };
+
+"Joint" = G3Item
+{
+	Type = 1;
+	SubType = 2;
+
+	DisplayName = "$Joint.iron.name";
+	Description = "$Joint.iron.desc";
+	DisplayCategories = array("All", "Food");
+
+	IconName = "Joint";
+	
+	UsableBy = array{ "$gui.item.UsableByAdultFamilyMembers" };
+	
+	Tier = 2;
+	SocialClass = 0;
+	BuildTime = 60.5;
+	Production = 1;
+	
+	Requirements = array
+	{
+		comp1 extends G3ItemComponent
+		{
+			Name = "Hemp";
+			Number = 2;
+		};
+	};
+	
+	Results = array
+	{
+		UnlockEffect
+		{
+			Names = array {"SmokeJoint"};
+		}
+	};
+	
+	RequiredBuildings = array
+	{
+		RequiredBuilding = array { "Shaman", 1 }
+	};
+};

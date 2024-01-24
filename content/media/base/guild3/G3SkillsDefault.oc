@@ -998,7 +998,7 @@ G3SkillsDefault extends G3SkillsContainer
 						},
 						UnlockEffect
 						{
-							Names = array{ "Blackberry", "Lavender", "BucketOfWater", "HerbTea", "MixedHerbs", "DiseaseService", "BlackPepperPlant" };
+							Names = array{ "Blackberry", "Lavender", "BucketOfWater", "HerbTea", "MixedHerbs", "DiseaseService", "BlackPepperPlant",  "Joint" };
 						}
 					};
 				};
