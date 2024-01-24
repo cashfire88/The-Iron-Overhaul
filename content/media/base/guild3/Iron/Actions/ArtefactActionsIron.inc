@@ -463,7 +463,7 @@
 	Cooldown = 0.04; //~1 hour
 	BaseRewardXP = 27;
 	IsAggression = true; 
-	IsImmediatelyKnownByTarget = true;
+	IsImmediatelyKnownByTarget = false;
 	
 	CanFail = true; 
 	
