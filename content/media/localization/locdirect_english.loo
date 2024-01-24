@@ -42,6 +42,17 @@ LocDirectData
 
 		LocDirectEntry
 		{
+			Key = "$AuDeToilette.iron.name";
+			Text = "Au De Toilette";
+		},
+		LocDirectEntry
+		{
+			Key = "$AuDeToilette.iron.desc";
+			Text = "A simple perfume but somehow it smells really like toilette";
+		},
+
+		LocDirectEntry
+		{
 			Key = "$LivingTrout.iron.name";
 			Text = "Living Trout";
 		},

@@ -1006,6 +1006,7 @@ AIObjectives extends AIObjectivesContainer
 						"ApplyToadSlime" = 0.01,
 						"ApplyBlackWidowPoison" = 0.01,
 						"ApplyParalysisPoison" = 0.01,
+						"ApplyAuDeToilette" = 0.02,
 						"ApplyGhostlyFog" = 0.01,
 						"UseDartagnansFragrance" = 0.05,
 						
@@ -1144,6 +1145,7 @@ AIObjectives extends AIObjectivesContainer
 						"ApplyToadSlime" = 0.05,
 						"ApplyBlackWidowPoison" = 0.05,
 						"ApplyParalysisPoison" = 0.05,
+						"ApplyAuDeToilette" = 0.1,
 						"ApplyGhostlyFog" = 0.05,
 						"UseDartagnansFragrance" = 0.05,
 						"ApplySlateTile" = 0.35,
@@ -1289,6 +1291,7 @@ AIObjectives extends AIObjectivesContainer
 						"ApplyToadSlime" = 0.01,
 						"ApplyBlackWidowPoison" = 0.01,
 						"ApplyParalysisPoison" = 0.01,
+						"ApplyAuDeToilette" = 0.01,
 						"ApplyGhostlyFog" = 0.01,
 						"UseDartagnansFragrance" = 0.05,
 					};
@@ -1666,6 +1669,7 @@ AIObjectives extends AIObjectivesContainer
 				//artifacts
 				"UseFlowerOfDiscord" = 0.2,
 				"UseDrunkardBrewBeer" = 0.01,
+
 				"UseBoozyBreathBeer" = 0.25,
 				//child
 				"RaidTheKitchens" = 0.05,
@@ -1680,6 +1684,7 @@ AIObjectives extends AIObjectivesContainer
 				"WriteTrashLetter" = 0.15,
 				"TearOffTrashLetter" = 0.15,
 				"StealFromCharacter" = 0.5,
+				"ApplyAuDeToilette" = 0.5,
 				"BreakBone" = 0.15,
 				"KidnapCharacter" = 0.05,
 				"DuelInsult" = 0.05,
@@ -1743,6 +1748,7 @@ AIObjectives extends AIObjectivesContainer
 				"ApplyToadExcrements" = 0.15,
 				"UseBoozyBreathBeer" = 0.3,
 				"ThrowStones" = 0.1,
+				"ApplyAuDeToilette" = 0.15,
 				"SpreadFleas" = 0.2,
 				"RaidTheKitchens" = 0.1,
 				"PublicShaming" = 0.75,
@@ -1815,6 +1821,7 @@ AIObjectives extends AIObjectivesContainer
 				"RaidTheKitchens" = 0.15,
 				//political actions
 				"PublicShaming" = 0.5,
+				"ApplyAuDeToilette" = 0.5,
 				"AuditBooks" = 0.5,
 				"LetterFromInquisition" = 0.15,
 				"InitiateIntrigue" = 0.15,

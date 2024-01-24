@@ -574,3 +574,54 @@
 		RequiredBuilding = array { "Barber", 1 }
 	};
 };
+
+"AuDeToilette" = G3Item
+{
+	Type = 3;
+
+	DisplayName = "$AuDeToilette.iron.name";
+	Description = "$AuDeToilette.iron.desc";
+	DisplayCategories = array("All");
+	UsableBy = array{ "$qs.charactertype.0" };
+	
+	IconName = "AuDeToilette";
+
+	Production = 1;
+	BuildTime = 40;
+	Tier = 2;
+	
+	SoldAtMarket = false;
+	BoughtByMarket = false;
+	
+	Requirements = array
+	{
+		comp1 extends G3ItemComponent
+		{
+			Name = "Worm";
+			Number = 3;
+		},
+		comp2 extends G3ItemComponent
+		{
+			Name = "Perch";
+			Number = 1;
+		},
+		comp3 extends G3ItemComponent
+		{
+			Name = "SwampRoot";
+			Number = 2;
+		},
+	};
+	
+	Results = array
+	{
+		UnlockEffect
+		{
+			Names = array {"ApplyAuDeToilette"};
+		}
+	};
+	
+	RequiredBuildings = array
+	{
+		RequiredBuilding = array { "Barber", 1 }
+	};
+};

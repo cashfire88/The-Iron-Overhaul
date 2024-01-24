@@ -84,6 +84,15 @@ LawSettings
 		},
 		Crime
 		{
+			ActionName = "ApplyAuDeToilette";
+			ResponsibleOfficeGroup = "CouncilInformerGroup";
+			Severity = 1;
+			EvidenceBaseValue = 50;
+			IsLegalByDefault = false;
+			CanChangeBy = "Office";
+		},
+		Crime
+		{
 			ActionName = "BribeOfficeHolder";
 			ResponsibleOfficeGroup = "MayorGroup";
 			Severity = 4;

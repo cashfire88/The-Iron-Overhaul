@@ -1274,7 +1274,7 @@ G3SkillsDefault extends G3SkillsContainer
 						UnlockEffect
 						{
 //							Names = array{ "Jasmin", "BatBlood", "JasmineOil", "MakeUp", "BodyCareService" ,"MassageOil" };
-							Names = array{ "Jasmin", "WildRose", "RoseWater", "Soap", "BodyCareService" };
+							Names = array{ "Jasmin", "WildRose", "RoseWater", "Soap", "BodyCareService", "AuDeToilette" };
 						}
 					};
 				};
