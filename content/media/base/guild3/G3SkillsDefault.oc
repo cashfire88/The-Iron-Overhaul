@@ -639,7 +639,7 @@ G3SkillsDefault extends G3SkillsContainer
 					{
 						UnlockEffect
 						{
-							Names = array { "StrongDoorLatch", "OilLamp" };
+							Names = array { "StrongDoorLatch", "OilLamp", "Porcelain", "Sand" };
 						}
 					};
 				};

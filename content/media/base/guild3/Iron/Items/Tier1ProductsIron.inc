@@ -639,3 +639,39 @@
 		RequiredBuilding = array { "Masonery", 1 }
 	};
 };
+
+
+"Porcelain" = G3Item
+{
+	Type = 1;
+	SubType = 5;
+
+	DisplayName = "$Porcelain.iron.name";
+	Description = "$Porcelain.iron.desc";
+	DisplayCategories = array("All", "Trinkets");
+
+	IconName = "Porcelain";
+
+	BuildTime = 15;
+	Tier = 1;
+	SocialClass = 0;
+	
+	Requirements = array
+	{
+		comp1 extends G3ItemComponent
+		{
+			Name = "Clay";
+			Number = 2;
+		};
+		comp3 extends G3ItemComponent
+		{
+			Name = "Sand";
+			Number = 5;
+		};
+	};
+	
+	RequiredBuildings = array
+	{
+		RequiredBuilding = array { "Masonery", 1 }
+	};
+};

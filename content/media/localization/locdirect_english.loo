@@ -53,6 +53,28 @@ LocDirectData
 
 		LocDirectEntry
 		{
+			Key = "$Porcelain.iron.name";
+			Text = "Porcelain";
+		},
+		LocDirectEntry
+		{
+			Key = "$Porcelain.iron.desc";
+			Text = "Cheap Porcelain";
+		},
+
+		LocDirectEntry
+		{
+			Key = "$Sand.iron.name";
+			Text = "Sand";
+		},
+		LocDirectEntry
+		{
+			Key = "$Sand.iron.desc";
+			Text = "Simple Sand";
+		},
+
+		LocDirectEntry
+		{
 			Key = "$ThrowingStones.iron.name";
 			Text = "Clay and Stones";
 		},
