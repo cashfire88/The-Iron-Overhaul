@@ -92,7 +92,7 @@
 	MoralAlignmentShift = 0.2;
 	MoralAlignment = MoralAlignment
 	{
-		Values = array{-0.6,-0.4,-0.6};
+		Values = array{-0.1,-0.1,-0.1};
 	};
 
 	CustomAnimationPool = array
