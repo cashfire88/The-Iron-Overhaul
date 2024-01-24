@@ -81,7 +81,7 @@ LocDirectData
 		LocDirectEntry
 		{
 			Key = "$ThrowingStones.iron.desc";
-			Text = "Processing left overs to find a final destination";
+			Text = "Processing left overs to find a final destination on the Head of your foe";
 		},
 
 		LocDirectEntry
@@ -151,7 +151,7 @@ LocDirectData
 		LocDirectEntry
 		{
 			Key = "$HorrorFlash.buff.iron.body";
-			Text = "%character% got a Horror Trip";
+			Text = "Critical Failure: %character% forgot to pass the joint and inhaled all in. Now %character% has pranoia";
 		},
 
 		LocDirectEntry

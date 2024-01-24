@@ -184,26 +184,16 @@
 		ActionGUIData
 		{
 			IsCharacter = 1;
-			IsFamilyMember = 1;
 			BelongsToOwnFamily = 1;
 			IsAdult = 1;
-			IsControlledByHuman = 1;
 		},
-		ActionGUIData
-		{
-			IsCharacter = 1;
-			IsFamilyMember = 1;
-			BelongsToOwnFamily = 1;
-			IsAdult = 1;
-			IsControlledByHuman = -1;
-			DoesNotHaveTag = "NoDrinking";
-		}
+		@base/AdultNeutralNPCs
 	};
 	UsableBy = array{ "$gui.item.UsableByAdultFamilyMembers" };
 
 	ActionActor = "Character";
 	UICategory = "Artifact";
-	Cooldown = 1.0;     //24 hours
+	Cooldown = 0.2;     //24 hours
 	IconName = "Joint";
 
 	ArtefactName = "Joint";
@@ -262,7 +252,7 @@
 			ApplyTo = "Self";
 			DisplayGroup = "drunk";
 			DisplayName = "$Joint.iron.name";
-			Duration = 200.0;
+			Duration = 400.0;
 		},
 		FunctionAffectNeeds
 		{
@@ -276,7 +266,7 @@
 			ApplyTo = "Self";
 			DisplayGroup = "drunk";
 			DisplayName = "$Joint.iron.name";
-			Duration = 200.0;
+			Duration = 400.0;
 		},
 		ModifierEffect
 		{
@@ -284,7 +274,16 @@
 			ApplyTo = "Self";
 			ActorValue = "MovementSpeedMult";
 			Mod = -0.25;
-			Duration = 200.0;
+			Duration = 400.0;
+			Recover = true;
+		},
+		ModifierEffect
+		{
+			Tags = array{"High"};
+			ApplyTo = "Self";
+			ActorValue = "Perception";
+			Mod = 1;
+			Duration = 400.0;
 			Recover = true;
 		},
         FunctionSendMessage
@@ -306,22 +305,32 @@
 			ApplyTo = "Self";
 			DisplayGroup = "drunk";
 			DisplayName = "$High.iron.desc";
-			Duration = 200.0;
+			Duration = 400.0;
 		},
 		VisualEffect
 		{
 			ApplyTo = "Self";
 			Tags = array{"Endurance", "UncontrollablyDrunk"};
 			VisualName = "Poisoned";
-			Duration = 200.0;
+			Duration = 400.0;
 		},
-		DisplayEffect
+		ModifierEffect
 		{
 			Tags = array{"High"};
 			ApplyTo = "Self";
-			DisplayGroup = "drunk";
-			DisplayName = "$Joint.iron.name";
-			Duration = 200.0;
+			ActorValue = "Perception";
+			Mod = 2;
+			Duration = 400.0;
+			Recover = true;
+		},
+		ModifierEffect
+		{
+			Tags = array{"High"};
+			ApplyTo = "Self";
+			ActorValue = "Intelligence";
+			Mod = 1;
+			Duration = 400.0;
+			Recover = true;
 		},
 		ModifierEffect
 		{
@@ -329,7 +338,7 @@
 			ApplyTo = "Self";
 			ActorValue = "MovementSpeedMult";
 			Mod = 0.1;
-			Duration = 200.0;
+			Duration = 400.0;
 			Recover = true;
 		},
         FunctionSendMessage
@@ -352,7 +361,7 @@
 			ApplyTo = "Self";
 			DisplayGroup = "drunk";
 			DisplayName = "$Joint.iron.name";
-			Duration = 200.0;
+			Duration = 400.0;
 		},
 		FunctionAffectNeeds
 		{
@@ -360,13 +369,14 @@
 			ProductType = 2;
 			Amount = -0.01;
 		},
-		DisplayEffect
+		ModifierEffect
 		{
-			Tags = array{"Drunk", "High"};
+			Tags = array{"High"};
 			ApplyTo = "Self";
-			DisplayGroup = "drunk";
-			DisplayName = "$Joint.iron.name";
-			Duration = 200.0;
+			ActorValue = "Intelligence";
+			Mod = -1;
+			Duration = 400.0;
+			Recover = true;
 		},
 		ModifierEffect
 		{
@@ -374,7 +384,7 @@
 			ApplyTo = "Self";
 			ActorValue = "MovementSpeedMult";
 			Mod = -0.25;
-			Duration = 200.0;
+			Duration = 400.0;
 			Recover = true;
 		},
         FunctionSendMessage
@@ -396,14 +406,32 @@
 			ApplyTo = "Self";
 			DisplayGroup = "drunk";
 			DisplayName = "$High.iron.name";
-			Duration = 200.0;
+			Duration = 400.0;
+		},
+		ModifierEffect
+		{
+			Tags = array{"High"};
+			ApplyTo = "Self";
+			ActorValue = "Intelligence";
+			Mod = -1;
+			Duration = 400.0;
+			Recover = true;
+		},
+		ModifierEffect
+		{
+			Tags = array{"High"};
+			ApplyTo = "Self";
+			ActorValue = "Strength";
+			Mod = -1;
+			Duration = 400.0;
+			Recover = true;
 		},
 		VisualEffect
 		{
 			ApplyTo = "Self";
 			Tags = array{"Endurance", "UncontrollablyDrunk"};
 			VisualName = "Poisoned";
-			Duration = 200.0;
+			Duration = 400.0;
 		},
 		DisplayEffect
 		{
@@ -411,7 +439,7 @@
 			ApplyTo = "Self";
 			DisplayGroup = "drunk";
 			DisplayName = "$Joint.iron.name";
-			Duration = 200.0;
+			Duration = 400.0;
 		},
 		ModifierEffect
 		{
@@ -419,7 +447,7 @@
 			ApplyTo = "Self";
 			ActorValue = "MovementSpeedMult";
 			Mod = -0.5;
-			Duration = 200.0;
+			Duration = 400.0;
 			Recover = true;
 		},
         FunctionSendMessage

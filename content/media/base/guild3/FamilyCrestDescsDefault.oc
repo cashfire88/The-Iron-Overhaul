@@ -194,6 +194,12 @@ FamilyCrestDescsDefault extends FamilyCrestDescs
 			TextureName = "Shield32";
 			CrestColor = array{0.917647058823529, 0.803921568627451, 0.545098039215686};
 		},
+		Crests33 extend FamilyCrestDesc
+		{
+			Id = 33;
+			TextureName = "Shield33";
+			CrestColor = array{0.957647058823529, 0.941176470588235, 0.988235294117647};
+		},
 	};
 };
 

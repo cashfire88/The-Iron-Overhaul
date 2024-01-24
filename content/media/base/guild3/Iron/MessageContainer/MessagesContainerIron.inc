@@ -125,7 +125,7 @@
 "HorrorFlash" = MessageDescription
 {
     Title = "$HorrorFlash.buff.iron.title";
-    Body = "$NiceHHorrorFlashigh.buff.iron.title";
+    Body = "$HorrorFlash.buff.iron.body";
     Effect = "";
     Icon = "Character";
     Type = "negative";
