@@ -47,7 +47,7 @@ FunctionTriggerAction
 FunctionRemoveEffect
 {
     MatchAny = true;
-    Tags = array{"Fleas","LoveDebuff"};
+    Tags = array{"Fleas","LoveDebuff","AuDeToilette"};
     ApplyTo = "Self";
 },
 FunctionTriggerAction
