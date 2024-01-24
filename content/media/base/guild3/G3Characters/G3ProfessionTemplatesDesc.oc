@@ -129,6 +129,7 @@ G3ProfessionTemplatesDesc extends G3ProfessionTemplates{
 			BusinessEnumType = 22; 
 			SkillGroup = "HuntingFarming";
 			BodyArmor = "FarmerClothes";
+			ResultObjects = array{ "FarmingProfession" };
 			AttributeWeights = array { 0.0f, 1.0f, 1.0f, 0.0f, 0.0f }; // Strength, Dexterity, Intelligence, Perception, Charisma
 		},
 		
@@ -181,6 +182,7 @@ G3ProfessionTemplatesDesc extends G3ProfessionTemplates{
 			BusinessEnumType = 17;
 			SkillGroup = "Handicraft";
 			BodyArmor = "ArtisanClothes";
+			ResultObjects = array{ "ArtisanProfession" };
 			AttributeWeights = array { 0.0f, 1.0f, 1.0f, 0.0f, 0.0f }; // Strength, Dexterity, Intelligence, Perception, Charisma
 		},
 
@@ -194,6 +196,7 @@ G3ProfessionTemplatesDesc extends G3ProfessionTemplates{
 			BusinessEnumType = 60;
 			SkillGroup = "Handicraft";
 			BodyArmor = "TinkerClothes";
+			ResultObjects = array { "TinkerProfession" };
 			AttributeWeights = array { 0.0f, 1.0f, 1.0f, 0.0f, 0.0f }; // Strength, Dexterity, Intelligence, Perception, Charisma
 		},
 
@@ -272,6 +275,7 @@ G3ProfessionTemplatesDesc extends G3ProfessionTemplates{
 			BusinessEnumType = 51;
 			SkillGroup = "Herbalism";
 			BodyArmor = "HerbalistClothes";
+			ResultObjects = array { "HerbalistProfession" };
 			AttributeWeights = array { 0.0f, 1.0f, 1.0f, 0.0f, 0.0f }; // Strength, Dexterity, Intelligence, Perception, Charisma
 		},
 

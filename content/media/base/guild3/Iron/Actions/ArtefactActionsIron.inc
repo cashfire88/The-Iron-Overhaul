@@ -204,6 +204,7 @@
 	ActionActor = "Character";
 	UICategory = "Artifact";
 	Cooldown = 1.0;     //24 hours
+	IconName = "Joint";
 
 	ArtefactName = "Joint";
 	ActionName = "SmokeJoint";
@@ -426,5 +427,218 @@
             ApplyTo = "Self";
             Description = "HorrorFlash";
         },
+	};
+};
+
+
+"AdultThrowStones" = G3ActionTemplate //Stink bomb
+{
+	ActionClassName = "UseArtefactAction";
+	GUIPresent = true;
+	UICategory = "Artifact";
+
+	GUIData = array
+	{
+		@base/MainThreeCharacters,
+		@base/Henchmen
+	};
+	UsableBy = array{ "$gui.item.UsableByAdultPartyMembers", "$gui.item.UsableByHenchmen" };
+
+	ArtefactName = "ThrowingStones";
+	ActionActor = "Character";
+	
+	TargetActor = "Character";
+
+
+	
+	ActionName = "AdultThrowStones";
+	
+	SourceScoreFormula = "Strength * 0.5 + Dexterity * 0.5";
+	TargetScoreFormula = "Dexterity * 0.75 + Perception * 0.25";
+	
+	DisplayName = "$StinkBomb";
+	Description = "$StinkBombDesc";
+	Instruction = "$callToAction.ResidenceBusinessNotPlayersAllies";
+
+	Cooldown = 0.04; //~1 hour
+	BaseRewardXP = 27;
+	IsAggression = true; 
+	IsImmediatelyKnownByTarget = true;
+	
+	CanFail = true; 
+	
+	DesiredProfiles = array
+	{
+		TargetProfileCharacter
+		{	
+			IsSourceHuman = 3;
+
+			FamilyProfile = TargetProfileFamily
+			{
+				MyFamily = -3;
+				GoodRelationWithMe = -2;
+				Alliance = -2;
+				Feud = 2;
+			};
+			NPC = -2;
+			CloseToActor = 2;
+			Employee = 2;
+			MatchTargetTags = -2;
+			CurrentBuildingProfiles = array
+			{
+				TargetProfileBuilding // somewhere in the world
+				{
+					Exists = -3;
+				},
+			};
+		},
+		TargetProfileCharacter
+		{	
+			IsSourceHuman = -3;
+
+			FamilyProfile = TargetProfileFamily
+			{
+				MyFamily = -3;
+				GoodRelationWithMe = -2;
+				Alliance = -3;
+				Feud = 2;
+			};
+			NPC = -2;
+			CloseToActor = 2;
+			Employee = 2;
+			MatchTargetTags = -2;
+			CurrentBuildingProfiles = array
+			{
+				TargetProfileBuilding // somewhere in the world
+				{
+					Exists = -3;
+				},
+			};
+		}
+	};
+			
+	MoralAlignmentShift = 0.3;
+	MoralAlignment = MoralAlignment
+	{
+		Values = array{-0.1,-0.1,-0.1};
+	};					
+	CustomAnimationPool = array
+	{
+		CustomAnimationInfo = array {"sabotage", 0, -1, -1};
+	};
+
+
+	AnimationProps = array
+	{
+		PropSpawnDesc { PropNames = array { "throwingrock/throwingrock" }; };
+	};
+	CanFail = true;
+	CriticalFactor = 0.8;
+   
+	DistanceFromTarget = 600;
+	DistanceFromTargetMin = 600;
+
+	AnimationProps = array
+	{
+		PropSpawnDesc { PropNames = array { "bomb/bomb" }; };
+	};
+			
+		CriticalSuccessResult =  array
+	{
+		DisplayEffect
+		{
+			ApplyTo = "Target";
+			Tags = array{"ThrowStones"};
+			Duration = 45;
+			DisplayGroup = "unconscious";
+			DisplayName = "$effect.HitInTheHead";
+		},
+		ModifierEffect
+		{
+			ApplyTo = "Target";
+			Tags = array{"ThrowStones"};
+			ActorValue = "MovementSpeedMult";
+			Mod = -0.15;
+			Duration = 45;
+			Recover = true;
+		},
+		FunctionAffectNeeds
+		{
+			ApplyTo = "Target";
+			ProductType = 3;
+			Amount = 0.01;
+		},
+		FunctionAffectNeeds
+		{
+			ApplyTo = "Target";
+			ProductType = 9;
+			Amount = 0.01;
+		},
+		FunctionAffectNeeds
+		{
+			ApplyTo = "Target";
+			ProductType = 10;
+			Amount = 0.01;
+		},
+	};
+
+
+	SuccessResult = array
+	{
+				DisplayEffect
+		{
+			ApplyTo = "Target";
+			Tags = array{"ThrowStones"};
+			Duration = 30;
+			DisplayGroup = "unconscious";
+			DisplayName = "$effect.HitInTheHead";
+		},
+		ModifierEffect
+		{
+			ApplyTo = "Target";
+			Tags = array{"ThrowStones"};
+			ActorValue = "MovementSpeedMult";
+			Mod = -0.10;
+			Duration = 30;
+			Recover = true;
+		},
+		FunctionUpdateRelationship
+		{
+			AffectTarget = "-2";
+		},
+		FunctionAffectNeeds
+		{
+			ApplyTo = "Target";
+			ProductType = 3;
+			Amount = 0.01;
+		},
+		FunctionAffectNeeds
+		{
+			ApplyTo = "Target";
+			ProductType = 9;
+			Amount = 0.01;
+		},
+		FunctionAffectNeeds
+		{
+			ApplyTo = "Target";
+			ProductType = 10;
+			Amount = 0.01;
+		},
+	};
+	
+	FailureResult =  array
+	{
+		FunctionUpdateRelationship
+		{
+			AffectTarget = "-5";
+		}
+	};
+	
+	CriticalFailureResult = array
+	{
+		FunctionUpdateRelationship
+		{
+			AffectTarget = "-8";
+		}
 	};
 };

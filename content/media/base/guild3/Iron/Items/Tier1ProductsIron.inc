@@ -452,3 +452,190 @@
 		RequiredBuilding = array { "FishingHut", 1 }
 	};
 };
+
+"Sickle" = G3Item
+{
+	Type = 1;
+	SubType = 3;
+
+	DisplayName = "$Sickle.iron.name";
+	Description = "$Sickle.iron.desc";
+	DisplayCategories = array("All", "WeaponArmor");
+
+	Tier = 1;
+	SocialClass = 0;
+	BuildTime = 25;
+	Production = 1;
+
+	IconName = "Sickle";
+	
+	VisualActorName = "dagger/dagger";
+
+	EquipmentType = 2;
+	EquipmentAdultsOnly = true;
+	UsableBy = array{ "$characters.Age.Adult" };
+
+	Results = array
+	{
+		ModifierEffect
+		{
+			ActorValue = "AttackPower";
+			Mod = -1;
+			Recover = true;
+		},
+		ModifierEffect
+		{
+			ActorValue = "Damage";
+			Mod = 10;
+			Recover = true;
+		},
+		ModifierEffect
+		{
+			ActorValue = "DefensePower";
+			Mod = -1;
+			Recover = true;
+		},
+		ModifierEffect
+		{
+			Filter = "hasTag.Herbalist";
+			ApplyTo = "Self";
+			ActorValue = "Productivity";
+			Mod = 0.10;
+			Recover = true;
+		},
+	};
+
+	Requirements = array
+	{
+		comp1 extends G3ItemComponent
+		{
+			Name = "Iron";
+			Number = 1;
+		};
+		comp2 extends G3ItemComponent
+		{
+			Name = "CrudeWeaponHilt";
+			Number = 1;
+		};
+	};
+	
+	RequiredBuildings = array
+	{
+		RequiredBuilding = array { "Artisan", 1 }
+	};
+};
+
+"Scythe" = G3Item
+{
+	Type = 1;
+	SubType = 3;
+
+	DisplayName = "$Scythe.iron.name";
+	Description = "$Scythe.iron.desc";
+	DisplayCategories = array("All", "WeaponArmor");
+
+	Tier = 1;
+	SocialClass = 0;
+	BuildTime = 27.5;
+	Production = 1;
+
+	IconName = "Scythe";
+	
+	VisualActorName = "dagger/dagger";
+
+	EquipmentType = 2;
+	EquipmentAdultsOnly = true;
+	UsableBy = array{ "$characters.Age.Adult" };
+
+	Results = array
+	{
+		ModifierEffect
+		{
+			ActorValue = "AttackPower";
+			Mod = -1;
+			Recover = true;
+		},
+		ModifierEffect
+		{
+			ActorValue = "Damage";
+			Mod = 15;
+			Recover = true;
+		},
+		ModifierEffect
+		{
+			ActorValue = "DefensePower";
+			Mod = -1;
+			Recover = true;
+		},
+		ModifierEffect
+		{
+			Filter = "hasTag.Farmer";
+			ApplyTo = "Self";
+			ActorValue = "Productivity";
+			Mod = 0.10;
+			Recover = true;
+		},
+	};
+
+	Requirements = array
+	{
+		comp1 extends G3ItemComponent
+		{
+			Name = "Iron";
+			Number = 1;
+		};
+		comp2 extends G3ItemComponent
+		{
+			Name = "PinewoodPlank";
+			Number = 1;
+		};
+	};
+	
+	RequiredBuildings = array
+	{
+		RequiredBuilding = array { "Artisan", 1 }
+	};
+};
+
+"ThrowingStones" = G3Item
+{
+	Type = 1;
+	SubType = 5;
+
+	DisplayName = "$ThrowingStones.iron.name";
+	Description = "$ThrowingStones.iron.desc";
+	DisplayCategories = array("All", "Trinkets");
+
+	IconName = "ThrowingStones";
+
+	BuildTime = 15;
+	Tier = 1;
+	SocialClass = 0;
+	
+	Requirements = array
+	{
+		comp1 extends G3ItemComponent
+		{
+			Name = "Clay";
+			Number = 2;
+		};
+		comp2 extends G3ItemComponent
+		{
+			Name = "BucketOfWater";
+			Number = 1;
+		};
+	};
+
+	Results = array
+	{
+		UnlockEffect
+		{
+			Names = array {"AdultThrowStones"};
+		}
+	};
+	
+	RequiredBuildings = array
+	{
+		RequiredBuilding = array { "Masonery", 1 }
+	};
+};

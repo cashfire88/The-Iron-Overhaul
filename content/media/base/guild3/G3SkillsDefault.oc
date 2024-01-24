@@ -502,7 +502,7 @@ G3SkillsDefault extends G3SkillsContainer
 						},
 						UnlockEffect
 						{
-							Names = array { "Iron", "CrudeWeaponHilt", "Dagger" };
+							Names = array { "Iron", "CrudeWeaponHilt", "Dagger", "Sickle", "Scythe" };
 						}
 					};
 				};
@@ -515,7 +515,7 @@ G3SkillsDefault extends G3SkillsContainer
 					{
 						UnlockEffect
 						{
-							Names = array { "Nails", "Fittings", "ThrowingKnife" };
+							Names = array { "Nails", "Fittings", "ThrowingKnife", "BlacksmithHammer", "Poker" };
 						}
 					};
 				};
@@ -626,7 +626,7 @@ G3SkillsDefault extends G3SkillsContainer
 						},
 						UnlockEffect
 						{
-							Names = array { "ClayVase", "Beaker", "WeightStone", "BucketOfWater", "ClayBowl" };
+							Names = array { "ClayVase", "Beaker", "WeightStone", "BucketOfWater", "ClayBowl", "ThrowingStones" };
 						}
 					};
 				};

@@ -666,3 +666,151 @@
 		RequiredBuilding = array { "Shaman", 1 }
 	};
 };
+
+"BlacksmithHammer" = G3Item
+{
+	Type = 1;
+	SubType = 3;
+
+	DisplayName = "$BlacksmithHammer.iron.name";
+	Description = "$BlacksmithHammer.iron.desc";
+	DisplayCategories = array("All", "WeaponArmor");
+
+	Tier = 2;
+	SocialClass = 0;
+	BuildTime = 33;
+	Production = 1;
+
+	IconName = "BlacksmithHammer";
+	
+	VisualActorName = "dagger/dagger";
+
+	EquipmentType = 2;
+	EquipmentAdultsOnly = true;
+	UsableBy = array{ "$characters.Age.Adult" };
+
+	Results = array
+	{
+		ModifierEffect
+		{
+			ActorValue = "AttackPower";
+			Mod = 1;
+			Recover = true;
+		},
+		ModifierEffect
+		{
+			ActorValue = "Damage";
+			Mod = 15;
+			Recover = true;
+		},
+		ModifierEffect
+		{
+			ActorValue = "DefensePower";
+			Mod = -2;
+			Recover = true;
+		},
+		ModifierEffect
+		{
+			Filter = "hasTag.Smithing";
+			ApplyTo = "Self";
+			ActorValue = "Productivity";
+			Mod = 0.15;
+			Recover = true;
+		},
+	};
+
+	Requirements = array
+	{
+		comp1 extends G3ItemComponent
+		{
+			Name = "Iron";
+			Number = 2;
+		};
+		comp2 extends G3ItemComponent
+		{
+			Name = "PinewoodPlank";
+			Number = 1;
+		};
+		comp3 extends G3ItemComponent
+		{
+			Name = "CrudeWeaponHilt";
+			Number = 1;
+		};
+	};
+	
+	RequiredBuildings = array
+	{
+		RequiredBuilding = array { "Artisan", 1 }
+	};
+};
+
+"Poker" = G3Item
+{
+	Type = 1;
+	SubType = 3;
+
+	DisplayName = "$Poker.iron.name";
+	Description = "$Poker.iron.desc";
+	DisplayCategories = array("All", "WeaponArmor");
+	IconName = "Poker";
+
+	Tier = 1;
+	SocialClass = 0;
+	BuildTime = 30;
+	Production = 1;
+	
+	VisualActorName = "dagger/dagger";
+
+	EquipmentType = 2;
+	EquipmentAdultsOnly = true;
+	UsableBy = array{ "$characters.Age.Adult" };
+
+	Results = array
+	{
+		ModifierEffect
+		{
+			ActorValue = "AttackPower";
+			Mod = 1;
+			Recover = true;
+		},
+		ModifierEffect
+		{
+			ActorValue = "Damage";
+			Mod = 10;
+			Recover = true;
+		},
+		ModifierEffect
+		{
+			ActorValue = "DefensePower";
+			Mod = -2;
+			Recover = true;
+		},
+		ModifierEffect
+		{
+			Filter = "hasTag.Mason";
+			ApplyTo = "Self";
+			ActorValue = "Productivity";
+			Mod = 0.15;
+			Recover = true;
+		},
+	};
+
+	Requirements = array
+	{
+		comp1 extends G3ItemComponent
+		{
+			Name = "Iron";
+			Number = 3;
+		};
+		comp2 extends G3ItemComponent
+		{
+			Name = "CrudeWeaponHilt";
+			Number = 2;
+		};
+	};
+	
+	RequiredBuildings = array
+	{
+		RequiredBuilding = array { "Artisan", 1 }
+	};
+};

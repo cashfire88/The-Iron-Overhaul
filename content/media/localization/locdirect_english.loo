@@ -31,6 +31,61 @@ LocDirectData
 
 		LocDirectEntry
 		{
+			Key = "$Scythe.iron.name";
+			Text = "Scythe";
+		},
+		LocDirectEntry
+		{
+			Key = "$Scythe.iron.desc";
+			Text = "Scythe can be used by Farmers to increase their productivity";
+		},
+
+		LocDirectEntry
+		{
+			Key = "$Poker.iron.name";
+			Text = "Poker";
+		},
+		LocDirectEntry
+		{
+			Key = "$Poker.iron.desc";
+			Text = "Poker can be used by Tinkerer to increase their productivity";
+		},
+
+		LocDirectEntry
+		{
+			Key = "$ThrowingStones.iron.name";
+			Text = "Clay and Stones";
+		},
+		LocDirectEntry
+		{
+			Key = "$ThrowingStones.iron.desc";
+			Text = "Processing left overs to find a final destination";
+		},
+
+		LocDirectEntry
+		{
+			Key = "$BlacksmithHammer.iron.name";
+			Text = "Blacksmith Hammer";
+		},
+		LocDirectEntry
+		{
+			Key = "$BlacksmithHammer.iron.desc";
+			Text = "BlacksmithHammer can be used by Blacksmiths to increase their productivity";
+		},
+
+		LocDirectEntry
+		{
+			Key = "$Sickle.iron.name";
+			Text = "Sickle";
+		},
+		LocDirectEntry
+		{
+			Key = "$Sickle.iron.desc";
+			Text = "Sickle can be used by Herbalists to increase their productivity";
+		},
+
+		LocDirectEntry
+		{
 			Key = "$High.buff.iron.title";
 			Text = "%character% got High";
 		},

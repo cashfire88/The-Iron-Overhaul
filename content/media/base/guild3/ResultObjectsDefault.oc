@@ -2840,6 +2840,7 @@ ResultObjectsDefault extends ResultObjectContainer
 		@base/BurningBuildingResultObjects,
 		@base/PoliticalPowersResultObjects,
 		@base/ProfessionResultObjects,
+		@base/ProfessionResultObjectsIron,
 		@base/ReligionResultObjects,
 		@base/TutorialResultObjects,
 		@base/RomancePreferenceResultObjects,
