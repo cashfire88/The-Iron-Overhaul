@@ -694,7 +694,7 @@
 		ModifierEffect
 		{
 			ActorValue = "AttackPower";
-			Mod = 1;
+			Mod = -1;
 			Recover = true;
 		},
 		ModifierEffect
@@ -711,12 +711,16 @@
 		},
 		ModifierEffect
 		{
-			Filter = "hasTag.Smithing";
-			ApplyTo = "Self";
-			ActorValue = "Productivity";
-			Mod = 0.15;
+			ActorValue = "Strength";
+			Mod = 2;
 			Recover = true;
 		},
+		ModifierEffect
+		{
+			ActorValue = "Dexterity";
+			Mod = 1;
+			Recover = true;
+		}
 	};
 
 	Requirements = array
@@ -770,13 +774,7 @@
 		ModifierEffect
 		{
 			ActorValue = "AttackPower";
-			Mod = 1;
-			Recover = true;
-		},
-		ModifierEffect
-		{
-			ActorValue = "Damage";
-			Mod = 10;
+			Mod = -1;
 			Recover = true;
 		},
 		ModifierEffect
@@ -787,12 +785,16 @@
 		},
 		ModifierEffect
 		{
-			Filter = "hasTag.Mason";
-			ApplyTo = "Self";
-			ActorValue = "Productivity";
-			Mod = 0.15;
+			ActorValue = "Strength";
+			Mod = 1;
 			Recover = true;
 		},
+		ModifierEffect
+		{
+			ActorValue = "Dexterity";
+			Mod = 2;
+			Recover = true;
+		}
 	};
 
 	Requirements = array

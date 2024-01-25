@@ -486,23 +486,21 @@
 		ModifierEffect
 		{
 			ActorValue = "Damage";
-			Mod = 10;
+			Mod = -10;
 			Recover = true;
 		},
 		ModifierEffect
 		{
-			ActorValue = "DefensePower";
-			Mod = -1;
+			ActorValue = "Dexterity";
+			Mod = 1;
 			Recover = true;
 		},
 		ModifierEffect
 		{
-			Filter = "hasTag.Herbalist";
-			ApplyTo = "Self";
-			ActorValue = "Productivity";
-			Mod = 0.10;
+			ActorValue = "Intelligence";
+			Mod = 1;
 			Recover = true;
-		},
+		}
 	};
 
 	Requirements = array
@@ -569,12 +567,16 @@
 		},
 		ModifierEffect
 		{
-			Filter = "hasTag.Farmer";
-			ApplyTo = "Self";
-			ActorValue = "Productivity";
-			Mod = 0.10;
+			ActorValue = "Dexterity";
+			Mod = 1;
 			Recover = true;
 		},
+		ModifierEffect
+		{
+			ActorValue = "Strength";
+			Mod = 1;
+			Recover = true;
+		}
 	};
 
 	Requirements = array
