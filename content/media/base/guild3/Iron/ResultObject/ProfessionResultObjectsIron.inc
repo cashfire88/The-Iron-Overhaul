@@ -56,4 +56,4 @@ ResultObject
 			Tags = array{ "Profession", "Tinker", "Tinkering" };
 		}
 	};
-},
+}
