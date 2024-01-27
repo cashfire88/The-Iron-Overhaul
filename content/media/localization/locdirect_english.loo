@@ -19,6 +19,26 @@ LocDirectData
 		},
 		LocDirectEntry
 		{
+			Key = "$Duck.iron.name";
+			Text = "Duck";
+		},
+		LocDirectEntry
+		{
+			Key = "$Duck.iron.desc";
+			Text = "Delicious Duck";
+		},
+		LocDirectEntry
+		{
+			Key = "$DuckMeat.iron.name";
+			Text = "Duck Meat";
+		},
+		LocDirectEntry
+		{
+			Key = "$Duck.iron.desc";
+			Text = "Delicious salted Duck Meat";
+		},
+		LocDirectEntry
+		{
 			Key = "$action.high.iron.name";
 			Text = "High";
 		},

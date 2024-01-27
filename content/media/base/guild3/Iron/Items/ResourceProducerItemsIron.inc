@@ -1,4 +1,5 @@
 //---------- QUARRY -------------
+
 "LesserQualitySaltStone" = G3Item
 {
 	Type = 1;
@@ -8,11 +9,11 @@
 	Description = "$LesserQualitySaltStone.iron.desc";
 	DisplayCategories = array("All", "RawMaterial");
 
-	IconName = "Saltblock";
+	IconName = "LesserQualitySaltStone";
 
-	Production = 1;
-	BuildTime = 10; //originally 8
-	Price = 3;
+	Production = 2;
+	BuildTime = 5; //originally 8
+	Price = 2;
 
 	RequiredBuildings = array{
 		RequiredBuilding = array { "Quarry", 1 }

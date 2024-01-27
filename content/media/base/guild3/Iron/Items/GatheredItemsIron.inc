@@ -98,4 +98,28 @@
 	GatheringBuilding = "FishingSpot";
 };
 
+"Duck" = G3Item
+{
+	Type = 1;
+	SubType = 10;
+
+	DisplayName = "$Duck.iron.name";
+	Description = "$Duck.iron.desc";
+	DisplayCategories = array("All", "Livestock");
+	IconName = "Duck";
+
+	Production = 1;
+	BuildTime = 30.0;
+	Tier = 1;
+	SocialClass = 1;
+
+	SeasonAvailability = array{1, 1, 1, 1};
+
+	RequiredBuildings = array{
+		RequiredBuilding = array { "Butcher", 1 }
+	};
+
+	GatheringBuilding = "Grove";
+};
+
 

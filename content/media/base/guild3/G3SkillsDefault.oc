@@ -429,7 +429,7 @@ G3SkillsDefault extends G3SkillsContainer
 						},
 						UnlockEffect
 						{
-							Names = array { "Beef", "Fat", "Leather", "Pork"};
+							Names = array { "Beef", "Fat", "Leather", "Pork", "Duck", "DuckMeat"};
 						}
 					};
 				};
@@ -670,7 +670,7 @@ G3SkillsDefault extends G3SkillsContainer
 						},
 						UnlockEffect
 						{
-							Names = array { "Grindstone", "SandingBlock", "MuralPainting" };
+							Names = array { "Grindstone", "SandingBlock", "MuralPainting"; "LesserQualitySalt" };
 						}
 					};
 				};
