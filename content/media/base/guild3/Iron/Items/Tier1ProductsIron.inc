@@ -420,7 +420,7 @@
 	SocialClass = 0;
 
 	Production = 1;
-	BuildTime = 22.0;
+	BuildTime = 19.0;
 	
 	Requirements = array
 	{
@@ -491,14 +491,9 @@
 		},
 		ModifierEffect
 		{
-			ActorValue = "Dexterity";
-			Mod = 1;
-			Recover = true;
-		},
-		ModifierEffect
-		{
-			ActorValue = "Intelligence";
-			Mod = 1;
+			Filter = "hasTag.herbIron";
+			ActorValue = "Productivity";
+			Mod = 0.1;
 			Recover = true;
 		}
 	};
@@ -567,14 +562,9 @@
 		},
 		ModifierEffect
 		{
-			ActorValue = "Dexterity";
-			Mod = 1;
-			Recover = true;
-		},
-		ModifierEffect
-		{
-			ActorValue = "Strength";
-			Mod = 1;
+			Filter = "hasTag.Farmer";
+			ActorValue = "Productivity";
+			Mod = 0.1;
 			Recover = true;
 		}
 	};
