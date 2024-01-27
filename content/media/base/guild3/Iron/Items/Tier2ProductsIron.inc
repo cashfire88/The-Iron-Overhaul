@@ -134,7 +134,7 @@
 	IconName = "BucketOfFruits";
 
 	Production = 1;
-	BuildTime = 50.00;
+	BuildTime = 37.00;
 	Tier = 2;
 	SocialClass = 0;
 	
@@ -166,7 +166,7 @@
 	{
 		UnlockEffect
 		{
-			Names = array {"DonateSimpleFeast"};
+			Names = array {"DonateBucketOfFruits"};
 		}
 	};
 };
@@ -419,7 +419,7 @@
 	IconName = "BucketOfTomatos";
 
 	Production = 1;
-	BuildTime = 50.00;
+	BuildTime = 37.00;
 	Tier = 2;
 	SocialClass = 0;
 	
@@ -446,7 +446,7 @@
 	{
 		UnlockEffect
 		{
-			Names = array {"DonateSimpleFeast"};
+			Names = array {"DonateBucketOfTomatos"};
 		}
 	};
 };

@@ -9,14 +9,7 @@
 	};
 	UsableBy = array{ "$gui.item.UsableByAdultFamilyMembers" };
 
-	RequiredBuildings = array
-	{
-		RequiredBuilding = array { "CountryHouse", 1 },
-		RequiredBuilding = array { "PoorHouse", 1 },
-		RequiredBuilding = array { "CityHouse", 1 },
-		RequiredBuilding = array { "Mansion", 1 }
-	};
-	ArtefactName = "SimpleFeast";
+	ArtefactName = "BucketOfFruits";
 	
 	ActionName = "DonateSimpleFeast";
 	DisplayName = "$action.SimpleFeast";

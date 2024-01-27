@@ -1,3 +1,21 @@
+"DonateBucketOfFruits" = G3ActionTemplate //Paralysis poison
+{
+	ArtefactName = "BucketOfFruits";
+	ActionName = "DonateBucketOfFruits";
+	IconName = "BucketOfFruits";
+	@base/DonateSimpleFeast
+};
+
+"DonateBucketOfTomatos" = G3ActionTemplate //Paralysis poison
+{
+	ArtefactName = "BucketOfTomatos";
+	ActionName = "DonateBucketOfTomatos";
+	IconName = "BucketOfTomatos";
+	@base/DonateSimpleFeast
+};
+
+
+
 "ApplyAuDeToilette" = G3ActionTemplate //Paralysis poison
 {
 	UICategory = "Artifact";
@@ -268,12 +286,18 @@
 			DisplayName = "$Joint.iron.name";
 			Duration = 400.0;
 		},
+		FunctionRemoveEffect
+		{
+			ApplyTo = "Self";
+			MatchAny = true;
+			Tags = array {"LoveDebuff"};
+		},
 		ModifierEffect
 		{
 			Tags = array{"High"};
 			ApplyTo = "Self";
-			ActorValue = "MovementSpeedMult";
-			Mod = -0.25;
+			ActorValue = "Perception";
+			Mod = 1;
 			Duration = 400.0;
 			Recover = true;
 		},
@@ -281,7 +305,7 @@
 		{
 			Tags = array{"High"};
 			ApplyTo = "Self";
-			ActorValue = "Perception";
+			ActorValue = "Intelligence";
 			Mod = 1;
 			Duration = 400.0;
 			Recover = true;
@@ -332,6 +356,12 @@
 			Duration = 400.0;
 			Recover = true;
 		},
+		FunctionRemoveEffect
+		{
+			ApplyTo = "Self";
+			MatchAny = true;
+			Tags = array {"LoveDebuff"};
+		},
 		ModifierEffect
 		{
 			Tags = array{"Slow","High"};
@@ -362,6 +392,12 @@
 			DisplayGroup = "drunk";
 			DisplayName = "$Joint.iron.name";
 			Duration = 400.0;
+		},
+		FunctionRemoveEffect
+		{
+			ApplyTo = "Self";
+			MatchAny = true;
+			Tags = array {"LoveDebuff"};
 		},
 		FunctionAffectNeeds
 		{
@@ -407,6 +443,12 @@
 			DisplayGroup = "drunk";
 			DisplayName = "$High.iron.name";
 			Duration = 400.0;
+		},
+		FunctionRemoveEffect
+		{
+			ApplyTo = "Self";
+			MatchAny = true;
+			Tags = array {"LoveDebuff"};
 		},
 		ModifierEffect
 		{
@@ -670,3 +712,4 @@
 		}
 	};
 };
+
