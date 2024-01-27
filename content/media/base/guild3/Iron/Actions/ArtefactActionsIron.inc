@@ -1,3 +1,21 @@
+"DonateBucketOfFruits" = G3ActionTemplate //Paralysis poison
+{
+	ArtefactName = "BucketOfFruits";
+	ActionName = "DonateBucketOfFruits";
+	IconName = "BucketOfFruits";
+	@base/DonateSimpleFeast
+};
+
+"DonateBucketOfTomatos" = G3ActionTemplate //Paralysis poison
+{
+	ArtefactName = "BucketOfTomatos";
+	ActionName = "DonateBucketOfTomatos";
+	IconName = "BucketOfTomatos";
+	@base/DonateSimpleFeast
+};
+
+
+
 "ApplyAuDeToilette" = G3ActionTemplate //Paralysis poison
 {
 	UICategory = "Artifact";
@@ -226,7 +244,7 @@
 	// Animation Props
 	AnimationProps = array
 	{
-		PropSpawnDesc { PropNames = array { "beaker/beaker" }; };
+		PropSpawnDesc { PropNames = array { "pipe/pipe" }; };
 	};
 
 	OnEndResult = array
@@ -250,7 +268,7 @@
 		{
 			Tags = array{"High"};
 			ApplyTo = "Self";
-			DisplayGroup = "drunk";
+			DisplayGroup = "weed";
 			DisplayName = "$Joint.iron.name";
 			Duration = 400.0;
 		},
@@ -260,20 +278,18 @@
 			ProductType = 2;
 			Amount = -0.01;
 		},
-		DisplayEffect
+		FunctionRemoveEffect
 		{
-			Tags = array{"High"};
 			ApplyTo = "Self";
-			DisplayGroup = "drunk";
-			DisplayName = "$Joint.iron.name";
-			Duration = 400.0;
+			MatchAny = true;
+			Tags = array {"LoveDebuff"};
 		},
 		ModifierEffect
 		{
 			Tags = array{"High"};
 			ApplyTo = "Self";
-			ActorValue = "MovementSpeedMult";
-			Mod = -0.25;
+			ActorValue = "Perception";
+			Mod = 1;
 			Duration = 400.0;
 			Recover = true;
 		},
@@ -281,7 +297,7 @@
 		{
 			Tags = array{"High"};
 			ApplyTo = "Self";
-			ActorValue = "Perception";
+			ActorValue = "Intelligence";
 			Mod = 1;
 			Duration = 400.0;
 			Recover = true;
@@ -303,7 +319,7 @@
 		{
 			Tags = array{"High"};
 			ApplyTo = "Self";
-			DisplayGroup = "drunk";
+			DisplayGroup = "weed";
 			DisplayName = "$High.iron.desc";
 			Duration = 400.0;
 		},
@@ -332,6 +348,12 @@
 			Duration = 400.0;
 			Recover = true;
 		},
+		FunctionRemoveEffect
+		{
+			ApplyTo = "Self";
+			MatchAny = true;
+			Tags = array {"LoveDebuff"};
+		},
 		ModifierEffect
 		{
 			Tags = array{"Slow","High"};
@@ -359,9 +381,15 @@
 		{
 			Tags = array{"Drunk", "High"};
 			ApplyTo = "Self";
-			DisplayGroup = "drunk";
+			DisplayGroup = "weed";
 			DisplayName = "$Joint.iron.name";
 			Duration = 400.0;
+		},
+		FunctionRemoveEffect
+		{
+			ApplyTo = "Self";
+			MatchAny = true;
+			Tags = array {"LoveDebuff"};
 		},
 		FunctionAffectNeeds
 		{
@@ -404,9 +432,15 @@
 		{
 			Tags = array{"Endurance", "UncontrollablyDrunk", "Drunk"};
 			ApplyTo = "Self";
-			DisplayGroup = "drunk";
+			DisplayGroup = "weed";
 			DisplayName = "$High.iron.name";
 			Duration = 400.0;
+		},
+		FunctionRemoveEffect
+		{
+			ApplyTo = "Self";
+			MatchAny = true;
+			Tags = array {"LoveDebuff"};
 		},
 		ModifierEffect
 		{
@@ -431,14 +465,6 @@
 			ApplyTo = "Self";
 			Tags = array{"Endurance", "UncontrollablyDrunk"};
 			VisualName = "Poisoned";
-			Duration = 400.0;
-		},
-		DisplayEffect
-		{
-			Tags = array{"Drunk", "High"};
-			ApplyTo = "Self";
-			DisplayGroup = "drunk";
-			DisplayName = "$Joint.iron.name";
 			Duration = 400.0;
 		},
 		ModifierEffect
@@ -668,5 +694,496 @@
 		{
 			AffectTarget = "-8";
 		}
+	};
+};
+
+"GiveJoint" = G3ActionTemplate //Give a gingerbread
+{
+	UICategory = "Artifact";
+	GUIPresent = true;
+	GUIData = array
+	{
+		ActionGUIData
+		{
+			IsCharacter = 1;
+			IsFamilyMember = 1;
+			BelongsToOwnFamily = 1;
+			MinAge = 15;
+		}
+	};
+	UsableBy = array{ "$characters.Age.Adult", "$characters.Age.Child" };
+	
+	ActionClassName = "UseArtefactAction";
+	
+
+	IconName = "Joint";
+	ActionName = "GiveJoint";
+	ArtefactName = "Joint";
+	DisplayName = "$GiveJoint.iron.name";
+	Description = "$GiveJoint.iron.desc";
+	Instruction = "$callToAction.CharacterNotPlayers";
+	
+	ActionActor = "Character";
+	TargetActor = "Character";
+	
+	EnterBuilding = "TryEnter";
+	SuppressBuildingEnterBehavior = true;
+	
+	SourceScoreFormula = "Charisma * 2 + Target.DoesHaveTag.RomPrefPresent * 2";
+	TargetScoreFormula = "Intelligence * 0.2";
+	
+	Cooldown = 0.01;
+	BaseRewardXP = 28;
+		
+	DesiredProfiles = array
+	{
+		TargetProfileCharacter 
+		{
+			CloseToActor = 2;
+			Boat = -3;
+			FamilyProfile = TargetProfileFamily
+			{
+				MyFamily = -3;
+			};
+			CurrentBuildingProfiles = array
+			{
+				TargetProfileBuilding // somewhere in the world
+				{
+					Exists = -3;
+				},
+				TargetProfileBuilding // inside my residence
+				{
+					Residence = 3;
+					Burning = -3;
+					FamilyProfile = TargetProfileFamily
+					{
+						MyFamily = 3;
+					};
+				},
+				TargetProfileBuilding // inside the residence of an ally
+				{
+					Residence = 3;
+					Burning = -3;
+					FamilyProfile = TargetProfileFamily
+					{
+						Alliance = 3;
+					};
+				},
+				TargetProfileBuilding // inside a city building
+				{
+					IncludedTypes = array{"Cityhall", "Church", "cathedrale", "Arsenal"};
+				},
+			};
+		}
+	};  
+	
+	CustomAnimationPool = array
+	{
+		CustomAnimationInfo = array {"MakePresent", 5, 54, -1};
+	};
+
+	CustomReceiverAnimationPool = array
+	{
+		CustomAnimationInfo = array {"AcceptPresent", 0, -1, -1};
+	};
+	
+	DistanceFromTarget = 55;
+	DistanceFromTargetMin = 55;
+	
+	MoralAlignmentShift = 0.1;
+	MoralAlignment = MoralAlignment
+	{
+		Values = array{0.1,0.25,0.1};
+	};
+
+	CriticalFactor = 0.9;
+	
+	CriticalSuccessResult = array
+	{
+		VisualEffect
+		{
+			ApplyTo = "Target";
+			VisualName = "Compliment";
+			Duration = 5;
+		},
+		FunctionTransferPrestige
+		{
+			Receiver = "Source";
+			Amount = 10;
+		},
+		FunctionUpdateRelationship
+		{
+			AffectTarget = "7";
+		},
+		FunctionAffectNeeds
+		{
+			ApplyTo = "Target";
+			ProductType = 3;
+			Amount = -0.02;
+		},
+		FunctionAffectNeeds
+		{
+			ApplyTo = "Target";
+			ProductType = 2;
+			Amount = 0.03;
+		},
+		FunctionAffectNeeds
+		{
+			ApplyTo = "Target";
+			ProductType = 6;
+			Amount = 0.02;
+		},
+		FunctionTriggerAction
+		{
+			ApplyTo = "Target";
+			Actions = array{"SimpleSmokeJoint"};
+		}
+	};
+	
+	SuccessResult = array
+	{
+		VisualEffect
+		{
+			ApplyTo = "Target";
+			VisualName = "Compliment";
+			Duration = 5;
+		},
+		FunctionUpdateRelationship
+		{
+			AffectTarget = "4";
+		},
+		FunctionAffectNeeds
+		{
+			ApplyTo = "Target";
+			ProductType = 3;
+			Amount = -0.02;
+		},
+		FunctionAffectNeeds
+		{
+			ApplyTo = "Target";
+			ProductType = 2;
+			Amount = 0.03;
+		},
+		FunctionAffectNeeds
+		{
+			ApplyTo = "Target";
+			ProductType = 6;
+			Amount = 0.02;
+		},
+		FunctionTriggerAction
+		{
+			ApplyTo = "Target";
+			Actions = array{"SimpleSmokeJoint"};
+		}
+	};
+	
+	FailureResult = array
+	{
+		FunctionTriggerAction
+		{
+			ApplyTo = "Target";
+			Actions = array{"SimpleSmokeJoint"};
+		},
+		FunctionUpdateRelationship
+		{
+			AffectTarget = "-4";
+		}
+	};
+	
+	CriticalFailureResult = array
+	{
+		VisualEffect
+		{
+			ApplyTo = "Target";
+			VisualName = "Insulted";
+			Duration = 5;
+		},
+		FunctionUpdateRelationship
+		{
+			AffectTarget = "-4";
+		}
+	};
+};
+
+"SimpleSmokeJoint" = G3ActionTemplate //Wheat beer
+{
+	ActionClassName = "SimpleExecutionAction";
+
+	GUIPresent = false;
+
+	UsableBy = array{ "$gui.item.UsableByAdultFamilyMembers" };
+
+	ActionActor = "Character";
+	UICategory = "Artifact";
+	Cooldown = 0.02;     //24 hours
+	IconName = "Joint";
+
+	ArtefactName = "Joint";
+	ActionName = "SimpleSmokeJoint";
+	DisplayName = "$Joint.iron.name";
+	Description = "$Joint.iron.desc";
+
+	// FailureResult and CriticalFailureResult only
+	// because 0 is still a tiny chance for a success, we keep CriticalSuccessResult and SuccessResult...
+	SourceScoreFormula = "0.2 * (Strength + Dexterity + Perception + Charisma + Intelligence) + Strength";
+	TargetScoreFormula = "8";
+	CanFail = true;
+	CriticalFactor = 0.8;
+
+    ShowCombatText = true;
+
+	EnterBuilding = "TryEnter";
+	
+	MoralAlignmentShift = 0;
+	MoralAlignment = MoralAlignment
+	{
+		Values = array{0, 0, 0};
+	};
+
+	// Animation Character
+	CustomAnimationPool = array
+	{
+		CustomAnimationInfo = array {"eat", 0, -1, -1};
+	};
+	// Animation Props
+	AnimationProps = array
+	{
+		PropSpawnDesc { PropNames = array { "beaker/beaker" }; };
+	};
+
+	OnEndResult = array
+	{
+		TagEffect
+		{
+			ApplyTo = "Self";
+			Tags = array{"NoSmoking"};
+			Duration = 450.0;
+		},
+	};
+	SuccessResult = array
+	{
+		VisualEffect
+		{
+			ApplyTo = "Self";
+			VisualName = "Inebriate";
+			Duration = 10.0;
+		},
+		DisplayEffect
+		{
+			Tags = array{"High"};
+			ApplyTo = "Self";
+			DisplayGroup = "weed";
+			DisplayName = "$Joint.iron.name";
+			Duration = 400.0;
+		},
+		FunctionAffectNeeds
+		{
+			ApplyTo = "Target";
+			ProductType = 2;
+			Amount = -0.01;
+		},
+		FunctionRemoveEffect
+		{
+			ApplyTo = "Self";
+			MatchAny = true;
+			Tags = array {"LoveDebuff"};
+		},
+		ModifierEffect
+		{
+			Tags = array{"High"};
+			ApplyTo = "Self";
+			ActorValue = "Perception";
+			Mod = 1;
+			Duration = 400.0;
+			Recover = true;
+		},
+		ModifierEffect
+		{
+			Tags = array{"High"};
+			ApplyTo = "Self";
+			ActorValue = "Intelligence";
+			Mod = 1;
+			Duration = 400.0;
+			Recover = true;
+		},
+        FunctionSendMessage
+        {
+            ApplyTo = "Self";
+            Description = "GotHigh";
+        },
+	};
+	CriticalSuccessResult = array
+	{
+		FunctionTriggerAction
+		{
+			ApplyTo = "Source";
+			Actions = array{"Drunk"};
+		},
+		DisplayEffect
+		{
+			Tags = array{"High"};
+			ApplyTo = "Self";
+			DisplayGroup = "weed";
+			DisplayName = "$High.iron.desc";
+			Duration = 400.0;
+		},
+		VisualEffect
+		{
+			ApplyTo = "Self";
+			Tags = array{"Endurance", "UncontrollablyDrunk"};
+			VisualName = "Poisoned";
+			Duration = 400.0;
+		},
+		ModifierEffect
+		{
+			Tags = array{"High"};
+			ApplyTo = "Self";
+			ActorValue = "Perception";
+			Mod = 2;
+			Duration = 400.0;
+			Recover = true;
+		},
+		ModifierEffect
+		{
+			Tags = array{"High"};
+			ApplyTo = "Self";
+			ActorValue = "Intelligence";
+			Mod = 1;
+			Duration = 400.0;
+			Recover = true;
+		},
+		FunctionRemoveEffect
+		{
+			ApplyTo = "Self";
+			MatchAny = true;
+			Tags = array {"LoveDebuff"};
+		},
+		ModifierEffect
+		{
+			Tags = array{"Slow","High"};
+			ApplyTo = "Self";
+			ActorValue = "MovementSpeedMult";
+			Mod = 0.1;
+			Duration = 400.0;
+			Recover = true;
+		},
+        FunctionSendMessage
+        {
+            ApplyTo = "Self";
+            Description = "NiceHigh";
+        },
+	};
+	FailureResult = array
+	{
+		VisualEffect
+		{
+			ApplyTo = "Self";
+			VisualName = "Inebriate";
+			Duration = 1.0;
+		},
+		DisplayEffect
+		{
+			Tags = array{"Drunk", "High"};
+			ApplyTo = "Self";
+			DisplayGroup = "weed";
+			DisplayName = "$Joint.iron.name";
+			Duration = 400.0;
+		},
+		FunctionRemoveEffect
+		{
+			ApplyTo = "Self";
+			MatchAny = true;
+			Tags = array {"LoveDebuff"};
+		},
+		FunctionAffectNeeds
+		{
+			ApplyTo = "Target";
+			ProductType = 2;
+			Amount = -0.01;
+		},
+		ModifierEffect
+		{
+			Tags = array{"High"};
+			ApplyTo = "Self";
+			ActorValue = "Intelligence";
+			Mod = -1;
+			Duration = 400.0;
+			Recover = true;
+		},
+		ModifierEffect
+		{
+			Tags = array{"Slow","High"};
+			ApplyTo = "Self";
+			ActorValue = "MovementSpeedMult";
+			Mod = -0.25;
+			Duration = 400.0;
+			Recover = true;
+		},
+        FunctionSendMessage
+        {
+            ApplyTo = "Self";
+            Description = "BadFlash";
+        },
+	};
+	CriticalFailureResult = array
+	{
+		FunctionTriggerAction
+		{
+			ApplyTo = "Source";
+			Actions = array{"Drunk"};
+		},
+		DisplayEffect
+		{
+			Tags = array{"Endurance", "UncontrollablyDrunk", "Drunk"};
+			ApplyTo = "Self";
+			DisplayGroup = "weed";
+			DisplayName = "$High.iron.name";
+			Duration = 400.0;
+		},
+		FunctionRemoveEffect
+		{
+			ApplyTo = "Self";
+			MatchAny = true;
+			Tags = array {"LoveDebuff"};
+		},
+		ModifierEffect
+		{
+			Tags = array{"High"};
+			ApplyTo = "Self";
+			ActorValue = "Intelligence";
+			Mod = -1;
+			Duration = 400.0;
+			Recover = true;
+		},
+		ModifierEffect
+		{
+			Tags = array{"High"};
+			ApplyTo = "Self";
+			ActorValue = "Strength";
+			Mod = -1;
+			Duration = 400.0;
+			Recover = true;
+		},
+		VisualEffect
+		{
+			ApplyTo = "Self";
+			Tags = array{"Endurance", "UncontrollablyDrunk"};
+			VisualName = "Poisoned";
+			Duration = 400.0;
+		},
+		ModifierEffect
+		{
+			Tags = array{"Slow","High"};
+			ApplyTo = "Self";
+			ActorValue = "MovementSpeedMult";
+			Mod = -0.5;
+			Duration = 400.0;
+			Recover = true;
+		},
+        FunctionSendMessage
+        {
+            ApplyTo = "Self";
+            Description = "HorrorFlash";
+        },
 	};
 };

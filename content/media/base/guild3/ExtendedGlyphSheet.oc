@@ -971,6 +971,12 @@ ExtendedGlyphSheet extends TextSymbolSheet
 		},
 		TextSymbol
 		{
+			Name = "weed";
+			Origin = array { 232, 84 };
+			Dimensions = array { 20, 21 };
+		},
+		TextSymbol
+		{
 			Name = "diseaseimmunity";
 			Origin = array { 135, 195 };
 			Dimensions = array { 21, 21 };

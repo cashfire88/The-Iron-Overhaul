@@ -334,48 +334,9 @@
 			VisualName = "Insulted";
 			Duration = 5.0;
 		},
-		TagEffect
-		{
-			Filter = "Source.hasNotTag.LoveDebuff";
-			ApplyTo = "Self";
-			Tags = array{"LoveDebuff"};
-			Duration = 2400.0;
-		},
-		ModifierEffect
-		{
-			ApplyTo = "Self";
-			Tags = array{"SweetTalk","LoveDebuff"};
-			ActorValue = "Charisma";
-			Mod = -1;
-			Duration = 2400.0;
-			Recover = true;
-		},
-		ModifierEffect
-		{
-			ApplyTo = "Self";
-			Tags = array{"SweetTalk","LoveDebuff"};
-			ActorValue = "Perception";
-			Mod = -1;
-			Duration = 2400.0;
-			Recover = true;
-		},
-		ModifierEffect
-		{
-			ApplyTo = "Self";
-			Tags = array{"SweetTalk","LoveDebuff"};
-			ActorValue = "Intelligence";
-			Mod = -1;
-			Duration = 2400.0;
-			Recover = true;
-		},
-		DisplayEffect
-		{
-			Tags = array{"Rejected"};
-			ApplyTo = "Self";
-			DisplayGroup = "wound";
-			DisplayName = "$effect.rejected";
-			Duration = 2400.0;
-		},
+		
+		@base/LoveDebuff
+
 		FunctionAffectNeeds
 		{
 			ApplyTo = "Target";
@@ -550,55 +511,9 @@
 			VisualName = "Insulted";
 			Duration = 5.0;
 		},
-		TagEffect
-		{
-			Filter = "Source.hasNotTag.LoveDebuff";
-			ApplyTo = "Self";
-			Tags = array{"LoveDebuff"};
-			Duration = 2400.0;
-		},
-		TagEffect
-		{
-			Filter = "Source.hasNotTag.LoveDebuff";
-			ApplyTo = "Self";
-			Tags = array{"LoveDebuff"};
-			Duration = 2400.0;
-		},
-		ModifierEffect
-		{
-			ApplyTo = "Self";
-			Tags = array{"KissCheek","LoveDebuff"};
-			ActorValue = "Charisma";
-			Mod = -2;
-			Duration = 2400.0;
-			Recover = true;
-		},
-		ModifierEffect
-		{
-			ApplyTo = "Self";
-			Tags = array{"KissCheek","LoveDebuff"};
-			ActorValue = "Intelligence";
-			Mod = -1;
-			Duration = 2400.0;
-			Recover = true;
-		},
-		ModifierEffect
-		{
-			ApplyTo = "Self";
-			Tags = array{"KissCheek","LoveDebuff"};
-			ActorValue = "Perception";
-			Mod = -1;
-			Duration = 2400.0;
-			Recover = true;
-		},
-		DisplayEffect
-		{
-			Tags = array{"Rejected","LoveDebuff"};
-			ApplyTo = "Self";
-			DisplayGroup = "wound";
-			DisplayName = "$effect.rejected";
-			Duration = 2400.0;
-		},
+
+		@base/LoveDebuff
+
 		FunctionAffectNeeds
 		{
 			ApplyTo = "Target";
@@ -1276,48 +1191,7 @@
 			VisualName = "Insulted";
 			Duration = 5.0;
 		},
-		TagEffect
-		{
-			Filter = "Source.hasNotTag.LoveDebuff";
-			ApplyTo = "Self";
-			Tags = array{"LoveDebuff"};
-			Duration = 2400.0;
-		},
-		ModifierEffect
-		{
-			ApplyTo = "Self";
-			Tags = array{"KissLiaison","LoveDebuff"};
-			ActorValue = "Charisma";
-			Mod = -1;
-			Duration = 2400.0;
-			Recover = true;
-		},
-		ModifierEffect
-		{
-			ApplyTo = "Self";
-			Tags = array{"KissLiaison","LoveDebuff"};
-			ActorValue = "Perception";
-			Mod = -1;
-			Duration = 2400.0;
-			Recover = true;
-		},
-		ModifierEffect
-		{
-			ApplyTo = "Self";
-			Tags = array{"KissLiaison","LoveDebuff"};
-			ActorValue = "Intelligence";
-			Mod = -1;
-			Duration = 2400.0;
-			Recover = true;
-		},
-		DisplayEffect
-		{
-			Tags = array{"Rejected","LoveDebuff"};
-			ApplyTo = "Self";
-			DisplayGroup = "wound";
-			DisplayName = "$effect.rejected";
-			Duration = 2400.0;
-		},
+		@base/LoveDebuff
 		FunctionTriggerAction
 		{
 			ApplyTo = "Source";
@@ -1488,40 +1362,9 @@
 			VisualName = "Insulted";
 			Duration = 5.0;
 		},
-		TagEffect
-		{
-			Filter = "Source.hasNotTag.LoveDebuff";
-			ApplyTo = "Self";
-			Tags = array{"LoveDebuff"};
-			Duration = 2400.0;
-		},
-		ModifierEffect
-		{
-			ApplyTo = "Self";
-			Tags = array{"DanceWithLiaison","LoveDebuff"};
-			ActorValue = "Perception";
-			Mod = -2;
-			Duration = 2400.0;
-			Recover = true;
-		},
-		ModifierEffect
-		{
-			ApplyTo = "Self";
-			Tags = array{"DanceWithLiaison","LoveDebuff"};
-			ActorValue = "Charisma";
-			Mod = -1;
-			Duration = 2400.0;
-			Recover = true;
-		},
-		ModifierEffect
-		{
-			ApplyTo = "Self";
-			Tags = array{"DanceWithLiaison","LoveDebuff"};
-			ActorValue = "Intelligence";
-			Mod = -1;
-			Duration = 2400.0;
-			Recover = true;
-		},
+		
+		@base/LoveDebuff
+
 		DisplayEffect
 		{
 			Tags = array{"Rejected"};

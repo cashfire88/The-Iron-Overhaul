@@ -134,7 +134,7 @@
 	IconName = "BucketOfFruits";
 
 	Production = 1;
-	BuildTime = 50.00;
+	BuildTime = 37.00;
 	Tier = 2;
 	SocialClass = 0;
 	
@@ -166,7 +166,7 @@
 	{
 		UnlockEffect
 		{
-			Names = array {"DonateSimpleFeast"};
+			Names = array {"DonateBucketOfFruits"};
 		}
 	};
 };
@@ -419,7 +419,7 @@
 	IconName = "BucketOfTomatos";
 
 	Production = 1;
-	BuildTime = 50.00;
+	BuildTime = 37.00;
 	Tier = 2;
 	SocialClass = 0;
 	
@@ -446,7 +446,7 @@
 	{
 		UnlockEffect
 		{
-			Names = array {"DonateSimpleFeast"};
+			Names = array {"DonateBucketOfTomatos"};
 		}
 	};
 };
@@ -641,7 +641,7 @@
 	
 	Tier = 2;
 	SocialClass = 0;
-	BuildTime = 60.5;
+	BuildTime = 15.5;
 	Production = 1;
 	
 	Requirements = array
@@ -657,7 +657,7 @@
 	{
 		UnlockEffect
 		{
-			Names = array {"SmokeJoint"};
+			Names = array {"SmokeJoint", "GiveJoint"};
 		}
 	};
 	
@@ -711,14 +711,9 @@
 		},
 		ModifierEffect
 		{
-			ActorValue = "Strength";
-			Mod = 2;
-			Recover = true;
-		},
-		ModifierEffect
-		{
-			ActorValue = "Dexterity";
-			Mod = 1;
+			Filter = "hasTag.Tinker";
+			ActorValue = "Productivity";
+			Mod = 0.1;
 			Recover = true;
 		}
 	};
@@ -779,20 +774,21 @@
 		},
 		ModifierEffect
 		{
+			ActorValue = "Damage";
+			Mod = 15;
+			Recover = true;
+		},
+		ModifierEffect
+		{
 			ActorValue = "DefensePower";
-			Mod = -2;
+			Mod = -1;
 			Recover = true;
 		},
 		ModifierEffect
 		{
-			ActorValue = "Strength";
-			Mod = 1;
-			Recover = true;
-		},
-		ModifierEffect
-		{
-			ActorValue = "Dexterity";
-			Mod = 2;
+			Filter = "hasTag.Mason";
+			ActorValue = "Productivity";
+			Mod = 0.1;
 			Recover = true;
 		}
 	};
