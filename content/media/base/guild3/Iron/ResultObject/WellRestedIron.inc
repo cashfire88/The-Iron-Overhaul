@@ -16,7 +16,7 @@ ResultObject
         {
             ApplyTo = "Self";
             ActorValue = "Productivity";
-            Mod = 0.2;
+            Mod = 0.05;
             Recover = true;
             Duration = 1200.0;
         },

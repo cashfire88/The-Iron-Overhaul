@@ -17,48 +17,9 @@ VisualEffect
 	VisualName = "Insulted";
 	Duration = 5.0;
 },
-TagEffect
-{
-	Filter = "Source.hasNotTag.LoveDebuff";
-	ApplyTo = "Self";
-	Tags = array{"LoveDebuff"};
-	Duration = 2400.0;
-},
-ModifierEffect
-{
-	ApplyTo = "Source";
-	Tags = array{"ProposeMarriage","LoveDebuff"};
-	ActorValue = "Charisma";
-	Mod = -2;
-	Duration = 2400.0;
-	Recover = true;
-},
-ModifierEffect
-{
-	ApplyTo = "Source";
-	Tags = array{"ProposeMarriage","LoveDebuff"};
-	ActorValue = "Intelligence";
-	Mod = -2;
-	Duration = 2400.0;
-	Recover = true;
-},
-ModifierEffect
-{
-	ApplyTo = "Source";
-	Tags = array{"ProposeMarriage","LoveDebuff"};
-	ActorValue = "Perception";
-	Mod = -2;
-	Duration = 2400.0;
-	Recover = true;
-},
-DisplayEffect
-{
-	Tags = array{"Rejected","LoveDebuff"};
-	ApplyTo = "Source";
-	DisplayGroup = "wound";
-	DisplayName = "$effect.rejected";
-	Duration = 2400.0;
-},
+
+@base/LoveDebuff
+
 FunctionSendMessage
 {
 	ApplyTo = "Source";
