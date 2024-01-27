@@ -127,6 +127,7 @@ AIObjectives extends AIObjectivesContainer
 						"PlayPipe" = 0.25,
 						"TakeBathHome" = 0.25,
 						"GiveCreamPie" = 0.25,
+						"GiveJoint" = 0.25,
 						//do romantic things
 						"CourtingSomeone" = 0.9,
 						"SweetTalk" = 0.2,
@@ -482,6 +483,7 @@ AIObjectives extends AIObjectivesContainer
 						//"DrinkStrongBeer" = 0.01,
 						"DrinkWheatBeer" = 0.01,
 						"SmokeJoint" = 0.01,
+						"GiveJoint" = 0.01,
 						"DrinkMead" = 0.01,	
 						"DonateSimpleFeast" = 0.05,	
 					};

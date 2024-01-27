@@ -700,3 +700,28 @@
 		},
 	};
 };
+
+"High" = G3ActionTemplate //Dead drunk
+{
+	GUIPresent = false;
+	CanFail = false;
+
+	ActionName = "High";
+	ActionActor = "Character";
+	ActionClassName = "SimpleExecutionAction";
+	
+	DisplayName = "$action.high.iron.name";
+	Description = "$action.high,iron,desc";
+	ShowCombatText = false;
+	
+	CanBeCancelled = false;
+	CanFail = false;
+	EnterBuilding = "TryEnter";
+	
+	Duration = 0.034; //~25 seconds
+	
+	CustomAnimationPool = array
+	{
+		CustomAnimationInfo = array {"drunk1", 0, -1, -1};
+	};
+};

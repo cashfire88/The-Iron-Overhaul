@@ -17,6 +17,26 @@ LocDirectData
 			Key = "$LesserQualitySalt.iron.desc";
 			Text = "Lesser QualitySalt for cooking delicious food";
 		},
+		LocDirectEntry
+		{
+			Key = "$action.high.iron.name";
+			Text = "High";
+		},
+		LocDirectEntry
+		{
+			Key = "$action.high.iron.desc";
+			Text = "Feel high";
+		},
+		LocDirectEntry
+		{
+			Key = "$GiveJoint.iron.name";
+			Text = "Give Joint";
+		},
+		LocDirectEntry
+		{
+			Key = "$GiveJoint.iron.desc";
+			Text = "Give Joint to someone Else";
+		},
 
 		LocDirectEntry
 		{
@@ -19754,6 +19774,11 @@ LocDirectData
 		{
 			Key = "$statusEffect.drunk";
 			Text = "Inebriated";
+		},
+		LocDirectEntry
+		{
+			Key = "$statusEffect.weed";
+			Text = "High";
 		},
 		LocDirectEntry
 		{

@@ -641,7 +641,7 @@
 	
 	Tier = 2;
 	SocialClass = 0;
-	BuildTime = 60.5;
+	BuildTime = 15.5;
 	Production = 1;
 	
 	Requirements = array
@@ -657,7 +657,7 @@
 	{
 		UnlockEffect
 		{
-			Names = array {"SmokeJoint"};
+			Names = array {"SmokeJoint", "GiveJoint"};
 		}
 	};
 	
