@@ -17,7 +17,21 @@ LocDirectData
 			Key = "$LesserQualitySalt.iron.desc";
 			Text = "Lesser QualitySalt for cooking delicious food";
 		},
-
+		LocDirectEntry
+		{
+			Key = "$effect.iron.apprentice";
+			Text = "Apprentice";
+		},
+		LocDirectEntry
+		{
+			Key = "$SendToApprenticeSchool.iron.name";
+			Text = "Make Apprentice Test";
+		},
+		LocDirectEntry
+		{
+			Key = "$SendToApprenticeSchool.iron.desc";
+			Text = "Make Apprentice Test";
+		},
 		LocDirectEntry
 		{
 			Key = "$Saw.iron.name";

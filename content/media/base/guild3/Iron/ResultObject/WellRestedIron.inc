@@ -41,3 +41,35 @@ ResultObject
         }
     };
 },
+
+ResultObject
+{
+    Id = "ApprenticeTest";
+    DisplayName = "$Schooling";
+    Results = array
+    {
+        DisplayEffect
+        {
+            Tags = array{"Apprentice"};
+            ApplyTo = "Self";
+            DisplayGroup = "buffed";
+            DisplayName = "$effect.iron.apprentice";
+            Duration = 0.0;
+        },
+        TagEffect
+		{
+			Tags = array{"Apprentice"};
+            ApplyTo = "Self";
+            Duration = 0.0;
+		},
+        ModifierEffect
+        {
+            ApplyTo = "Self";
+            Tags = array{"Apprentice"};
+            ActorValue = "Productivity";
+            Mod = 0.1;
+            Recover = true;
+            Duration = 0.0;
+        }
+    };
+},

@@ -725,3 +725,76 @@
 		CustomAnimationInfo = array {"drunk1", 0, -1, -1};
 	};
 };
+
+"SendToApprenticeSchool" = G3ActionTemplate //Send to school
+{
+	GUIPresent = true;
+	UICategory = "Family";
+	OrderIndex = 15;
+	IconName = "ApprenticeTest";
+
+	ActionClassName = "SimpleExecutionAction";
+	GUIData = array
+	{				
+		ActionGUIData
+		{
+			IsCharacter = 1;
+			BelongsToOwnFamily = 1;
+			DoesNotHaveTag = "Apprentice";
+		}
+	};
+	UsableBy = array{ "$characters.Age.Adult" };
+
+	CanFail = false;
+	
+	ActionName = "SendToApprenticeSchool";
+	ActionActor = "Character";
+	TargetActor = "Building";
+	DisplayName = "$SendToApprenticeSchool.iron.name";
+	Description = "$SendToApprenticeSchool.iron.desc";
+	AskConfirmationOnCancel = true;
+	Instruction = "$selectionPrompt.SelectSchool";
+	
+	PriceFormula = "200";
+	BudgetPot = "Business";
+	Duration = 0.02f;
+	BaseRewardPrestige = 40;
+	BaseRewardXP = 200;
+	
+	MoralAlignmentShift = 0.6;
+	MoralAlignment = MoralAlignment
+	{
+		Values = array{0.5,0.2,0};
+	};
+	
+	ShowSelectionPrompt = "UseTargetProfile";
+	SelectionPromptCallToAction = "$selectionPrompt.SelectSchool";
+	SelectionPromptNoTargetMessage = "$selectionPrompt.NoSchools";
+	HideSelectionPromptCancelButton = true;
+	
+	DesiredProfiles = array
+	{
+		TargetProfileBuilding
+		{
+			CloseToActor = 2;
+			IncludedTypes = array{"School"};
+		}
+	};
+	
+	EnterBuilding = "ForceEnter";
+	
+	CriticalFactor = 1.0;
+	
+	SuccessResult = array
+	{
+		FunctionTrackObjectiveProgress
+		{
+			Amount = 30;
+			ObjectiveTypename = "IncreaseSecurity";
+		},
+		FunctionPickRandom
+		{
+			ResultObjectIds =  array{"ApprenticeTest"};
+		}
+	};
+};

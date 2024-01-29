@@ -1936,7 +1936,7 @@ G3SkillsDefault extends G3SkillsContainer
 						},
 						UnlockEffect
 						{
-							Names = array {"PlayMusic", "StageConcert", "PromoteYourBusinessesIron" }; 
+							Names = array {"PlayMusic", "StageConcert", "PromoteYourBusinessesIron"}; 
 						},
 						ModifierEffect
 						{

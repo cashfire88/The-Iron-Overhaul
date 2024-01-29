@@ -993,6 +993,7 @@ GameplayDefault extends GameplayElements
 						//"StartConversation",
 						"GetHealService",
 						"GetDiseaseService",
+						"SendToApprenticeSchool",
 						"GetDiseaseServiceMedicus",
 						"GetPoisonService",
 						"GetGastronomyService",
