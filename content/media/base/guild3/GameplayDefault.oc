@@ -30,7 +30,7 @@ GameplayDefault extends GameplayElements
 	Score_PoliticsGuildMember = 50.0;
 	Score_PoliticsInfluence_Multiplier = 0.02;
 
-	EmployeeSalaryPerYear = "115 + Level * (hasTag.BuffEasy * 5 + hasTag.BuffNormal * 15 + hasTag.BuffHard * 40 + hasTag.BuffImpossible * 75) * (Source.hasTag.IsLowTier + Source.hasTag.IsHighTier * 1.5)"; // Source.hasTag is the building, just hasTag is the employee
+	EmployeeSalaryPerYear = "200 + Level * (hasTag.BuffEasy * 5 + hasTag.BuffNormal * 15 + hasTag.BuffHard * 40 + hasTag.BuffImpossible * 75) * (Source.hasTag.IsLowTier + Source.hasTag.IsHighTier * 1.5)"; // Source.hasTag is the building, just hasTag is the employee
 //	EmployeeSalaryPerYear = "100 + Level * (hasTag.BuffEasy * 5 + hasTag.BuffNormal * 15 + hasTag.BuffHard * 40 + hasTag.BuffImpossible * 75)";
 	
 	BuildingsOnFireCountLow = 1;
