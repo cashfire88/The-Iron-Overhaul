@@ -24,6 +24,16 @@ LocDirectData
 		},
 		LocDirectEntry
 		{
+			Key = "$effect.iron.journeyman";
+			Text = "Journeyman";
+		},
+		LocDirectEntry
+		{
+			Key = "$effect.iron.master";
+			Text = "Master";
+		},
+		LocDirectEntry
+		{
 			Key = "$SendToApprenticeSchool.iron.name";
 			Text = "Make Apprentice Test";
 		},
@@ -31,6 +41,26 @@ LocDirectData
 		{
 			Key = "$SendToApprenticeSchool.iron.desc";
 			Text = "Make Apprentice Test";
+		},
+		LocDirectEntry
+		{
+			Key = "$SendToJourneymanSchool.iron.name";
+			Text = "Make Journeyman Test";
+		},
+		LocDirectEntry
+		{
+			Key = "$SendToJourneymanSchool.iron.desc";
+			Text = "Make Journeyman Test";
+		},
+		LocDirectEntry
+		{
+			Key = "$SendToMasterSchool.iron.name";
+			Text = "Make Master Test";
+		},
+		LocDirectEntry
+		{
+			Key = "$SendToMasterSchool.iron.desc";
+			Text = "Make Master Test";
 		},
 		LocDirectEntry
 		{
@@ -180,6 +210,30 @@ LocDirectData
 		{
 			Key = "$Sickle.iron.desc";
 			Text = "Sickle can be used by Herbalists to increase their productivity";
+		},
+
+		LocDirectEntry
+		{
+			Key = "$TestSuccess.iron.title";
+			Text = "%character% passed the Test";
+		},
+
+		LocDirectEntry
+		{
+			Key = "$TestSuccess.iron.body";
+			Text = "%character% reached the next level in his craft. %character% has higher production";
+		},
+
+		LocDirectEntry
+		{
+			Key = "$TestFailure.iron.title";
+			Text = "%character% failed the Test";
+		},
+
+		LocDirectEntry
+		{
+			Key = "$TestFailure.iron.body";
+			Text = "%character% failed the Test";
 		},
 
 		LocDirectEntry

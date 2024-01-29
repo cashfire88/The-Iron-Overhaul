@@ -73,3 +73,97 @@ ResultObject
         }
     };
 },
+
+ResultObject
+{
+    Id = "JourneymanTest";
+    DisplayName = "$Schooling";
+    Results = array
+    {
+        FunctionRemoveEffect
+        {
+            ApplyTo = "Self";
+            MatchAny = true;
+            Tags = array {"Apprentice"};
+        },
+        DisplayEffect
+        {
+            Tags = array{"Journeyman"};
+            ApplyTo = "Self";
+            DisplayGroup = "buffed";
+            DisplayName = "$effect.iron.journeyman";
+            Duration = 0.0;
+        },
+        TagEffect
+		{
+			Tags = array{"Apprentice"};
+            ApplyTo = "Self";
+            Duration = 0.0;
+		},
+        TagEffect
+		{
+			Tags = array{"Journeyman"};
+            ApplyTo = "Self";
+            Duration = 0.0;
+		},
+        ModifierEffect
+        {
+            ApplyTo = "Self";
+            Tags = array{"Journeyman"};
+            ActorValue = "Productivity";
+            Mod = 0.2;
+            Recover = true;
+            Duration = 0.0;
+        }
+    };
+},
+
+ResultObject
+{
+    Id = "MasterTest";
+    DisplayName = "$Schooling";
+    Results = array
+    {
+        FunctionRemoveEffect
+        {
+            ApplyTo = "Self";
+            MatchAny = true;
+            Tags = array {"Journeyman"};
+        },
+        TagEffect
+		{
+			Tags = array{"Apprentice"};
+            ApplyTo = "Self";
+            Duration = 0.0;
+		},
+        TagEffect
+		{
+			Tags = array{"Journeyman"};
+            ApplyTo = "Self";
+            Duration = 0.0;
+		},
+        TagEffect
+		{
+			Tags = array{"Master"};
+            ApplyTo = "Self";
+            Duration = 0.0;
+		},
+        DisplayEffect
+        {
+            Tags = array{"Master"};
+            ApplyTo = "Self";
+            DisplayGroup = "buffed";
+            DisplayName = "$effect.iron.master";
+            Duration = 0.0;
+        },
+        ModifierEffect
+        {
+            ApplyTo = "Self";
+            Tags = array{"Master"};
+            ActorValue = "Productivity";
+            Mod = 0.35;
+            Recover = true;
+            Duration = 0.0;
+        }
+    };
+},

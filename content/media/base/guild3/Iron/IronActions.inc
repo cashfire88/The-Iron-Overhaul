@@ -745,7 +745,7 @@
 	};
 	UsableBy = array{ "$characters.Age.Adult" };
 
-	CanFail = false;
+	CanFail = true;
 	
 	ActionName = "SendToApprenticeSchool";
 	ActionActor = "Character";
@@ -759,7 +759,11 @@
 	BudgetPot = "Business";
 	Duration = 0.02f;
 	BaseRewardPrestige = 40;
-	BaseRewardXP = 200;
+	BaseRewardXP = 20;
+	Cooldown = 0.004;
+
+	SourceScoreFormula = "0.2 * (Strength + Dexterity + Perception + Charisma + Intelligence) + Intelligence";
+	TargetScoreFormula = "8";
 	
 	MoralAlignmentShift = 0.6;
 	MoralAlignment = MoralAlignment
@@ -785,16 +789,294 @@
 	
 	CriticalFactor = 1.0;
 	
-	SuccessResult = array
+CriticalSuccessResult = array
 	{
-		FunctionTrackObjectiveProgress
+		ModifierEffect
 		{
-			Amount = 30;
-			ObjectiveTypename = "IncreaseSecurity";
+			Tags = array{"Ace"};
+			ApplyTo = "Self";
+			ActorValue = "Intelligence";
+			Mod = 1;
+			Duration = 0.0;
+			Recover = true;
 		},
 		FunctionPickRandom
 		{
 			ResultObjectIds =  array{"ApprenticeTest"};
+		},
+        FunctionSendMessage
+        {
+            ApplyTo = "Self";
+            Description = "TestSuccessAce";
+        },
+	};
+
+
+	SuccessResult = array
+	{
+		FunctionPickRandom
+		{
+			ResultObjectIds =  array{"ApprenticeTest"};
+		},
+		FunctionSendMessage
+        {
+            ApplyTo = "Self";
+            Description = "TestSuccess";
+        }
+	};
+
+	FailureResult = array
+	{
+        FunctionSendMessage
+        {
+            ApplyTo = "Self";
+            Description = "TestFailure";
+        },
+	};
+	CriticalFailureResult = array
+	{
+        FunctionSendMessage
+        {
+            ApplyTo = "Self";
+            Description = "TestFailure";
+        },
+	};
+};
+
+
+"SendToJourneymanSchool" = G3ActionTemplate //Send to school
+{
+	GUIPresent = true;
+	UICategory = "Family";
+	OrderIndex = 15;
+	IconName = "ApprenticeTest";
+
+	ActionClassName = "SimpleExecutionAction";
+	GUIData = array
+	{				
+		ActionGUIData
+		{
+			IsCharacter = 1;
+			BelongsToOwnFamily = 1;
+			DoesHaveTag = "Apprentice";
+			DoesNotHaveTag = "Journeyman";
 		}
+	};
+	UsableBy = array{ "$characters.Age.Adult" };
+
+	CanFail = true;
+	
+	ActionName = "SendToJourneymanSchool";
+	ActionActor = "Character";
+	TargetActor = "Building";
+	DisplayName = "$SendToJourneymanSchool.iron.name";
+	Description = "$SendToJourneymanSchool.iron.desc";
+	AskConfirmationOnCancel = true;
+	Instruction = "$selectionPrompt.SelectSchool";
+	
+	PriceFormula = "50";
+	BudgetPot = "Business";
+	Duration = 0.02f;
+	BaseRewardPrestige = 100;
+	BaseRewardXP = 20;
+	Cooldown = 0.004;
+
+	SourceScoreFormula = "0.2 * (Strength + Dexterity + Perception + Charisma + Intelligence) + Intelligence";
+	TargetScoreFormula = "4";
+	
+	MoralAlignmentShift = 0.6;
+	MoralAlignment = MoralAlignment
+	{
+		Values = array{0.1,0.1,0};
+	};
+	
+	ShowSelectionPrompt = "UseTargetProfile";
+	SelectionPromptCallToAction = "$selectionPrompt.SelectSchool";
+	SelectionPromptNoTargetMessage = "$selectionPrompt.NoSchools";
+	HideSelectionPromptCancelButton = true;
+	
+	DesiredProfiles = array
+	{
+		TargetProfileBuilding
+		{
+			CloseToActor = 2;
+			IncludedTypes = array{"School"};
+		}
+	};
+	
+	EnterBuilding = "ForceEnter";
+	
+	CriticalFactor = 1.0;
+	
+	CriticalSuccessResult = array
+	{
+		ModifierEffect
+		{
+			Tags = array{"Ace"};
+			ApplyTo = "Self";
+			ActorValue = "Intelligence";
+			Mod = 1;
+			Duration = 0.0;
+			Recover = true;
+		},
+		FunctionPickRandom
+		{
+			ResultObjectIds =  array{"JourneymanTest"};
+		},
+        FunctionSendMessage
+        {
+            ApplyTo = "Self";
+            Description = "TestSuccessAce";
+        },
+	};
+
+
+	SuccessResult = array
+	{
+		FunctionPickRandom
+		{
+			ResultObjectIds =  array{"JourneymanTest"};
+		},
+		FunctionSendMessage
+        {
+            ApplyTo = "Self";
+            Description = "TestSuccess";
+        }
+	};
+
+	FailureResult = array
+	{
+        FunctionSendMessage
+        {
+            ApplyTo = "Self";
+            Description = "TestFailure";
+        },
+	};
+	CriticalFailureResult = array
+	{
+        FunctionSendMessage
+        {
+            ApplyTo = "Self";
+            Description = "TestFailure";
+        },
+	};
+};
+
+"SendToMasterSchool" = G3ActionTemplate //Send to school
+{
+	GUIPresent = true;
+	UICategory = "Family";
+	OrderIndex = 15;
+	IconName = "ApprenticeTest";
+
+	ActionClassName = "SimpleExecutionAction";
+	GUIData = array
+	{				
+		ActionGUIData
+		{
+			IsCharacter = 1;
+			BelongsToOwnFamily = 1;
+			DoesHaveTag = "Journeyman";
+			DoesNotHaveTag = "Master";
+		}
+	};
+	UsableBy = array{ "$characters.Age.Adult" };
+
+	CanFail = true;
+	
+	ActionName = "SendToMasterSchool";
+	ActionActor = "Character";
+	TargetActor = "Building";
+	DisplayName = "$SendToMasterSchool.iron.name";
+	Description = "$SendToMasterSchool.iron.desc";
+	AskConfirmationOnCancel = true;
+	Instruction = "$selectionPrompt.SelectSchool";
+	
+	PriceFormula = "50";
+	BudgetPot = "Business";
+	Duration = 0.02f;
+	BaseRewardPrestige = 100;
+	BaseRewardXP = 20;
+	Cooldown = 0.004;
+
+	SourceScoreFormula = "0.2 * (Strength + Dexterity + Perception + Charisma + Intelligence) + Intelligence";
+	TargetScoreFormula = "4";
+	
+	MoralAlignmentShift = 0.6;
+	MoralAlignment = MoralAlignment
+	{
+		Values = array{0.1,0.1,0};
+	};
+	
+	ShowSelectionPrompt = "UseTargetProfile";
+	SelectionPromptCallToAction = "$selectionPrompt.SelectSchool";
+	SelectionPromptNoTargetMessage = "$selectionPrompt.NoSchools";
+	HideSelectionPromptCancelButton = true;
+	
+	DesiredProfiles = array
+	{
+		TargetProfileBuilding
+		{
+			CloseToActor = 2;
+			IncludedTypes = array{"School"};
+		}
+	};
+	
+	EnterBuilding = "ForceEnter";
+	
+	CriticalFactor = 1.0;
+	
+	CriticalSuccessResult = array
+	{
+		ModifierEffect
+		{
+			
+			Tags = array{"Ace"};
+			ApplyTo = "Self";
+			ActorValue = "Intelligence";
+			Mod = 1;
+			Duration = 0.0;
+			Recover = true;
+		},
+		FunctionPickRandom
+		{
+			ResultObjectIds =  array{"MasterTest"};
+		},
+        FunctionSendMessage
+        {
+            ApplyTo = "Self";
+            Description = "TestSuccessAce";
+        },
+	};
+
+
+	SuccessResult = array
+	{
+		FunctionPickRandom
+		{
+			ResultObjectIds =  array{"MasterTest"};
+		},
+		FunctionSendMessage
+        {
+            ApplyTo = "Self";
+            Description = "TestSuccess";
+        }
+	};
+
+	FailureResult = array
+	{
+        FunctionSendMessage
+        {
+            ApplyTo = "Self";
+            Description = "TestFailure";
+        },
+	};
+	CriticalFailureResult = array
+	{
+        FunctionSendMessage
+        {
+            ApplyTo = "Self";
+            Description = "TestFailure";
+        },
 	};
 };

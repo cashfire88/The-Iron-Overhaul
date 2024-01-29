@@ -142,3 +142,45 @@
         };
     };	
 };
+
+"TestFailure" = MessageDescription
+{
+    Title = "$TestFailure.iron.title";
+    Body = "$TestFailure.iron.body";
+    Effect = "";
+    Icon = "Employee";
+    Type = "negative";
+    IsUrgent = false;
+    Duration = 60;
+    SFX = 33;
+    OnClickReactions = array
+    {
+        FunctionOpenUI
+        {
+            UIName = "MessageLog";
+            ShowOnTop = true;
+            PlaySound = true;	
+        };
+    };	
+};
+
+"TestSuccess" = MessageDescription
+{
+    Title = "$TestSuccess.iron.title";
+    Body = "$TestSuccess.iron.body";
+    Effect = "";
+    Icon = "Employee";
+    Type = "postitive";
+    IsUrgent = false;
+    Duration = 60;
+    SFX = 33;
+    OnClickReactions = array
+    {
+        FunctionOpenUI
+        {
+            UIName = "MessageLog";
+            ShowOnTop = true;
+            PlaySound = true;	
+        };
+    };	
+};

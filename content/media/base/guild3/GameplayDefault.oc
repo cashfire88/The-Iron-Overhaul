@@ -994,6 +994,8 @@ GameplayDefault extends GameplayElements
 						"GetHealService",
 						"GetDiseaseService",
 						"SendToApprenticeSchool",
+						"SendToJourneymanSchool",
+						"SendToMasterSchool",
 						"GetDiseaseServiceMedicus",
 						"GetPoisonService",
 						"GetGastronomyService",

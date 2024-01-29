@@ -1,6 +1,6 @@
 ResultObject
 {
-    Id = "DonateFeast";
+    Id = "DonateFeastResult";
     Results = array
     {
         FunctionPickRandom
