@@ -17,6 +17,28 @@ LocDirectData
 			Key = "$LesserQualitySalt.iron.desc";
 			Text = "Lesser QualitySalt for cooking delicious food";
 		},
+
+		LocDirectEntry
+		{
+			Key = "$Saw.iron.name";
+			Text = "Saw";
+		},
+		LocDirectEntry
+		{
+			Key = "$Saw.iron.desc";
+			Text = "A simple saw to improve the work of carpenters";
+		},
+
+		LocDirectEntry
+		{
+			Key = "$MasonHammer.iron.name";
+			Text = "Stonemason Hammer";
+		},
+		LocDirectEntry
+		{
+			Key = "$MasonHammer.iron.desc";
+			Text = "A Hammer designed for the stonemason to improve his work";
+		},
 		LocDirectEntry
 		{
 			Key = "$Duck.iron.name";

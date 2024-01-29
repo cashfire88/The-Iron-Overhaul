@@ -236,6 +236,7 @@ G3ProfessionTemplatesDesc extends G3ProfessionTemplates{
 			BusinessEnumType = 19;
 			SkillGroup = "Handicraft";
 			BodyArmor = "CarpenterClothes";
+			ResultObjects = array { "CarpenterProfession" };
 			AttributeWeights = array { 0.0f, 1.0f, 1.0f, 0.0f, 0.0f }; // Strength, Dexterity, Intelligence, Perception, Charisma
 		},
 		
@@ -249,6 +250,7 @@ G3ProfessionTemplatesDesc extends G3ProfessionTemplates{
 			BusinessEnumType = 26;
 			SkillGroup = "Handicraft";
 			BodyArmor = "StonemasonClothes";
+			ResultObjects = array { "StonemasonProfession" };
 			AttributeWeights = array { 0.0f, 1.0f, 1.0f, 0.0f, 0.0f }; // Strength, Dexterity, Intelligence, Perception, Charisma
 		},
 		

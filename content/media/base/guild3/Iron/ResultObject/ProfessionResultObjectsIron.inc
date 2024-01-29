@@ -56,4 +56,28 @@ ResultObject
 			Tags = array{ "Profession", "Tinker", "Tinkering" };
 		}
 	};
+},
+
+ResultObject
+{
+	Id = "CarpenterProfession";
+	Results = array
+	{
+		TagEffect
+		{
+			Tags = array{ "Profession", "Carpenter", "Sawing" };
+		}
+	};
+},
+
+ResultObject
+{
+	Id = "StonemasonProfession";
+	Results = array
+	{
+		TagEffect
+		{
+			Tags = array{ "Profession", "HandicraftStone", "Stonemason" };
+		}
+	};
 }
