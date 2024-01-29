@@ -760,7 +760,7 @@
 	Duration = 0.02f;
 	BaseRewardPrestige = 40;
 	BaseRewardXP = 20;
-	Cooldown = 0.004;
+	Cooldown = 1.004;
 
 	SourceScoreFormula = "0.2 * (Strength + Dexterity + Perception + Charisma + Intelligence) + Intelligence";
 	TargetScoreFormula = "8";
@@ -874,15 +874,15 @@ CriticalSuccessResult = array
 	AskConfirmationOnCancel = true;
 	Instruction = "$selectionPrompt.SelectSchool";
 	
-	PriceFormula = "50";
+	PriceFormula = "800";
 	BudgetPot = "Business";
-	Duration = 0.02f;
+	Duration = 0.04f;
 	BaseRewardPrestige = 100;
-	BaseRewardXP = 20;
-	Cooldown = 0.004;
+	BaseRewardXP = 50;
+	Cooldown = 1.004;
 
 	SourceScoreFormula = "0.2 * (Strength + Dexterity + Perception + Charisma + Intelligence) + Intelligence";
-	TargetScoreFormula = "4";
+	TargetScoreFormula = "10";
 	
 	MoralAlignmentShift = 0.6;
 	MoralAlignment = MoralAlignment
@@ -992,15 +992,15 @@ CriticalSuccessResult = array
 	AskConfirmationOnCancel = true;
 	Instruction = "$selectionPrompt.SelectSchool";
 	
-	PriceFormula = "50";
+	PriceFormula = "1500";
 	BudgetPot = "Business";
-	Duration = 0.02f;
-	BaseRewardPrestige = 100;
-	BaseRewardXP = 20;
-	Cooldown = 0.004;
+	Duration = 0.12f;
+	BaseRewardPrestige = 200;
+	BaseRewardXP = 200;
+	Cooldown = 1.004;
 
 	SourceScoreFormula = "0.2 * (Strength + Dexterity + Perception + Charisma + Intelligence) + Intelligence";
-	TargetScoreFormula = "4";
+	TargetScoreFormula = "12";
 	
 	MoralAlignmentShift = 0.6;
 	MoralAlignment = MoralAlignment
