@@ -2068,6 +2068,7 @@ G3ItemsDefault extends G3ItemsContainer
 		@base/Tier1ProductsIron
 		@base/Tier2ProductsIron
 		@base/Tier3ProductsIron
+		@base/Tier4ProductsIron
 		@base/Tier2Products
 		@base/Tier3Products
 		@base/Tier4Products

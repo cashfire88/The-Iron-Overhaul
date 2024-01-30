@@ -17,6 +17,52 @@ LocDirectData
 			Key = "$LesserQualitySalt.iron.desc";
 			Text = "Lesser QualitySalt for cooking delicious food";
 		},
+
+		LocDirectEntry
+		{
+			Key = "$Antibiotics.iron.name";
+			Text = "Eye lotion";
+		},
+		LocDirectEntry
+		{
+			Key = "$Antibiotics.iron.desc";
+			Text = "While it is sold as an eye lotion in reality it is much more effective in preventing deseases";
+		},
+
+
+		LocDirectEntry
+		{
+			Key = "$Fertilizer.iron.name";
+			Text = "Fertil Soil";
+		},
+		LocDirectEntry
+		{
+			Key = "$Fertilizer.iron.desc";
+			Text = "Some Plants can only grow in earth where this magic Soil is added";
+		},
+
+		LocDirectEntry
+		{
+			Key = "$CowLiver.iron.name";
+			Text = "Cow Liver";
+		},
+		LocDirectEntry
+		{
+			Key = "$CowLiver.iron.desc";
+			Text = "Some eat this kind of meat and others do something better out of it";
+		},
+
+		LocDirectEntry
+		{
+			Key = "$Onion.iron.name";
+			Text = "Onion";
+		},
+		LocDirectEntry
+		{
+			Key = "$Onion.iron.desc";
+			Text = "A versatile plant, the Onion";
+		},
+
 		LocDirectEntry
 		{
 			Key = "$effect.iron.apprentice";

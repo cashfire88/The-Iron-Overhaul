@@ -106,7 +106,7 @@ G3SkillsDefault extends G3SkillsContainer
 						},
 						UnlockEffect
 						{
-							Names = array{"Horse", "RidingHorse", "DogCompanion"};
+							Names = array{"Horse", "RidingHorse", "DogCompanion", "Onion"};
 						}
 					};
 				};
@@ -442,7 +442,7 @@ G3SkillsDefault extends G3SkillsContainer
 					{
 						UnlockEffect
 						{
-							Names = array { "GoHunting", "Deer", "GameMeat", "RoastVenison"};
+							Names = array { "GoHunting", "Deer", "GameMeat", "RoastVenison", "CowLiver"};
 						}
 					};
 				};
@@ -1060,7 +1060,7 @@ G3SkillsDefault extends G3SkillsContainer
 						},
 						UnlockEffect
 						{
-							Names = array{"Polish", "Perfume", "WeaponPoison", "Antidote", "GhostlyFog"};
+							Names = array{"Polish", "Perfume", "WeaponPoison", "Antidote", "GhostlyFog", "Antibiotics"};
 						}
 					};
 				};
@@ -1399,7 +1399,7 @@ G3SkillsDefault extends G3SkillsContainer
 						},
 						UnlockEffect
 						{
-							Names = array { "Moonflower", "DarkTalisman", "Bomb" };
+							Names = array { "Moonflower", "DarkTalisman", "Bomb", "Fertilizer" };
 						}
 					};
 				};
