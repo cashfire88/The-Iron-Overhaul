@@ -48,6 +48,12 @@ ResultObject
     DisplayName = "$Schooling";
     Results = array
     {
+        FunctionRemoveEffect
+        {
+            ApplyTo = "Self";
+            MatchAny = true;
+            Tags = array {"Unlearned"};
+        },
         DisplayEffect
         {
             Tags = array{"Apprentice"};
@@ -68,6 +74,15 @@ ResultObject
             Tags = array{"Apprentice"};
             ActorValue = "Productivity";
             Mod = 0.1;
+            Recover = true;
+            Duration = 0.0;
+        },
+        ModifierEffect
+        {
+            ApplyTo = "Self";
+            Tags = array{"Apprentice"};
+            ActorValue = "CraftmanSkill";
+            Mod = 1;
             Recover = true;
             Duration = 0.0;
         }
@@ -106,6 +121,15 @@ ResultObject
             ApplyTo = "Self";
             Duration = 0.0;
 		},
+        ModifierEffect
+        {
+            ApplyTo = "Self";
+            Tags = array{"Journeyman"};
+            ActorValue = "CraftmanSkill";
+            Mod = 2;
+            Recover = true;
+            Duration = 0.0;
+        },
         ModifierEffect
         {
             ApplyTo = "Self";
@@ -154,6 +178,15 @@ ResultObject
             ApplyTo = "Self";
             DisplayGroup = "buffed";
             DisplayName = "$effect.iron.master";
+            Duration = 0.0;
+        },
+        ModifierEffect
+        {
+            ApplyTo = "Self";
+            Tags = array{"Master"};
+            ActorValue = "CraftmanSkill";
+            Mod = 3;
+            Recover = true;
             Duration = 0.0;
         },
         ModifierEffect

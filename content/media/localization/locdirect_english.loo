@@ -29,6 +29,11 @@ LocDirectData
 		},
 		LocDirectEntry
 		{
+			Key = "$effect.iron.unlearned";
+			Text = "Unlearned";
+		},
+		LocDirectEntry
+		{
 			Key = "$effect.iron.master";
 			Text = "Master";
 		},
@@ -19892,6 +19897,11 @@ LocDirectData
 		},
 		LocDirectEntry
 		{
+			Key = "$statusEffect.craft";
+			Text = "Craftman Skill";
+		},
+		LocDirectEntry
+		{
 			Key = "$statusEffect.fire";
 			Text = "Burning";
 		},
@@ -26208,8 +26218,8 @@ LocDirectData
 		},
 		LocDirectEntry
 		{
-			Key = "$gui.Char.Banger";
-			Text = "Banger";
+			Key = "$gui.Char.CraftmanSkill";
+			Text = "CraftmanSkill";
 		},
 		LocDirectEntry
 		{
