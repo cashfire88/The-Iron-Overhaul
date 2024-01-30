@@ -178,7 +178,7 @@
 
 	DisplayName = "$FlowerPot.iron.name";
 	Description = "$FlowerPot.iron.description";
-	DisplayCategories = array("All", "Food");
+	DisplayCategories = array("All", "Trinkets");
 	IconName = "FlowerPot";
 
 	Production = 1;

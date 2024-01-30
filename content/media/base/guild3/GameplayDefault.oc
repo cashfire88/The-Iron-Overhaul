@@ -185,7 +185,7 @@ GameplayDefault extends GameplayElements
 		"Entertainment"			= "Dexterity * 0.75 + Charisma";
 		"ExperienceGainMult"	= "max(0.5, 1 + Intelligence * 0.02)";
 		"Fertility"				= "IsMale ? 1 : sqrt(clamp(invlerp(Gameplay.MenopauseAge, Gameplay.FullFertilityAge, Age) / (1 + 0.5 * LiveBirths), 0, 1))"; // Full fertility until FullFertilityAge, then decay until Menopause, sqrt so decay is slow at start and fast at end. Attenuated with no. of live births.
-		"Banger"				= 0;
+		"CraftmanSkill"				= 0;
 		"GoodGenetics"			= "max(0, Level * 0.003 + Intelligence * 0.003 + Strength * 0.01 + Charisma * 0.005)";
 		"Health"				= "100 + Level * 8 + (Strength + Dexterity) * 0.5";
 		//"HealthRegeneration" 	= "0.75 + Strength * 0.125 + Level * 0.25";

@@ -84,7 +84,7 @@ UiConstValues extends UiConstants
 		},
 		ActorValueDefinition
 		{
-			Id = "Banger";
+			Id = "CraftmanSkill";
 			Classes = array{ "G3Character" };
 			Multiplier = 10.0;
 			Format = "%.2f%%";
