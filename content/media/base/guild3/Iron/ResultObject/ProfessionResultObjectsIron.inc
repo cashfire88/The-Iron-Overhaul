@@ -225,6 +225,7 @@ ResultObject
 	Id = "ArtisanProfession";
 	Results = array
 	{
+			@base/Unlearned
 		TagEffect
 		{
 			Tags = array{ "Profession", "Artisan", "Smithing" };
@@ -260,10 +261,10 @@ ResultObject
 
 ResultObject
 {
-	@base/Unlearned
 	Id = "CarpenterProfession";
 	Results = array
 	{
+		@base/Unlearned
 		TagEffect
 		{
 			Tags = array{ "Profession", "Carpenter", "Sawing" };
@@ -273,10 +274,10 @@ ResultObject
 
 ResultObject
 {
-	@base/Unlearned
 	Id = "StonemasonProfession";
 	Results = array
 	{
+		@base/Unlearned
 		TagEffect
 		{
 			Tags = array{ "Profession", "HandicraftStone", "Stonemason" };
