@@ -29,6 +29,11 @@ LocDirectData
 		},
 		LocDirectEntry
 		{
+			Key = "$tooltip.CraftmanSkillDesc";
+			Text = "Here you can see how far the character is in his craft. 0 = Nothing, 1 = Apprentice, 2 = Journeyman, 3 = Master";
+		},
+		LocDirectEntry
+		{
 			Key = "$effect.iron.unlearned";
 			Text = "Unlearned";
 		},
@@ -26219,7 +26224,7 @@ LocDirectData
 		LocDirectEntry
 		{
 			Key = "$gui.Char.CraftmanSkill";
-			Text = "CraftmanSkill";
+			Text = "Craftman Trait";
 		},
 		LocDirectEntry
 		{
