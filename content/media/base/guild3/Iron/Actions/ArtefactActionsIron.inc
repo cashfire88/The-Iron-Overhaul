@@ -1188,3 +1188,109 @@
 	};
 };
 
+
+"UseSpeedPotion" = G3ActionTemplate //Endurance potion
+{
+	ActionClassName = "UseArtefactAction";
+
+	GUIPresent = true;
+	GUIData = array
+	{
+		@base/OwnFamilyAdults
+	};
+	UsableBy = array{ "$gui.item.UsableByAdultFamilyMembers" };
+
+	ActionActor = "Character";
+	UICategory = "Artifact";
+	Cooldown = 0.5;     //12 hours
+	IconName = "SpeedPotion";
+
+
+	ArtefactName = "SpeedPotion";
+	ActionName = "UseSpeedPotion";
+	DisplayName = "$SpeedPotion.action.iron.name";
+	Description = "$SpeedPotion.action.iron.desc";
+
+	SourceScoreFormula = "MedicineMastery";
+	TargetScoreFormula = "4";
+	
+	BaseRewardXP = 10;
+
+	EnterBuilding = "TryEnter";
+	
+	CanFail = true;
+	CriticalFactor = 1; // "0" chance for critical successes and critical failures
+
+	MoralAlignmentShift = 0.03;
+	MoralAlignment = MoralAlignment
+	{
+		Values = array{-0.5,-0.5,0};
+	};
+
+	// Animation Character
+	CustomAnimationPool = array
+	{
+		CustomAnimationInfo = array {"drink_poison1", 0, -1, -1};
+	};
+	// Animation Props
+	AnimationProps = array
+	{
+		PropSpawnDesc { PropNames = array { "antidote/antidote" }; };
+	};
+
+	SuccessResult = array
+	{
+		VisualEffect
+		{
+			ApplyTo = "Self";
+			VisualName = "Inebriate";
+			Duration = 10.0;
+		};
+		DisplayEffect
+		{
+			Tags = array{"SpeedPotion", "Drunk"};
+			ApplyTo = "Self";
+			DisplayGroup = "drunk";
+			DisplayName = "$EndurenceDrink";
+			Duration = 360.0;
+		};
+		ModifierEffect
+		{
+			Tags = array{"SpeedPotion"};
+			ApplyTo = "Self";
+			ActorValue = "MovementSpeedMult";
+			Mod = 0.50;
+			Duration = 360.0; // 1 tick = 1 second in real time, while 45 ticks are 1 ingame hour (based on NormalYearTime = 1080)
+			Recover = true;
+		};
+		FunctionAffectNeeds
+		{
+			ApplyTo = "Target";
+			ProductType = 7;
+			Amount = -0.01;
+		},
+	};
+	
+	FailureResult = array
+	{
+		FunctionTriggerAction
+		{
+			ApplyTo = "Source";
+			Actions = array{"Drunk"};
+		},
+		DisplayEffect
+		{
+			Tags = array{"Drunk", "SpeedPotion", "UncontrollablyDrunk"};
+			ApplyTo = "Self";
+			DisplayGroup = "drunk";
+			DisplayName = "$Inebriated";
+			Duration = 25.0;
+		},
+		VisualEffect
+		{
+			ApplyTo = "Self";
+			VisualName = "Poisoned";
+			Duration = 25.0;
+		}
+	};
+};

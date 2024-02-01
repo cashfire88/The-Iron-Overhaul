@@ -230,7 +230,7 @@
 	IconName = "GrindedBlackPepper";
 
 	Production = 1;
-	BuildTime = 62.00;
+	BuildTime = 30.00;
 	Tier = 1;
 	SocialClass = 1;
 	

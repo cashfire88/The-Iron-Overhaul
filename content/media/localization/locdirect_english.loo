@@ -20,6 +20,75 @@ LocDirectData
 
 		LocDirectEntry
 		{
+			Key = "$Glas.iron.name";
+			Text = "Glas";
+		},
+		LocDirectEntry
+		{
+			Key = "$Glas.iron.desc";
+			Text = "Raw Glas";
+		},
+
+		LocDirectEntry
+		{
+			Key = "$Eyeglas.iron.name";
+			Text = "Glases";
+		},
+		LocDirectEntry
+		{
+			Key = "$Eyeglas.iron.desc";
+			Text = "Glases to wear. It will greatly improve the visuals";
+		},
+
+		
+		LocDirectEntry
+		{
+			Key = "$RoastedPig.iron.name";
+			Text = "Roasted Pig";
+		},
+		LocDirectEntry
+		{
+			Key = "$RoastedPig.iron.desc";
+			Text = "A delicious grilled Pig on a stick";
+		},
+
+		LocDirectEntry
+		{
+			Key = "$Cabbage.iron.name";
+			Text = "Cabbage";
+		},
+		LocDirectEntry
+		{
+			Key = "$Cabbage.iron.desc";
+			Text = "Just a simple Cabbage";
+		},
+
+
+
+		LocDirectEntry
+		{
+			Key = "$SpeedPotion.action.iron.name";
+			Text = "Drink Speed Potion";
+		},
+		LocDirectEntry
+		{
+			Key = "$SpeedPotion.action.iron.desc";
+			Text = "Drink the potion and hope for the best";
+		},
+
+				LocDirectEntry
+		{
+			Key = "$SpeedPotion.iron.name";
+			Text = "Speed Potion";
+		},
+		LocDirectEntry
+		{
+			Key = "$SpeedPotion.iron.desc";
+			Text = "For all those people who skip leg day";
+		},
+
+		LocDirectEntry
+		{
 			Key = "$Antibiotics.iron.name";
 			Text = "Eye lotion";
 		},
